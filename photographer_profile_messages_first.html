@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotopoisk</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/user.less" />
+    -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/doubletaptogo.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        <div class="central_block">
+          <a href="index.html" title="" class="logo"></a>
+          
+          <nav class="main_navigation">
+            <a href="#" title="" class="touch_nav"></a>
+            <ul>
+              <li class="parent_nav">
+                <a href="photographers.html" title="" aria-haspopup="true">Фотографы</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Свадебные фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотографы Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Детские фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent_nav">
+                <a href="photomodels.html" title="" aria-haspopup="true">Модели</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Фотомодели Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотомодели TFP</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Дети модели</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="stylists.html" title="">Стилисты</a>
+              </li>
+              <li>
+                <a href="photostudios.html" title="">Фотостудии</a>
+              </li>
+              <li>
+                <a href="retouchers.html" title="">Ретушеры</a>
+              </li>
+              <li>
+                <a href="amateurs.html" title="">Фотолюбители</a>
+              </li>
+              <li>
+                <a href="agencies.html" title="">Модельные агентства</a>
+              </li>
+              <li>
+                <a href="schools.html" title="">Фотошколы</a>
+              </li>
+              <li class="parent_nav more_menu">
+                <a href="#" title="" aria-haspopup="true">Еще</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="retouchers.html" title="">Ретушеры</a>
+                  </li>
+                  <li>
+                    <a href="amateurs.html" title="">Фотолюбители</a>
+                  </li>
+                  <li>
+                    <a href="agencies.html" title="">Модельные агентства</a>
+                  </li>
+                  <li>
+                    <a href="schools.html" title="">Фотошколы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="user_block">
+            <a href="#" title="" class="touch_user_menu"><img src="img/avatar.png" alt="" title="" /></a>
+            <div class="menu_block logined">
+              <div class="user_block">
+                <a href="#" title="" class="avatar"><img src="img/avatar.png" alt="" title="" /></a>
+                <div class="user_info">
+                  <div class="info_block">
+                    <div class="name_row"><a href="#" title="">Алефтина Смелая</a></div>
+                    <div class="notifications_row">
+                      <span class="link messages">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                      <span class="link friends">
+                        <a href="#" title=""><span class="notification">+5</span></a>
+                      </span>
+                      <span class="link edit_profile_link">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="links_block">
+                    <ul>
+                      <li>
+                        <a href="photographer_profile.html" title="">Профиль</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_edit.html" title="">Редактирование</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_portfolio.html" title="">Портфолио</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_blog.html" title="">Блог</a>
+                      </li>
+                      <li>
+                        <a href="payment.html" title="">Pro-Аккаунт</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_views.html" title="">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="add_menu">
+                  <a href="#" title="" class="add_label">Добавить</a>
+                  <div class="add_links">
+                    <ul>
+                      <li>
+                        <a href="#" title="">Фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Видео</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Событие</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Объявление</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Статью в блог</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        </div>
+        
+        <div class="bottom_line">
+          <div class="central_block">
+            <div class="extended_navigation">
+              <ul>
+                <li>
+                  <a href="activity_wall.html" title="">Активность</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="photos.html" title="" aria-haspopup="true">Фото дня</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="#" title="">Фото недели</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Фото месяца</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="photostream.html" title="">Фотопоток</a>
+                </li>
+                <li>
+                  <a href="events_categories.html" title="">События</a>
+                </li>
+                <li>
+                  <a href="contests.html" title="">Фотоконкурсы</a>
+                </li>
+                <li>
+                  <a href="forums.html" title="">Форум</a>
+                </li>
+                <li>
+                  <a href="adverts_categories.html" title="">Объявления</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="#" title="" aria-haspopup="true">Публикации</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="news.html" title="">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog_categories.html" title="">Блоги</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Интервью</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Полезно знать</a>
+                    </li>
+                    <li>
+                      <a href="videos.html" title="">Видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent_nav">
+                  <a href="job.html" title="" aria-haspopup="true">Работа</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="my_ads.html" title="">Мои объявления</a>
+                    </li>
+                    <li>
+                      <a href="my_orders.html" title="">Мои заказы</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clear_both"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- content -->
+      <div class="content_block">
+        <div class="content profile_page">
+          <div class="profile_block">
+            
+            <div class="profile_messages">
+               <div class="avatar">
+                <a href="#" title="" class="image">
+                  <img src="img/photo_06.png" alt="" title"" />
+                  <span class="online_status"></span>
+                  <span class="top_status"></span>
+                </a>
+              </div>
+              
+              <div class="messages_list">
+                <h1 class="caption">Входящие сообщения</h1>
+                <a href="#" title="" class="outbound">Смотреть отправленные</a>
+                <div class="clear_both"></div>
+
+                <div class="messages">
+
+                  <div class="message">
+                    <div class="avatar">
+                      <a href="#" title=""><img src="img/forum_avatar_01.png" alt="" title="" /></a>
+                    </div>
+                    <div class="body">
+                      <a href="#" title="" class="author">Руслан Жуков</a>
+                      <div class="text">
+                        <br />
+                        <p>Приветствуем на нашем сервисе!<br />
+                        Теперь перед  Вами открыты все возможности проекта.</p>
+                        <br />
+                        <h3>Что можно сделать после регистрации?</h3>
+                        <p>Прежде всего, ознакомьтесь с возможностями сайта:</p>
+                        <h4>1. Добавьте фотографии в свое портфолио</h4>
+                        <p>Будьте внимательны при выборе жанра фотографии (то что изображено на фотографии должно соответствовать жанру) 
+                        и названия, тегов – чем внимательнее к этому отнесетесь, тем больше шансов быть замеченным среди потока фотографий.</p>
+                        <p>Заголовки и теги используются при поиске фотографии через поисковые системы. Чем правильнее Вы вводите эти 
+                        параметры, тем больше вероятности что Вас найдут по ним Ваши будущие заказчики.</p>
+                        <h5>Пример 1: Вы загружаете фотографию на которой изображен закат на море:</h5>
+                        <p>Жанр: Пейзаж<br />
+                        Заголовок: Морской закат<br />
+                        Описание, теги: море, закат, пейзаж.</p>
+                        <h5>Пример 2: Вы загружаете свадебную фотографию:</h5>
+                        <p>Жанр: Свадебная<br />
+                        Заголовок:  Свадьба Наташи и Юры<br />
+                        Описание, теги: свадебное фото, свадебная съемка, свадьба, фотография свадьбы, красивая свадьба и т.д.</p>
+                        <p>Как добавить фотографии можно подробнее прочитать в этой статье: 
+                        <a href="http://fotopoisk.com.ua/novosti_proekta/zagruzka-izobrazhenii" title="">http://fotopoisk.com.ua/novosti_proekta/zagruzka-izobrazhenii</a></p>
+                        <h4>2. Внимательно осмотрите возможности своего аккаунта. Вы можете:</h4>
+                        <ul>
+                          <li>Добавить фотографии в свое портфолио;</li>
+                          <li>Добавить пользователя в друзья;</li>
+                          <li>Обмениваться личными сообщениями внутри сайта;</li>
+                          <li>Подписаться на обновления тех пользователей, которые заинтересовали и следить за их работами в стене активности, не тратя время и просматривая профиль каждого;</li>
+                          <li>Вести свой блог</li>
+                          <li>Добавлять видео;</li>
+                          <li>Оставлять комментарии под всеми постами, новостями, событиями и пр;</li>
+                          <li>Голосовать за понравившиеся фотографии увеличивая их шансы попасть  в «Фото дня» - ставить «мне нравится» и «не нравится» на фотографиях;</li>
+                          <li>Оставлять отзывы о пользователях;</li>
+                          <li>Общаться на форуме;</li>
+                          <li>Добавлять свои события (мастер-классы, выставки, воркшопы и пр.) в раздел «События»;</li>
+                          <li>Бронировать фотостудии в любом городе;</li>
+                          <li>Делиться своими новостями с остальными пользуясь «Стеной активности»</li>
+                        </ul>
+                        <br />
+                        <p>Чем активнее Вы на сайте – тем больше шансов стать специалистом недели. Подробнее в этой статье:
+                        <a href="http://fotopoisk.com.ua/novosti_proekta/reiting-i-rubrika-spetsialist-nedeli" title="">http://fotopoisk.com.ua/novosti_proekta/reiting-i-rubrika-spetsialist-nedeli</a></p>
+                        <h4>3. Обратите внимание, что на нашем сайте есть система рейтинга специалистов, фотографий и рубрика<br /><a href="#" tite="">«Специалист недели»</a></h4>
+                        <p>Рейтинг специалиста – это количество набранных им отметок «Мне нравится», которые<br />
+                        поставлены Вашему профилю, что влияет на его позицию в общем рейтинге, в таких разделах как: Фотографы, 
+                        Фотомодели, Стилисты, Фотостудии, Ретушеры, Фотолюбители, Фотошколы, Модельные агенства.</p>
+                        <p>Рейтинг фотографии – это суммарное количество отметок «Мне нравится», которые получила Ваша фотография. 
+                        Та фотография, которая набирает наибольшее количество «лайков» попадает в рубрику <a href="#" title="">«Фото дня»</a></p>
+                        <p>Рейтинг фотографий <b>не равен</b> личному рейтингу специалиста.</p>
+                        <p>Каждую неделю самые активные пользователи сайта попадают в рубрику «Специалист недели», 
+                        которая находится в нижней части главной страницы.</p>
+                        <p>Как попасть в рубрику <a href="#" title="">«Специалист недели»</a> можете причитать тут:
+                        <a href="http://fotopoisk.com.ua/polzovatel_nedeli" title="">http://fotopoisk.com.ua/polzovatel_nedeli</a></p>
+                        <h4>4. Новости, события</h4>
+                        <p>Обратите внимание на рубрику <a href="#" title="">«Новости»</a> - эта рубрика имеет множество подрубрик, охватывает 
+                        все самые интересные новости о мире фотографии, моде, стиле, фототехники, фотоконкурсах международного и всеукраинского 
+                        масштаба и многое другое. Мы ищем самые актуальные и интересные новости для Вас каждый день!</p>
+                        <p><a href="#" title="">«События»</a> - рубрика, собравшая все события Украины: фотовыставки, мастер-классы, кастинги, 
+                        воркшопы, фестивали. Вашего события нет в списке? Зайдите в интересующий Вас раздел Справа есть кнопка 
+                        <a href="#" title="">«Добавить событие»</a> - внимательно заполните все поля. Не забыв указать, дату, место проведения, 
+                        контакты организаторов, если необходимо. После добавления, событие будет проверено модератором и опубликовано в рубрике 
+                        <a href="#" title="">«События»</a>.</p>
+                        <h4>5. Публикации</h4>
+                        <p>Обратите внимание на рубрику <a href="#" title="">«Полезно знать»</a>. Мы собрали максимальное количество интересных 
+                        и полезных статей, которые пригодятся как и профессионалам, так и новичкам.  Статьи о моде, стиле будут интересны и 
+                        фотографам, и стилистам, и ретушерам, и моделям, и фотолюбителям.</p>
+                        <p>Мы всегда открыты к пожеланием наших пользователей и будем рады услышать идеи, как сделать наш проект лучшим!</p>
+                        <p>С уважением,<br />
+                        администрация ресурса «ФотоПоиск».</p>
+                      </div>
+                      <div class="bottom_line">
+                        26 марта 2012 в 14:19
+                        |
+                        <a href="#" title="">Удалить</a>
+                        |
+                        <a href="#" title="">Ответить</a>
+                      </div>
+                    </div>
+                    <div class="clear_both"></div>
+                  </div>
+
+                </div>
+
+                <a href="#" title="" class="show_more">Показать еще</a>
+              </div>
+              <div class="clear_both"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="central_block">
+        <div class="left_block">
+          <div class="footer_navigation">
+            <a href="#" title="">О проекте</a>
+            |
+            <a href="#" title="">Новости проекта</a>
+            |
+            <a href="#feedback" title="" rel="feedback">Связаться с нами</a>
+          </div>
+
+          <div class="copy_right">
+            ©2010 Фотопоиск. Все права защищены. info@fotopoisk.com.ua <br />
+            Все фотографии являются собственностью пользоватлей<br /><br />
+            г. Киев, ул. Крещатик, 25<br />
+            +38 (066) 774-73-52
+          </div>
+        </div>
+
+        <div class="site_links">
+          <div class="column">
+            <a href="#" title="">Фотографы</a><br />
+            <a href="#" title="">Фотомодели</a><br />
+            <a href="#" title="">Стилисты</a><br />
+            <a href="#" title="" class="current">Фотостудии</a><br />
+            <a href="#" title="">Ретушеры</a><br />
+            <a href="#" title="">Фотошколы</a><br />
+            <a href="#" title="">Агенства</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Новости</a><br />
+            <a href="#" title="">Блоги</a><br />
+            <a href="#" title="">Интервью</a><br />
+            <a href="#" title="">Полезно знать</a><br />
+            <a href="#" title="">События</a><br />
+            <a href="#" title="">Форум</a><br />
+            <a href="#" title="">Барахолка</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Фото дня</a><br />
+            <a href="#" title="">Фотопоток</a><br />
+            <a href="#" title="">Фотоконкурсы</a><br />
+            <a href="#" title="">Топ городов</a><br />
+            <a href="#" title="">Фотограф года</a><br />
+            <a href="#" title="">Модель года</a><br />
+            <a href="#" title="">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="right_block">
+          <div class="socials">
+            <a href="#" title="" class="instagram"></a>
+            <a href="#" title="" class="odnoklassniki"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="fb"></a>
+            <a href="#" title="" class="vk"></a>
+            <a href="#" title="" class="google_plus"></a>
+            <div class="clear_both"></div>
+          </div>
+
+          <div class="designed_by">
+            <a href="http://freshlime.com.ua" title="" target="_blank"><img src="img/fresh_logo.png" alt="FreshLimeStudio" title="" /></a>
+          </div>
+
+          <div class="clear_both"></div>
+          
+          <div class="share_buttons">
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_01.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_02.png" alt="" tite="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_03.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_04.png" alt="" tite="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

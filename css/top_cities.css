@@ -1,0 +1,193 @@
+/* top cities styles */
+.top_cities_page {
+  padding: 0px 0px 30px 0px;
+  margin: 0px auto;
+}
+.top_cities_page .cities_header_block {
+  position: relative;
+  max-width: 1245px;
+  margin: 0px auto;
+  padding-top: 17px;
+}
+.top_cities_page .cities_header_block .page_title {
+  padding-top: 7px;
+}
+.top_cities_page .cities_header_block .add_advert_link {
+  display: none;
+}
+.top_cities_page .top_cities_block {
+  max-width: 1245px;
+  margin: 0px auto 20px auto;
+}
+.top_cities_page .top_cities {
+  float: left;
+  width: 962px;
+  margin-top: 22px;
+}
+.top_cities_page .cities_category {
+  position: relative;
+  min-height: 151px;
+  padding: 6px;
+  margin-bottom: 9px;
+}
+.top_cities_page .cities_category .thumb {
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+.top_cities_page .cities_category .thumb img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.top_cities_page .cities_category .body_block {
+  float: left;
+  max-width: 780px;
+  padding: 10px 0px 0px 16px;
+}
+.top_cities_page .cities_category .category_name {
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.top_cities_page .cities_category .cities_list {
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #666666;
+}
+.top_cities_page .cities_category .cities_list a {
+  color: inherit;
+}
+.top_cities_page .dark_row {
+  background: #F7F7F7 none;
+}
+.top_cities_page .cities_right_column {
+  float: right;
+  width: 245px;
+  margin-top: 22px;
+}
+@media only screen and (max-width: 1270px) {
+  .top_cities_page .top_cities_block {
+    width: 996px;
+  }
+  .top_cities_page .top_cities {
+    float: none;
+    width: inherit;
+  }
+  .top_cities_page .cities_category {
+    width: 972px;
+  }
+  .top_cities_page .cities_category .body_block {
+    max-width: 800px;
+  }
+  .top_cities_page .right_column {
+    float: none;
+    width: 996px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .top_cities_page .right_column .tile {
+    width: 996px;
+  }
+  .top_cities_page .right_column .tile .body {
+    padding: 20px 18px 22px 18px;
+  }
+  .top_cities_page .right_column .nearest_events .events_list .news_list,
+  .top_cities_page .right_column .last_news .events_list .news_list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .top_cities_page .right_column .nearest_events .title,
+  .top_cities_page .right_column .last_news .title {
+    padding-right: 10px;
+  }
+  .top_cities_page .right_column .nearest_events .row,
+  .top_cities_page .right_column .last_news .row {
+    display: table-cell;
+    width: auto;
+    min-width: 194px;
+  }
+  .top_cities_page .right_column .nearest_events .clear_both,
+  .top_cities_page .right_column .last_news .clear_both {
+    display: none;
+  }
+  .top_cities_page .right_column .image_block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .top_cities_page .cities_header_block {
+    padding-right: 10px;
+  }
+  .top_cities_page .top_cities_block {
+    width: 745px;
+  }
+  .top_cities_page .top_cities {
+    width: inherit;
+    margin-top: 13px;
+  }
+  .top_cities_page .cities_category {
+    width: 721px;
+  }
+  .top_cities_page .cities_category .body_block {
+    max-width: 550px;
+  }
+  .top_cities_page .right_column {
+    width: 754px;
+  }
+  .top_cities_page .right_column .tile {
+    width: 745px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .top_cities_page .cities_header_block {
+    padding-left: 10px;
+  }
+  .top_cities_page .top_cities_block {
+    width: auto;
+    min-width: 276px;
+    padding: 0px 10px;
+  }
+  .top_cities_page .top_cities {
+    width: inherit;
+  }
+  .top_cities_page .cities_category {
+    display: block;
+    width: auto;
+  }
+  .top_cities_page .cities_category .thumb,
+  .top_cities_page .cities_category .thumb img {
+    width: 90px;
+    height: 90px;
+  }
+  .top_cities_page .cities_category .body_block {
+    float: none;
+    max-width: none;
+    padding-left: 106px;
+  }
+  .top_cities_page .right_column {
+    width: 100%;
+  }
+  .top_cities_page .right_column .tile {
+    width: auto;
+  }
+  .top_cities_page .right_column .nearest_events .events_list,
+  .top_cities_page .right_column .last_news .events_list,
+  .top_cities_page .right_column .nearest_events .news_list,
+  .top_cities_page .right_column .last_news .news_list {
+    display: block;
+    width: auto;
+  }
+  .top_cities_page .right_column .nearest_events .row,
+  .top_cities_page .right_column .last_news .row {
+    display: table;
+    width: auto;
+    min-width: 194px;
+    min-width: auto;
+  }
+  .top_cities_page .right_column .nearest_events .clear_both,
+  .top_cities_page .right_column .last_news .clear_both {
+    display: block;
+  }
+}

@@ -1,0 +1,262 @@
+@import (reference) "base.less";
+
+.user_popups {
+	display: none;
+}
+
+.user_popups_block {
+	position: relative;
+	width: 600px;
+	min-height: 200px;
+	padding: 22px 24px 26px 24px;
+	background: #FFFFFF none;
+	.popup_caption {
+		.font(2.8em, 1.2em);
+	}
+	.popup_form_block {
+		position: relative;
+		width: 600px;
+        padding-top: 18px;
+	}
+	.input_block {
+		position: relative;
+		height: 44px;
+		margin: 0px 0px 15px 0px;
+	}
+	.inputs {
+		display: block;
+		width: 328px;
+		height: 42px;
+		margin: 0px;
+        padding: 0px 10px;
+		font-size: 1.8em;
+		color: @light_grey_color;
+	}
+	.selects {
+		display: block;
+		outline: none;
+		width: 350px;
+		height: 44px;
+		margin: 0px 0px 15px 0px;
+		padding: 8px 5px 8px 7px;
+		.font(1.8em, 44px);
+		font-family: Tahoma, Arial, sans-serif;
+		color: @light_grey_color;
+		border: 1px solid #A5ACB2;
+	}
+	.textareas {
+		width: 580px;
+		height: 180px;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 1.8em;
+	}
+	.show_history {
+		display: inline-block;
+		float: left;
+		margin-left: 13px;
+		margin-top: 12px;
+		padding-right: 23px;
+		.font(1.8em, 1.2em);
+		text-decoration: underline;
+		background: url(../img/arrow_down_blue.png) 100% 8px no-repeat;
+	}
+	.show_history:hover {
+		text-decoration: none;
+	}
+	.buttons {
+		float: right;
+        cursor: pointer;
+        outline: 0;
+        height: 43px;
+        margin: 0;
+        padding: 0 28px;
+        font-size: 2.4em;
+        line-height: 1.2em;
+        color: #fff;
+        border: none;
+        background: #39C;
+	}
+	.cancel {
+		float: right;
+		display: inline-block;
+		margin: 6px 25px 0px 0px;
+		.font(2.4em, 1.2em);
+		color: @light_grey_color;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .user_popups_block {
+        width: 450px;
+        .popup_form_block {
+            width: 450px;
+        }
+        .textareas {
+            width: 420px !important;
+        }
+        .actions {
+            text-align: center;
+            .buttons {
+                float: right;
+                margin-top: 10px;
+            }
+            .cancel {
+                float: right;
+                margin-top: 16px;
+            }
+            .show_history {
+                float: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .user_popups_block {
+        width: 350px;
+        .popup_form_block {
+            width: 350px;
+        }
+        .inputs {
+            width: 270px !important;
+        }
+        .selects {
+            width: 294px !important;
+        }
+        .textareas {
+            width: 320px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .user_popups_block {
+        width: 250px;
+        .popup_form_block {
+            width: 250px;
+        }
+        .inputs {
+            width: 170px !important;
+        }
+        .selects {
+            width: 194px !important;
+        }
+        .textareas {
+            width: 220px !important;
+        }
+        .cancel {
+            margin-right: 0px !important;
+        }
+        .show_history {
+            margin-bottom: 15px;
+            margin-left: 0px !important;
+            .font(15px, 1.2em);
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .user_popups_block {
+        width: 190px;
+        .popup_form_block {
+            width: 190px;
+        }
+        .inputs {
+            width: 170px !important;
+        }
+        .selects {
+            width: 194px !important;
+        }
+        .textareas {
+            width: 170px !important;
+        }
+        .show_history {
+            margin-bottom: 15px;
+            margin-left: 0px !important;
+            .font(15px, 1.2em);
+        }
+    }
+}
+
+.calendar_info {
+	width: auto;
+	max-width: 400px;
+	min-width: 290px;
+	min-height: 150px;
+	padding: 22px 24px 26px 24px;
+	background: #FFFFFF none;
+	.popup_caption {
+		.font(20px, 1.2em);
+	}
+}
+
+.calendar_info_block {
+	width: 100%;
+	padding-top: 20px;
+	.font(12px, 1.2em);
+	.row {
+		display: table;
+		margin-bottom: 8px;
+	}
+	.labels,
+	.values {
+		display: table-cell;
+		text-align: left;
+		vertical-align: top;
+	}
+	.labels {
+		width: 137px;
+		color: @dark_color;
+	}
+	.values {
+		color: @grey_color;
+		a {
+			text-decoration: underline;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+	}
+	.actions {
+		padding-top: 20px;
+		.font(12px, 1.2em);
+		text-align: right;
+	}
+	.buttons {
+		display: inline-block;
+        height: 27px !important;
+        padding-top: 13px 15px 0px 15px !importane;
+		.font(14px, 1.2em);
+	}
+	a.buttons {
+		height: 30px;
+		padding-top: 10px;
+		text-decoration: none !important;
+		color: @white_color !important;
+	}
+	.cancel {
+		margin-right: 15px;
+		color: @light_grey_color;
+	}
+}
+
+@media only screen and (max-width: 419px) {
+    .calendar_info {
+        min-width: auto;
+        .labels {
+            display: block;
+        }
+        .values {
+            display: block;
+        }
+        .actions {
+            text-align: left;
+        }
+        .buttons {
+            margin-top: 15px !important;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

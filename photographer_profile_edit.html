@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotopoisk</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/users.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <link rel="stylesheet" href="css/user_edit.css" />
+    <link rel="stylesheet" href="calendar/jquery-ui-1.10.3.custom.css" />
+    <link rel="stylesheet" href="select/select2.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/users.less" />
+    <link type="text/less" rel="stylesheet" href="css/user.less" />
+    <link type="text/less" rel="stylesheet" href="css/user_edit.less" />
+    -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/doubletaptogo.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    <script src="calendar/jquery-ui-1.10.3.custom.js"></script>
+    <script src="select/select2.js"></script>
+    <script type="text/javascript">
+	  $(function() {
+        $( ".datepicker" ).datepicker({
+          showOn: "button",
+          buttonImage: "img/calenar_icon.png",
+          buttonImageOnly: true
+	    });
+	  });
+	  $(document).ready(function() {
+	    $(".genres").select2();
+	  });
+    </script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        <div class="central_block">
+          <a href="index.html" title="" class="logo"></a>
+          
+          <nav class="main_navigation">
+            <a href="#" title="" class="touch_nav"></a>
+            <ul>
+              <li class="parent_nav">
+                <a href="photographers.html" title="" aria-haspopup="true">Фотографы</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Свадебные фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотографы Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Детские фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent_nav">
+                <a href="photomodels.html" title="" aria-haspopup="true">Модели</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Фотомодели Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотомодели TFP</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Дети модели</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="stylists.html" title="">Стилисты</a>
+              </li>
+              <li>
+                <a href="photostudios.html" title="">Фотостудии</a>
+              </li>
+              <li>
+                <a href="retouchers.html" title="">Ретушеры</a>
+              </li>
+              <li>
+                <a href="amateurs.html" title="">Фотолюбители</a>
+              </li>
+              <li>
+                <a href="agencies.html" title="">Модельные агентства</a>
+              </li>
+              <li>
+                <a href="schools.html" title="">Фотошколы</a>
+              </li>
+              <li class="parent_nav more_menu">
+                <a href="#" title="" aria-haspopup="true">Еще</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="retouchers.html" title="">Ретушеры</a>
+                  </li>
+                  <li>
+                    <a href="amateurs.html" title="">Фотолюбители</a>
+                  </li>
+                  <li>
+                    <a href="agencies.html" title="">Модельные агентства</a>
+                  </li>
+                  <li>
+                    <a href="schools.html" title="">Фотошколы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="user_block">
+            <a href="#" title="" class="touch_user_menu"><img src="img/avatar.png" alt="" title="" /></a>
+            <div class="menu_block logined">
+              <div class="user_block">
+                <a href="#" title="" class="avatar"><img src="img/avatar.png" alt="" title="" /></a>
+                <div class="user_info">
+                  <div class="info_block">
+                    <div class="name_row"><a href="#" title="">Алефтина Смелая</a></div>
+                    <div class="notifications_row">
+                      <span class="link messages">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                      <span class="link friends">
+                        <a href="#" title=""><span class="notification">+5</span></a>
+                      </span>
+                      <span class="link edit_profile_link">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="links_block">
+                    <ul>
+                      <li>
+                        <a href="photographer_profile.html" title="">Профиль</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_edit.html" title="">Редактирование</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_portfolio.html" title="">Портфолио</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_blog.html" title="">Блог</a>
+                      </li>
+                      <li>
+                        <a href="payment.html" title="">Pro-Аккаунт</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_views.html" title="">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="add_menu">
+                  <a href="#" title="" class="add_label">Добавить</a>
+                  <div class="add_links">
+                    <ul>
+                      <li>
+                        <a href="#" title="">Фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Видео</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Событие</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Объявление</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Статью в блог</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        </div>
+        
+        <div class="bottom_line">
+          <div class="central_block">
+            <div class="extended_navigation">
+              <ul>
+                <li>
+                  <a href="activity_wall.html" title="">Активность</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="photos.html" title="" aria-haspopup="true">Фото дня</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="#" title="">Фото недели</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Фото месяца</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="photostream.html" title="">Фотопоток</a>
+                </li>
+                <li>
+                  <a href="events_categories.html" title="">События</a>
+                </li>
+                <li>
+                  <a href="contests.html" title="">Фотоконкурсы</a>
+                </li>
+                <li>
+                  <a href="forums.html" title="">Форум</a>
+                </li>
+                <li>
+                  <a href="adverts_categories.html" title="">Объявления</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="#" title="" aria-haspopup="true">Публикации</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="news.html" title="">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog_categories.html" title="">Блоги</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Интервью</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Полезно знать</a>
+                    </li>
+                    <li>
+                      <a href="videos.html" title="">Видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent_nav">
+                  <a href="job.html" title="" aria-haspopup="true">Работа</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="my_ads.html" title="">Мои объявления</a>
+                    </li>
+                    <li>
+                      <a href="my_orders.html" title="">Мои заказы</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clear_both"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- content -->
+      <div class="content_block">
+        <div class="content profile_edit_page">
+          <div class="profile_edit">
+            
+            <form name="" id="" action="" method="">
+              <div class="notice_popup">
+                <a href="#" title="" class="close_button"></a>
+                <div class="notice_text">
+                  Данные успешно сохранены
+                </div>
+              </div>
+              
+              <div class="notice_popup notice_errors">
+                <a href="#" title="" class="close_button"></a>
+                <div class="notice_text">
+                  Данные не сохранены. Возникли некоторые проблемы. <br />Проверьте заполнение формы.
+                </div>
+              </div>
+              
+              <div class="notice_popup notice_photos">
+                <a href="#" title="" class="close_button"></a>
+                <div class="notice_text">
+                  У вас есть возможность загружать не более 5 фотографий в сутки. Для снятия ограничения перейдите на <a href="#" title="">PRO-аккаунт</a>.
+                </div>
+              </div>
+              
+              <div class="profile_avatar">
+                <a href="#" title="" class="image">
+                  <img src="img/photo_06.png" alt="" title"" />
+                  <span class="online_status"></span>
+                  <span class="top_status"></span>
+                </a>
+                <div class="actions">
+                  <a href="#" title="" class="edit"></a>
+                  <a href="#" title="" class="upload"></a>
+                </div>
+              </div>
+              
+              <div class="user_data">
+              
+                <div class="caption">Основная информация</div>
+                <div class="main_info_fiels">
+                  <div class="left_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Имя</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Фамилия</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Ваш пол</label>
+                      </div>
+                      <div class="fields">
+                        <select name="" id="" class="selects errors">
+                          <option></option>
+                          <option>Муж.</option>
+                          <option>Жен.</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Город</label>
+                      </div>
+                      <div class="fields">
+                        <select name="" id="" class="selects">
+                          <option></option>
+                          <option>Киев</option>
+                          <option>Харьков</option>
+                        </select>
+                      </div>
+                    </div>
+                    
+                    <div class="row date_fields">
+                      <div class="labels">
+                        <label for="">Дата рождения</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs errors datepicker" />
+                      </div>
+                    </div>
+                    
+                    <div class="row date_fields">
+                      <div class="labels">
+                        <label for="">Опыт работы с</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs datepicker" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="caption">Дополнительная информация</div>
+                <div class="aditional_info_fields">
+                  <div class="row">
+                    <div class="labels">
+                      <label for="">Жанры, в которых работаете</label>
+                    </div>
+                    <div class="fields">
+                      <select name="" id="" multiple class="select genres errors">
+                        <option></option>
+                        <option>Пейзаж</option>
+                        <option>Aliquam</option>
+                        <option>Lorem ipsum</option>
+                        <option>Пленер</option>
+                        <option>Nunc</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="labels">
+                      <label for="">Условия работы</label>
+                    </div>
+                    <div class="fields">
+                      <input type="text" name="" id="" value="" class="inputs" />
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="labels">
+                      <label for="">Наличие фотокамер</label>
+                    </div>
+                    <div class="fields">
+                      <input type="text" name="" id="" value="" class="inputs" />
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="labels">
+                      <label for="">Наличие объективов</label>
+                    </div>
+                    <div class="fields">
+                      <input type="text" name="" id="" value="" class="inputs" />
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="labels">
+                      <label for="">Наличие другого оборудования</label>
+                    </div>
+                    <div class="fields">
+                      <input type="text" name="" id="" value="" class="inputs" />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="caption">Коротко о себе</div>
+                <textarea name="" id="" class="about_self textareas"></textarea>
+                
+                <div class="caption">Услуги и цены</div>
+                <textarea name="" id="" class="serveces_prices textareas"></textarea>
+                
+                <div class="caption">Контактные данные</div>
+                <div class="contact_info_fiels">
+                  <div class="left_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Веб-сайт</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs errors" />
+                        <div class="error">
+                          <div class="error_notice">
+                            <span>Обязательное для заполнения поле</span>
+                            <img src="img/arrow_down_errors.png" alt="" title="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Телефон</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Skype</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Twitter</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Instagram</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Вконтакте</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Facebook</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">LiveJournal</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Google+</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Flickr</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="caption">Аккаунт</div>
+                <div class="contact_info_fiels">
+                  <div class="left_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">E-mail</label>
+                      </div>
+                      <div class="fields">
+                        <input type="text" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right_fields">
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Пароль</label>
+                      </div>
+                      <div class="fields">
+                        <input type="password" name="" id="" value="" class="inputs errors" />
+                        <div class="error">
+                          <div class="error_notice">
+                            <span>Обязательное для заполнения поле</span>
+                            <img src="img/arrow_down_errors.png" alt="" title="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="labels">
+                        <label for="">Повторите</label>
+                      </div>
+                      <div class="fields">
+                        <input type="password" name="" id="" value="" class="inputs" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="submit">
+                  <input type="submit" name="" id="" value="Сохранить" class="buttons" />
+                </div>
+                
+              </div>
+              <div class="clear_both"></div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="central_block">
+        <div class="left_block">
+          <div class="footer_navigation">
+            <a href="#" title="">О проекте</a>
+            |
+            <a href="#" title="">Новости проекта</a>
+            |
+            <a href="#feedback" title="" rel="feedback">Связаться с нами</a>
+          </div>
+
+          <div class="copy_right">
+            ©2010 Фотопоиск. Все права защищены. info@fotopoisk.com.ua <br />
+            Все фотографии являются собственностью пользоватлей<br /><br />
+            г. Киев, ул. Крещатик, 25<br />
+            +38 (066) 774-73-52
+          </div>
+        </div>
+
+        <div class="site_links">
+          <div class="column">
+            <a href="#" title="">Фотографы</a><br />
+            <a href="#" title="">Фотомодели</a><br />
+            <a href="#" title="">Стилисты</a><br />
+            <a href="#" title="" class="current">Фотостудии</a><br />
+            <a href="#" title="">Ретушеры</a><br />
+            <a href="#" title="">Фотошколы</a><br />
+            <a href="#" title="">Агенства</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Новости</a><br />
+            <a href="#" title="">Блоги</a><br />
+            <a href="#" title="">Интервью</a><br />
+            <a href="#" title="">Полезно знать</a><br />
+            <a href="#" title="">События</a><br />
+            <a href="#" title="">Форум</a><br />
+            <a href="#" title="">Барахолка</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Фото дня</a><br />
+            <a href="#" title="">Фотопоток</a><br />
+            <a href="#" title="">Фотоконкурсы</a><br />
+            <a href="#" title="">Топ городов</a><br />
+            <a href="#" title="">Фотограф года</a><br />
+            <a href="#" title="">Модель года</a><br />
+            <a href="#" title="">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="right_block">
+          <div class="socials">
+            <a href="#" title="" class="instagram"></a>
+            <a href="#" title="" class="odnoklassniki"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="fb"></a>
+            <a href="#" title="" class="vk"></a>
+            <a href="#" title="" class="google_plus"></a>
+            <div class="clear_both"></div>
+          </div>
+
+          <div class="designed_by">
+            <a href="http://freshlime.com.ua" title="" target="_blank"><img src="img/fresh_logo.png" alt="FreshLimeStudio" title="" /></a>
+          </div>
+
+          <div class="clear_both"></div>
+          
+          <div class="share_buttons">
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_01.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_02.png" alt="" tite="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_03.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_04.png" alt="" tite="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

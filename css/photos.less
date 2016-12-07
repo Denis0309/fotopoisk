@@ -1,0 +1,153 @@
+@import (reference) "base.less";
+@import (reference) "users.less";
+
+/* photos styles */
+.photos_page {
+    padding: 0px 0px 30px 0px;
+    .photos_header_block {
+        position: relative;
+        max-width: 1245px;
+        margin: 0px auto;
+        padding-top: 19px;
+        .page_title {
+            padding-top: 7px;
+        }
+        .help_link {
+            display: block;
+            position: absolute;
+            top: 29px;
+            right: 10px;
+            width: 22px;
+            height: 22px;
+            background: url(../img/icons.png) -78px -47px no-repeat;
+        }
+    }
+    .photos_block {
+        max-width: 1245px;
+        margin: 0px auto;
+        padding-top: 19px;
+    }
+    .photos {
+        margin: 0px -3px 0px -2px;
+    }
+    .photo {
+        .users_page > .user;
+        .image {
+            .users_page > .user > .avatar;
+        }
+        .photo_info {
+            .users_page > .user > .user_info;
+            display: none;
+            min-height: auto;
+            .info {
+                display: table;
+                width: 100%;
+                min-height: 49px;
+            }
+            .row {
+                display: table-row;
+            }
+            .title {
+                display: table-cell;
+                padding-top: 3px;
+                padding-bottom: 0px;
+                padding-left: 11px;
+                .font(14px, 1.2em);
+                text-align: left;
+                vertical-align: middle;
+                a {
+                    text-decoration: none;
+                    color: @white_color;
+                }
+            }
+            .counter {
+                padding-bottom: 0px;
+                padding-top: 3px;
+            }
+            .author_info {
+                display: table-cell;
+                padding: 0px 0px 7px 11px;
+                .font(12px, 1.2em);
+                color: @author_color;
+                a {
+                    text-decoration: none;
+                    color: @author_color;
+                }
+            }
+        }
+    }
+    .history_link {
+        padding-right: 3px;
+        padding-top: 12px;
+        .font(16px, 1.2em);
+        text-align: right;
+        .prev_link {
+            display: inline-block;
+            padding-right: 17px;
+            background: url("../img/arrow_right_blue.png") 100% 4px no-repeat;
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .photos_page {
+        width: 100%;
+        .photos_block,
+        .photos_header_block {
+            max-width: 996px;
+        }
+        .photos {
+            margin-left: -1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .photos_page {
+        .photos_block,
+        .photos_header_block {
+            max-width: 745px;
+        }
+        .photos {
+            margin-left: -2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .photos_page {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        .help_cloud {
+            margin: 0px -10px;
+        }
+        .photos_header_block {
+            .page_title {
+                float: none;
+                padding-bottom: 17px;
+            }
+        }
+        .photos_block {
+            .photo {
+                width: 48.7%;
+                min-width: 245px;
+                margin: 0px 0.65% 6px 0.65%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    .photos_page {
+        .photos_block {
+            .photos {
+                margin: 0px;
+            }
+            .photo {
+                width: 100%;
+                margin: 0px 0px 6px 0px;
+            }
+        }
+    }
+}

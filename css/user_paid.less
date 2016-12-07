@@ -1,0 +1,478 @@
+@import (reference) "user.less";
+
+.paid_profile {
+    .paid_header {
+        position: relative;
+        min-width: 1245px;
+        min-height: 116px;
+        padding-top: 370px;
+        padding-bottom: 30px;
+        background-position: 50% 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .paid_icon_block {
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        width: 1245px;
+        margin-left: -622.5px;
+        text-align: right;
+    }
+    .paid_icon {
+        display: inline-block;
+        padding: 9px 8px 7px 8px;
+        background: url(../img/paid_transparent_bg.png) 0px 0px repeat;
+        .icon {
+            display: block;
+            width: 27px;
+            height: 25px;
+            background: url(../img/paid_profile_icon.png) 0px 0px no-repeat;
+        }
+    }
+    a.paid_icon:hover {
+        .icon {
+            background-position: 0px -26px;
+        }
+    }
+    .paid_top_row {
+        width: 100%;
+        min-height: 106px;
+        padding-bottom: 9px;
+        background: url(../img/paid_transparent_bg.png) 0px 0px repeat;
+        .paid_central {
+            position: relative;
+            width: 1245px;
+            margin: 0px auto;
+        }
+    }
+    .paid_avatar {
+        position: absolute;
+        bottom: -15px;
+        left: 0px;
+        width: 245px;
+        height: 245px;
+        border: 7px solid #FFFFFF;
+        background: #FFFFFF none;
+        .image {
+            .profile_page > .user_main_block > .avatar > .image;
+        }
+        .online_status {
+            .profile_page > .user_main_block > .avatar > .online_status;
+        }
+        .online_status:before {
+            content: "";
+            display: block;
+            width: inherit;
+            height: inherit;
+            background: url(../img/icons.png) -29px -31px no-repeat;
+        }
+        .top_status {
+            .profile_page > .user_main_block > .avatar > .top_status;
+        }
+        .top_status:before {
+            content: "";
+            display: block;
+            width: inherit;
+            height: inherit;
+            background: url(../img/icons.png) 0px -32px no-repeat;
+        }
+        .actions {
+            .profile_page > .user_main_block > .avatar > .actions;
+        }
+    }
+    .paid_user_data {
+        float: left;
+        width: 425px;
+        padding: 7px 0px 7px 283px;
+        vertical-align: middle;
+        color: @white_color;
+        .name {
+            padding-bottom: 10px;
+            .font(29px, 1.2em);
+        }
+        .user_label {
+            .font(17px, 1.2em);
+        }
+    }
+    .paid_actions {
+        .profile_page > .user_main_block > .actions_block;
+        width: 500px;
+        min-height: 107px;
+        .actions {
+            margin-top: 9px;
+            padding: 1px;
+            border: none;
+            background: none;
+        }
+        .counters {
+            color: @white_color;
+        }
+        .like,
+        .not_like {
+            color: @white_color;
+            border: 1px solid #FFFFFF;
+            background: url(../img/likes_icons.png) 0px 0px no-repeat;
+        }
+        .like:hover,
+        .not_like:hover,
+        .active {
+            color: @blue_color;
+            border-color: @blue_color;
+        }
+        .like {
+            width: 104px;
+            padding: 11px 14px 0px 0px;
+            background-position: 12px -74px;
+        }
+        .like:hover {
+            background-position: 12px -156px;
+        }
+        .not_like {
+            width: 44px;
+            padding: 11px 0px 0px 0px;
+            background-position: 12px -115px;
+        }
+        .not_like:hover {
+            background-position: 12px -197px;
+        }
+        .social_contacts {
+            .profile_page > .user_main_block > .social_contacts;
+            padding-top: 7px;
+            a {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #FFFFFF;
+                background-image: url(../img/social_icons_paid.png);
+            }
+            a:hover {
+                border-color: @blue_color;
+            }
+            .flickr {
+				background-position: -294px -1px;
+			}
+			.twitter {
+				background-position: 0px 0px;
+			}
+			.google_plus {
+				background-position: -42px -1px;
+			}
+			.facebook {
+				background-position: -84px -1px;
+			}
+			.instagram {
+				background-position: -126px -1px;
+			}
+			.live_journal {
+				background-position: -169px -1px;
+			}
+			.vkontaktik {
+				background-position: -210px -2px;
+			}
+			.skype {
+				background-position: -253px -2px;
+			}
+			.flickr:hover {
+				background-position: -294px -43px;
+			}
+			.twitter:hover {
+				background-position: 0px -42px;
+			}
+			.google_plus:hover {
+				background-position: -42px -43px;
+			}
+			.facebook:hover {
+				background-position: -84px -43px;
+			}
+			.instagram:hover {
+				background-position: -126px -43px;
+			}
+			.live_journal:hover {
+				background-position: -169px -43px;
+			}
+			.vkontaktik:hover {
+				background-position: -210px -44px;
+			}
+			.skype:hover {
+				background-position: -253px -44px;
+			}
+        }
+    }
+    .paid_user_info {
+        width: 1245px;
+        margin: 0px auto;
+        padding: 20px 0px 10px 0px;
+    }
+    .user_info_block {
+        display: table;
+        float: left;
+        .font(14px, 17px);
+        .row {
+            display: table-row;
+        }
+        .labels,
+        .info {
+            display: table-cell;
+            padding: 2px 0px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .labels {
+            width: 102px;
+        }
+        .info {
+            color: @grey_color;
+            a {
+                color: @grey_color;
+            }
+        }
+    }
+    .main_info {
+        width: 532px;
+        margin-right: 10px;
+    }
+    .additional_info {
+        width: 468px;
+        margin-left: 23px;
+        margin-right: 10px;
+    }
+    .profile_links {
+        .profile_page > .user_main_block > .profile_links;
+        float: right;
+        width: 190px;
+        height: auto;
+		margin-top: 0px;
+        a {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .paid_profile {
+        .paid_header {
+            min-width: 996px;
+            min-height: 216px;
+            padding-top: 270px;
+        }
+        .paid_icon_block {
+            width: 996px;
+            margin-left: -498px;
+        }
+        .paid_top_row {
+            .paid_central {
+                width: 996px;
+            }
+        }
+        .paid_user_data {
+            width: 346px;
+            .name {
+                padding-bottom: 10px;
+                .font(27px, 1.2em);
+            }
+            .user_label {
+                .font(15px, 1.2em);
+            }
+        }
+        .paid_actions {
+            width: 330px;
+            .actions {
+                width: 330px;
+                margin-left: -1px;
+            }
+            .counters_block {
+                padding-bottom: 10px;
+                .row {
+                    margin: 0px 0px 0px auto;
+                }
+            }
+            .social_contacts {
+                width: 330px;
+                height: auto;
+                min-height: 42px;
+                padding-top: 14px;
+            }
+        }
+        .paid_user_info {
+            width: 996px;
+        }
+        .main_info {
+            width: 407px;
+        }
+        .additional_info {
+            width: 354px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .paid_profile {
+        .paid_header {
+            min-width: 745px;
+            min-height: 236px;
+            padding-top: 150px;
+        }
+        .paid_icon_block {
+            width: 745px;
+            margin-left: -372.5px;
+        }
+        .paid_top_row {
+            .paid_central {
+                width: 745px;
+            }
+        }
+        .paid_avatar {
+            width: 256px;
+            height: 256px;
+            top: 9px;
+            bottom: 0px;
+            .actions {
+                width: inherit;
+            }
+        }
+        .paid_user_data {
+            float: none;
+            padding-left: 294px;
+        }
+        .paid_actions {
+            float: none;
+            padding-left: 294px;
+            .actions {
+                margin-left: 0px;
+            }
+            .counters_block {
+                float: none;
+                .row {
+                    margin: 0px auto 0px 0px;
+                }
+            }
+            .votes_buttons {
+                float: left;
+            }
+            .like,
+            .not_like {
+                
+            }
+            .social_contacts {
+                width: 330px;
+                height: auto;
+                min-height: 42px;
+                text-align: left;
+            }
+        }
+        .paid_user_info {
+            width: 745px;
+        }
+        .main_info {
+            width: 357px;
+        }
+        .additional_info {
+            width: 334px;
+        }
+        .profile_links {
+            clear: both;
+            width: 745px;
+            padding-top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .paid_profile {
+        margin: 0px -10px;
+        .paid_header {
+            min-width: auto !important;
+        }
+        .paid_icon_block {
+            width: 100%;
+            left: auto;
+            right: 8px;
+            margin-left: 0px;
+        }
+        .paid_top_row {
+            width: auto;
+            padding: 0px 10px 9px 10px;
+            .paid_central {
+                width: auto;
+            }
+        }
+        .paid_user_data {
+            float: none;
+            width: 320px;
+            padding-left: 294px;
+        }
+        .paid_actions {
+            float: none;
+            padding-left: 294px;
+            .actions {
+                width: 300px;
+            }
+            .counters_block {
+                width: 298px;
+                .counters {
+                    .font(23px, 1.35em) !important;
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .paid_user_info {
+            width: auto;
+            padding: 20px 10px 10px 10px;
+        }
+        .main_info {
+            width: 100%;
+        }
+        .additional_info {
+            width: 100%;
+            margin-left: 0px;
+            padding-top: 20px;
+        }
+        .profile_links {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .paid_profile {
+        .paid_avatar {
+            width: 225px;
+            height: 225px;
+            top: 9px;
+            bottom: 0px;
+        }
+        .paid_user_data {
+            padding-left: 263px;
+        }
+        .paid_actions {
+            padding-left: 263px;
+        }
+    }
+}
+
+@media only screen and (max-width: 619px) {
+    .paid_profile {
+        .paid_header {
+            min-height: 126px;
+            padding-top: 260px;
+        }
+        .paid_avatar {
+            top: -249px;
+            bottom: 0px;
+        }
+        .paid_user_data {
+            width: auto;
+            padding-left: 0px;
+        }
+        .paid_actions {
+            width: auto;
+            padding-left: 0px;
+            .social_contacts {
+                width: auto;
+            }
+        }
+    }
+}

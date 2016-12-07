@@ -1,0 +1,208 @@
+/* payment styles */
+.payment_background {
+  background: url(../img/payment_bg.jpg) 50% 50% repeat-y;
+  background-size: cover;
+}
+.payment_page {
+  width: 1024px;
+  margin: 0px auto;
+  padding-bottom: 50px;
+}
+.payment_page .payment_block {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 7px #000000;
+}
+.payment_page .caption {
+  padding-top: 71px;
+  padding-bottom: 53px;
+  font-size: 63px;
+  line-height: 1.2em;
+}
+.payment_page .subcaption {
+  padding-top: 120px;
+  padding-bottom: 53px;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+.payment_page .table {
+  display: table;
+  width: 100%;
+  margin: 0px auto 0px auto;
+}
+.payment_page .cell {
+  display: table-cell;
+  padding: 0px 15px;
+  font-size: 22px;
+  line-height: 1.2em;
+  text-align: left;
+  vertical-align: top;
+}
+.payment_page .cell span {
+  display: block;
+  float: left;
+  width: 53px;
+  margin-top: -21px;
+  padding-right: 22px;
+  font-size: 96px;
+  line-height: 1.2em;
+}
+.payment_page .cell p {
+  padding-left: 75px;
+  padding-bottom: 0px;
+}
+.payment_page a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1270px) {
+  .payment_page {
+    width: 996px;
+  }
+  .payment_page .caption {
+    font-size: 52px;
+    line-height: 1.2em;
+  }
+  .payment_page .subcaption {
+    padding-top: 80px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .payment_page {
+    width: 745px;
+  }
+  .payment_page .caption {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  .payment_page .subcaption {
+    padding-top: 40px;
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+  .payment_page .table {
+    display: block;
+    table-layout: auto;
+  }
+  .payment_page .cell {
+    clear: left;
+    display: table;
+    padding-bottom: 15px;
+  }
+  .payment_page .cell span {
+    display: table-cell;
+    width: 40px;
+    margin: 0px;
+    padding-right: 15px;
+    font-size: 72px;
+    line-height: 1.2em;
+    vertical-align: middle;
+  }
+  .payment_page .cell p {
+    display: table-cell;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .payment_page {
+    width: auto;
+    padding: 0px 10px 50px 0px;
+  }
+}
+@media only screen and (max-width: 379px) {
+  .payment_page .caption {
+    font-size: 32px;
+    line-height: 1.2em;
+  }
+  .payment_page .subcaption {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.2em;
+  }
+}
+.payment_thanks_page {
+  width: 1024px;
+  margin: 0px auto;
+  padding-bottom: 50px;
+}
+.payment_thanks_page .payment_block {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 7px #000000;
+}
+.payment_thanks_page .caption {
+  padding-top: 71px;
+  padding-bottom: 53px;
+  font-size: 63px;
+  line-height: 1.2em;
+}
+.payment_thanks_page .subcaption {
+  padding-top: 120px;
+  padding-bottom: 53px;
+  font-size: 28px;
+  line-height: 1.2em;
+}
+.payment_thanks_page .table {
+  display: table;
+  width: 100%;
+  margin: 0px auto 0px auto;
+}
+.payment_thanks_page .cell {
+  display: table-cell;
+  padding: 0px 15px;
+  font-size: 22px;
+  line-height: 1.2em;
+  text-align: left;
+  vertical-align: top;
+}
+.payment_thanks_page .cell span {
+  display: block;
+  float: left;
+  width: 53px;
+  margin-top: -21px;
+  padding-right: 22px;
+  font-size: 96px;
+  line-height: 1.2em;
+}
+.payment_thanks_page .cell p {
+  padding-left: 75px;
+  padding-bottom: 0px;
+}
+.payment_thanks_page a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.payment_thanks_page .subcaption {
+  padding-top: 30px;
+}
+.payment_thanks_page p {
+  font-size: 22px;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+@media only screen and (max-width: 1270px) {
+  .payment_thanks_page {
+    width: 996px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .payment_thanks_page {
+    width: 745px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .payment_thanks_page {
+    width: auto;
+    padding: 0px 10px 50px 10px;
+  }
+  .payment_thanks_page .caption {
+    font-size: 48px;
+    line-height: 1.2em;
+  }
+  .payment_thanks_page .subcaption {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
+}

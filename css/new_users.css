@@ -1,0 +1,53 @@
+.new_users .user .user_info {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: url(../img/dark_transparent_bg.png) 0px 0px repeat;
+}
+.new_users .user .user_info .info {
+  display: table;
+  width: 100%;
+  min-height: 49px;
+}
+.new_users .user .user_info .row {
+  display: table-row;
+}
+.new_users .user .user_info .name {
+  display: table-cell;
+  padding-top: 3px;
+  padding-bottom: 0px;
+  padding-left: 11px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-align: left;
+  vertical-align: middle;
+}
+.new_users .user .user_info .name a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.new_users .user .user_info .counter {
+  display: table-cell;
+  padding: 3px 11px 0px 11px;
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: right;
+  vertical-align: middle;
+}
+.new_users .user .user_info .counter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.new_users .user .user_info .additional_info {
+  display: table-cell;
+  padding: 0px 0px 7px 11px;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #dddddd;
+}
+.new_users .user .user_info .additional_info a {
+  text-decoration: none;
+  color: #dddddd;
+}

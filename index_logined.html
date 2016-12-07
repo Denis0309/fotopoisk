@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotopoisk</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/home.less" />
+    -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/doubletaptogo.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        <a href="#" title="" style="background-image: url(img/top_image.png);" class="header_top_image"></a>
+        
+        <div class="central_block">
+          <a href="index.html" title="" class="logo"></a>
+          
+          <nav class="main_navigation">
+            <a href="#" title="" class="touch_nav"></a>
+            <ul>
+              <li class="parent_nav">
+                <a href="photographers.html" title="" aria-haspopup="true">Фотографы</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Свадебные фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотографы Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Детские фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent_nav">
+                <a href="photomodels.html" title="" aria-haspopup="true">Модели</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Фотомодели Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотомодели TFP</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Дети модели</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="stylists.html" title="">Стилисты</a>
+              </li>
+              <li>
+                <a href="photostudios.html" title="">Фотостудии</a>
+              </li>
+              <li>
+                <a href="retouchers.html" title="">Ретушеры</a>
+              </li>
+              <li>
+                <a href="amateurs.html" title="">Фотолюбители</a>
+              </li>
+              <li>
+                <a href="agencies.html" title="">Модельные агентства</a>
+              </li>
+              <li>
+                <a href="schools.html" title="">Фотошколы</a>
+              </li>
+              <li class="parent_nav more_menu">
+                <a href="#" title="" aria-haspopup="true">Еще</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="retouchers.html" title="">Ретушеры</a>
+                  </li>
+                  <li>
+                    <a href="amateurs.html" title="">Фотолюбители</a>
+                  </li>
+                  <li>
+                    <a href="agencies.html" title="">Модельные агентства</a>
+                  </li>
+                  <li>
+                    <a href="schools.html" title="">Фотошколы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="user_block">
+            <a href="#" title="" class="touch_user_menu"><img src="img/avatar.png" alt="" title="" /></a>
+            <div class="menu_block logined">
+              <div class="user_block">
+                <a href="#" title="" class="avatar"><img src="img/avatar.png" alt="" title="" /></a>
+                <div class="user_info">
+                  <div class="info_block">
+                    <div class="name_row">
+                      <a href="#" title="">Алефтина Смелая</a>
+                    </div>
+                    <div class="notifications_row">
+                      <span class="link messages">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                      <span class="link friends">
+                        <a href="#" title=""><span class="notification">+5</span></a>
+                      </span>
+                      <span class="link edit_profile_link">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="links_block">
+                    <ul>
+                      <li>
+                        <a href="photographer_profile.html" title="">Профиль</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_edit.html" title="">Редактирование</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_portfolio.html" title="">Портфолио</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_blog.html" title="">Блог</a>
+                      </li>
+                      <li>
+                        <a href="payment.html" title="">Pro-Аккаунт</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_views.html" title="">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="add_menu">
+                  <a href="#" title="" class="add_label">Добавить</a>
+                  <div class="add_links">
+                    <ul>
+                      <li>
+                        <a href="#" title="">Фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Видео</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Событие</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Объявление</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Статью в блог</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        </div>
+        
+        <div class="bottom_line">
+          <div class="central_block">
+            <div class="extended_navigation">
+              <ul>
+                <li>
+                  <a href="activity_wall.html" title="">Активность</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="photos.html" title="" aria-haspopup="true">Фото дня</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="#" title="">Фото недели</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Фото месяца</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="photostream.html" title="">Фотопоток</a>
+                </li>
+                <li>
+                  <a href="events_categories.html" title="">События</a>
+                </li>
+                <li>
+                  <a href="contests.html" title="">Фотоконкурсы</a>
+                </li>
+                <li>
+                  <a href="forums.html" title="">Форум</a>
+                </li>
+                <li>
+                  <a href="adverts_categories.html" title="">Объявления</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="#" title="" aria-haspopup="true">Публикации</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="news.html" title="">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog_categories.html" title="">Блоги</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Интервью</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Полезно знать</a>
+                    </li>
+                    <li>
+                      <a href="videos.html" title="">Видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent_nav">
+                  <a href="job.html" title="" aria-haspopup="true">Работа</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="my_ads.html" title="">Мои объявления</a>
+                    </li>
+                    <li>
+                      <a href="my_orders.html" title="">Мои заказы</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clear_both"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- content -->
+      <div class="content_block">
+        <div class="content home_page">
+          
+          <section class="random_photos">
+            <div class="caption">
+              Фото дня
+              <a href="#" title="" class="more">Смотреть все фотографии дня</a>
+            </div>
+            
+            <div class="photos">
+              <div class="photo">
+                <a href="#" title="" class="image"><img src="img/photo_01.png" alt="" title="" /></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="photo">
+                <a href="#" title="" class="image"><img src="img/photo_02.png" alt="" title="" /></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="photo">
+                <a href="#" title="" class="image"><span class="nu_block"><span class="age_text">18+</span><span class="info_text">На фото <br />обнаженная натура</span></span></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="photo">
+                <a href="#" title="" class="image"><img src="img/photo_04.png" alt="" title="" /></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="photo">
+                <a href="#" title="" class="image"><img src="img/photo_05.png" alt="" title="" /></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="photo">
+                <a href="#" title="" class="image"><img src="img/photo_06.png" alt="" title="" /></a>
+                
+                <div class="photo_info">
+                  <div class="info">
+                    <div class="row">
+                      <p class="title">
+                        <a href="#" title="">Название фото</a>
+                      </p>
+                      <span class="counter">
+                        <a href="#" title="">120</a>
+                      </span>
+                    </div>
+                    <div class="row">
+                      <p class="author_info">
+                        <a href="#" title="">Alexandra Lavrentieva</a>, фотограф
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clear_both"></div>
+          </section>
+          
+          <aside class="left_block">
+            <section class="tile aside_tile photographers_tile">
+              <div class="caption">
+                <a href="#" title="">Фотографы</a>
+              </div>
+              
+              <div class="users_list">
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Анастасия Прилуцкая</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_04.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Ира С.</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_03.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Ирина Шавоца</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_08.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Марианна Самусь</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Анастасия Прилуцкая</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="more_link">
+                <a href="#" title="">Все фотографы</a>
+              </div>
+            </section>
+            
+            <div class="home_image orange_image">
+              <a href="#" title=""><img src="img/orahge_image.png" alt="" title="" /></a>
+            </div>
+          </aside>
+          
+          <aside class="right_block">
+            <section class="tile aside_tile photomodels_tile">
+              <div class="caption">
+                <a href="#" title="">Фотомодели</a>
+              </div>
+              
+              <div class="users_list">
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Анастасия Прилуцкая</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_04.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Ира С.</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_03.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Ирина Шавоца</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_08.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Марианна Самусь</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="photo">
+                    <a href="#" title=""><img src="img/photo_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="name">
+                    <a href="#" title="">Анастасия Прилуцкая</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="more_link">
+                <a href="#" title="">Все фотомодели</a>
+              </div>
+            </section>
+            
+            <div class="home_image blue_image">
+              <a href="#" title=""><img src="img/blue_image.png" alt="" title="" /></a>
+            </div>
+          </aside>
+          
+          <div class="main_block">
+            <section class="tile central_tile latest_news">
+              <div class="caption">
+                <a href="#" title="">Свежие новости</a>
+              </div>
+              
+              <div class="news_articles">
+                <a href="#" title="" class="article main_plate">
+                  <img src="img/news_thumb_01.png" alt="" title="" class="thumb" />
+                  <span class="title">Сергей Карасёв: что едят баскетболисты</span>
+                  <span class="date">12/10</span>
+                  <span class="views">439</span>
+                </a>
+                <a href="#" title="" class="article small_plate">
+                  <img src="img/news_thumb_03.png" alt="" title="" class="thumb" />
+                  <span class="title">20 инстаграм-аккаунтов, которые...</span>
+                  <span class="views">439</span>
+                </a>
+                <a href="#" title="" class="article small_plate">
+                  <img src="img/news_thumb_04.png" alt="" title="" class="thumb" />
+                  <span class="title">Знай, что это всё не ради красоты...</span>
+                  <span class="views">439</span>
+                </a>
+              </div>
+            </section>
+            
+            <section class="tile central_tile nearest_events">
+              <div class="caption">
+                <a href="#" title="">Ближайшие события</a>
+              </div>
+              
+              <div class="list_block">
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Конференция Vogue</a>
+                    <p class="date">12 апреля 2014 года</p>
+                    <p class="place">Цюрих, выставочный центр “Кенстер”</p>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_02.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Мастер-класс Фишера</a>
+                    <p class="date">20 марта 2014 года</p>
+                    <p class="place">Киев, бизнес-центр “Форум”</p>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Презентация Гетцнерской студии</a>
+                    <p class="date">1 мая 2014 года</p>
+                    <p class="place">Киев, Университетская, 28</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="more_link">
+                <a href="#" title="">Все события</a>
+              </div>
+            </section>
+            
+            <section class="tile central_tile new_interview">
+              <div class="caption">
+                <a href="#" title="">Новые интервью</a>
+              </div>
+              
+              <div class="list_block">
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_03.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Переходные кольца на Советскую оптику</a>
+                    <div class="author">
+                      <a href="" title="">Ольга Солдина</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Lightroom, Photoshop. Что ещё посоветуете?</a>
+                    <div class="author">
+                      <a href="" title="">Юлия Бечерова</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_04.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Переходные кольца на Советскую оптику</a>
+                    <div class="author">
+                      <a href="" title="">Виктория Бермен</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="more_link">
+                <a href="#" title="">Все интервью</a>
+              </div>
+            </section>
+            
+            <section class="tile central_tile blog_posts">
+              <div class="caption">
+                <a href="#" title="">Блоги</a>
+              </div>
+              
+              <div class="list_block">
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_03.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Переходные кольца на Советскую оптику</a>
+                    <div class="author">
+                      <a href="" title="">Ольга Солдина</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_01.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Lightroom, Photoshop. Что ещё посоветуете?</a>
+                    <div class="author">
+                      <a href="" title="">Юлия Бечерова</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="row">
+                  <div class="thumb">
+                    <a href="#" title=""><img src="img/tiles_thumb_04.png" alt="" title="" /></a>
+                  </div>
+                  <div class="body">
+                    <a href="" title="" class="title">Переходные кольца на Советскую оптику</a>
+                    <div class="author">
+                      <a href="" title="">Виктория Бермен</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="more_link">
+                <a href="#" title="">Все статьи</a>
+              </div>
+            </section>
+            
+            <section class="tile central_tile latest_adv">
+              <div class="caption">
+                <a href="#" title="">Барахолка</a>
+              </div>
+              
+              <div class="adverts_list">
+                <div class="row">
+                  <a href="#" title="" class="title">Продам Nikon 5D в отличном состоянии</a>
+                  <div class="info">
+                    <a href="#" title="" class="author">Юлия Бечерова</a>
+                    вчера в 12:09
+                  </div>
+                </div>
+
+                <div class="row">
+                  <a href="#" title="" class="title">Переходные кольца на Советскую оптику</a>
+                  <div class="info">
+                    <a href="#" title="" class="author">Виктория Бермен</a>
+                    вчера в 11:31
+                  </div>
+                </div>
+
+                <div class="row">
+                  <a href="#" title="" class="title">Переходные кольца на Советскую оптику</a>
+                  <div class="info">
+                    <a href="#" title="" class="author">Виктория Бермен</a>
+                    вчера в 11:02
+                  </div>
+                </div>
+
+                <div class="row">
+                  <a href="#" title="" class="title">Переходные кольца на Советскую оптику</a>
+                  <div class="info">
+                    <a href="#" title="" class="author">Виктория Бермен</a>
+                    вчера в 10:03
+                  </div>
+                </div>
+              </div>
+
+              <div class="more_link">
+                <a href="#" title="">Все объяления</a>
+              </div>
+            </section>
+            
+            <section class="tile central_tile new_faces">
+              <div class="caption">
+                <a href="new_users.html" title="">Новые лица</a>
+              </div>
+              
+              <div class="faces_list">
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_08.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Ольга</a>
+                </div>
+
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_03.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Виктория</a>
+                </div>
+
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_04.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Ольга</a>
+                </div>
+
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_01.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Юлия  </a>
+                </div>
+
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_06.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Антонина</a>
+                </div>
+
+                <div class="face">
+                  <a href="#" title="" class="photo"><img src="img/photo_09.png" alt="" title="" /></a>
+                  <a href="#" title="" class="name">Григорий</a>
+                </div>
+              </div>
+            </section>
+            
+            <div class="clear_both"></div>
+          </div>
+          
+          <div class="clear_both"></div>
+          
+          <section class="awarded_users">
+            <div class="users">
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_03.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Модель недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_06.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Фотограф недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_07.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Фотостудия недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_08.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Стилист недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_09.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Ретушер недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="user">
+                <a href="#" title="" class="avatar"><img src="img/photo_10.png" alt="" title="" /></a>
+                
+                <div class="award_block">
+                  <span class="award">Фотолюбитель недели</span>
+                </div>
+                <div class="user_info">
+                  <p class="name">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                  <span class="counter">
+                    <a href="#" title="">120</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="clear_both"></div>
+          </section>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="central_block">
+        <div class="left_block">
+          <div class="footer_navigation">
+            <a href="#" title="">О проекте</a>
+            |
+            <a href="#" title="">Новости проекта</a>
+            |
+            <a href="#feedback" title="" rel="feedback">Связаться с нами</a>
+          </div>
+
+          <div class="copy_right">
+            ©2010 Фотопоиск. Все права защищены. info@fotopoisk.com.ua <br />
+            Все фотографии являются собственностью пользоватлей<br /><br />
+            г. Киев, ул. Крещатик, 25<br />
+            +38 (066) 774-73-52
+          </div>
+        </div>
+
+        <div class="site_links">
+          <div class="column">
+            <a href="#" title="">Фотографы</a><br />
+            <a href="#" title="">Фотомодели</a><br />
+            <a href="#" title="">Стилисты</a><br />
+            <a href="#" title="" class="current">Фотостудии</a><br />
+            <a href="#" title="">Ретушеры</a><br />
+            <a href="#" title="">Фотошколы</a><br />
+            <a href="#" title="">Агенства</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Новости</a><br />
+            <a href="#" title="">Блоги</a><br />
+            <a href="#" title="">Интервью</a><br />
+            <a href="#" title="">Полезно знать</a><br />
+            <a href="#" title="">События</a><br />
+            <a href="#" title="">Форум</a><br />
+            <a href="#" title="">Барахолка</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Фото дня</a><br />
+            <a href="#" title="">Фотопоток</a><br />
+            <a href="#" title="">Фотоконкурсы</a><br />
+            <a href="#" title="">Топ городов</a><br />
+            <a href="#" title="">Фотограф года</a><br />
+            <a href="#" title="">Модель года</a><br />
+            <a href="#" title="">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="right_block">
+          <div class="socials">
+            <a href="#" title="" class="instagram"></a>
+            <a href="#" title="" class="odnoklassniki"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="fb"></a>
+            <a href="#" title="" class="vk"></a>
+            <a href="#" title="" class="google_plus"></a>
+            <div class="clear_both"></div>
+          </div>
+
+          <div class="designed_by">
+            <a href="http://freshlime.com.ua" title="" target="_blank"><img src="img/fresh_logo.png" alt="FreshLimeStudio" title="" /></a>
+          </div>
+
+          <div class="clear_both"></div>
+          
+          <div class="share_buttons">
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_01.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_02.png" alt="" tite="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_03.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_04.png" alt="" tite="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

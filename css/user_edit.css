@@ -1,0 +1,749 @@
+.profile_edit_page .profile_edit {
+  width: 1017px;
+  margin: 0px auto;
+  padding-top: 19px;
+  padding-bottom: 30px;
+}
+.profile_edit_page .profile_avatar {
+  float: left;
+  position: relative;
+  z-index: 0;
+  width: 245px;
+  height: 245px;
+  margin-right: 21px;
+  width: 224px;
+  height: 224px;
+}
+.profile_edit_page .profile_avatar .image {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+}
+.profile_edit_page .profile_avatar .image img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.profile_edit_page .profile_avatar .online_status {
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+}
+.profile_edit_page .profile_avatar .online_status:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  background: url(../img/icons.png) -29px -31px no-repeat;
+}
+.profile_edit_page .profile_avatar .top_status {
+  position: absolute;
+  display: block;
+  top: 6px;
+  right: 7px;
+  width: 28px;
+  height: 26px;
+}
+.profile_edit_page .profile_avatar .top_status:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  background: url(../img/icons.png) 0px -32px no-repeat;
+}
+.profile_edit_page .profile_avatar .actions {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  width: 245px;
+  height: 36px;
+  padding-top: 8px;
+  text-align: center;
+  background: url(../img/dark_transparent_bg.png) 0px 0px repeat;
+}
+.profile_edit_page .profile_avatar .actions a {
+  display: inline-block;
+  height: 27px;
+  margin: 0px 14px;
+  background-image: url(../img/user_avatar_icons.png);
+  background-repeat: no-repeat;
+}
+.profile_edit_page .profile_avatar .actions .top_vote {
+  width: 27px;
+  background-position: 0px 0px;
+}
+.profile_edit_page .profile_avatar .actions .to_friends {
+  width: 35px;
+  background-position: -27px -1px;
+}
+.profile_edit_page .profile_avatar .actions .message {
+  width: 33px;
+  background-position: -62px 0px;
+}
+.profile_edit_page .profile_avatar .actions .top_vote:hover {
+  background-position: 0px -27px;
+}
+.profile_edit_page .profile_avatar .actions .to_friends:hover {
+  background-position: -27px -28px;
+}
+.profile_edit_page .profile_avatar .actions .message:hover {
+  background-position: -62px -27px;
+}
+.profile_edit_page .profile_avatar .actions .top_vote.active {
+  background-position: -131px 0px;
+}
+.profile_edit_page .profile_avatar .actions .to_friends.active {
+  background-position: -95px 0px;
+}
+.profile_edit_page .profile_avatar .actions .top_vote.active:hover {
+  background-position: -131px -27px;
+}
+.profile_edit_page .profile_avatar .actions .to_friends.active:hover {
+  background-position: -95px -28px;
+}
+.profile_edit_page .profile_avatar .actions {
+  width: 224px;
+}
+.profile_edit_page .profile_avatar .actions a {
+  width: 25px !important;
+  margin: 0px 17px !important;
+  background-image: url(../img/edit_avatar_icons.png) !important;
+}
+.profile_edit_page .profile_avatar .actions .edit {
+  background-position: 0px 0px;
+}
+.profile_edit_page .profile_avatar .actions .upload {
+  background-position: -25px 0px;
+}
+.profile_edit_page .profile_avatar .actions .edit:hover {
+  background-position: 0px -27px;
+}
+.profile_edit_page .profile_avatar .actions .upload:hover {
+  background-position: -25px -27px;
+}
+.profile_edit_page .user_data {
+  float: left !important;
+  width: 751px !important;
+}
+.profile_edit_page .user_data .caption {
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #2c3338;
+}
+.profile_edit_page .user_data .row {
+  padding-bottom: 18px;
+}
+.profile_edit_page .user_data .labels {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #999999;
+}
+.profile_edit_page .user_data .fields {
+  display: inline-block;
+  position: relative;
+  min-height: 44px;
+}
+.profile_edit_page .user_data .main_info_fiels {
+  display: table;
+  width: 751px;
+  margin-bottom: 20px;
+}
+.profile_edit_page .user_data .main_info_fiels .left_fields {
+  display: table-cell;
+  width: 348px;
+  padding-right: 50px;
+}
+.profile_edit_page .user_data .main_info_fiels .left_fields .labels {
+  width: 103px;
+  padding-left: 9px;
+}
+.profile_edit_page .user_data .main_info_fiels .right_fields {
+  display: table-cell;
+  width: 353px;
+}
+.profile_edit_page .user_data .main_info_fiels .right_fields .labels {
+  width: 117px;
+}
+.profile_edit_page .user_data .main_info_fiels .fields {
+  width: 230px;
+}
+.profile_edit_page .user_data .main_info_fiels .fields .inputs {
+  width: 208px;
+}
+.profile_edit_page .user_data .main_info_fiels .fields select {
+  width: 230px;
+}
+.profile_edit_page .user_data .main_info_fiels .date_fields .labels {
+  width: 150px;
+}
+.profile_edit_page .user_data .main_info_fiels .date_fields .fields {
+  width: 197px;
+}
+.profile_edit_page .user_data .main_info_fiels .date_fields .fields .inputs {
+  width: 125px;
+}
+.profile_edit_page .user_data .main_info_fiels .date_fields .fields .ui-datepicker-trigger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.profile_edit_page .user_data .aditional_info_fields {
+  width: 751px;
+  margin-bottom: 20px;
+}
+.profile_edit_page .user_data .aditional_info_fields .labels {
+  width: 288px;
+  padding-left: 9px;
+}
+.profile_edit_page .user_data .aditional_info_fields .fields {
+  width: 449px;
+}
+.profile_edit_page .user_data .aditional_info_fields .fields .inputs {
+  width: 427px;
+}
+.profile_edit_page .user_data .aditional_info_fields .fields select {
+  width: 449px;
+}
+.profile_edit_page .user_data .about_self,
+.profile_edit_page .user_data .serveces_prices {
+  width: 729px;
+  height: 84px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 1.2em;
+}
+.profile_edit_page .user_data .contact_info_fiels,
+.profile_edit_page .user_data .account_info_fields {
+  display: table;
+  width: 751px;
+  margin-bottom: 20px;
+}
+.profile_edit_page .user_data .contact_info_fiels .left_fields,
+.profile_edit_page .user_data .account_info_fields .left_fields {
+  display: table-cell;
+  width: 347px;
+  padding-right: 50px;
+}
+.profile_edit_page .user_data .contact_info_fiels .left_fields .labels,
+.profile_edit_page .user_data .account_info_fields .left_fields .labels {
+  width: 100px;
+  padding-left: 9px;
+}
+.profile_edit_page .user_data .contact_info_fiels .right_fields,
+.profile_edit_page .user_data .account_info_fields .right_fields {
+  display: table-cell;
+  width: 350px;
+}
+.profile_edit_page .user_data .contact_info_fiels .right_fields .labels,
+.profile_edit_page .user_data .account_info_fields .right_fields .labels {
+  width: 117px;
+}
+.profile_edit_page .user_data .contact_info_fiels .fields,
+.profile_edit_page .user_data .account_info_fields .fields {
+  width: 230px;
+}
+.profile_edit_page .user_data .contact_info_fiels .fields .inputs,
+.profile_edit_page .user_data .account_info_fields .fields .inputs {
+  width: 208px;
+}
+.profile_edit_page .user_data .inputs {
+  display: block;
+  width: 328px;
+  height: 42px;
+  margin: 0px;
+  font-size: 18px;
+  color: #999999;
+}
+.profile_edit_page .user_data .submit {
+  text-align: right;
+  margin-top: -15px;
+}
+.profile_edit_page .user_data .selects {
+  display: block;
+  outline: none;
+  width: 350px;
+  height: 44px;
+  margin: 0px 0px 0px 0px;
+  padding: 8px 5px 8px 7px;
+  font-size: 18px;
+  line-height: 44px;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #999999;
+  border: 1px solid #A5ACB2;
+}
+.profile_edit_page .user_data .select2-container {
+  width: 449px;
+}
+.profile_edit_page .model_select {
+  width: 449px;
+}
+.profile_edit_page .ui-spinner {
+  width: 118px;
+}
+.profile_edit_page .spinner {
+  width: 68px !important;
+}
+.profile_edit_page .model_parameners {
+  display: table;
+  width: 751px;
+  margin-bottom: 18px;
+}
+.profile_edit_page .model_parameners .left_fields,
+.profile_edit_page .model_parameners .right_fileds {
+  display: table-cell;
+  vertical-align: top;
+}
+.profile_edit_page .model_parameners .left_fields .labels,
+.profile_edit_page .model_parameners .right_fileds .labels,
+.profile_edit_page .model_parameners .left_fields .fields,
+.profile_edit_page .model_parameners .right_fileds .fields {
+  display: block;
+  float: left;
+  margin-bottom: 18px;
+}
+.profile_edit_page .model_parameners .left_fields .labels,
+.profile_edit_page .model_parameners .right_fileds .labels {
+  padding-top: 12px;
+}
+.profile_edit_page .model_parameners .left_fields .inputs,
+.profile_edit_page .model_parameners .right_fileds .inputs {
+  width: 79px !important;
+}
+.profile_edit_page .model_parameners .left_fields {
+  width: 498px;
+}
+.profile_edit_page .model_parameners .left_fields .labels {
+  width: 291px;
+  padding-left: 9px;
+}
+.profile_edit_page .model_parameners .left_fields .fields {
+  width: 197px;
+}
+.profile_edit_page .model_parameners .right_fileds .labels {
+  width: 134px;
+  padding-left: 0px;
+}
+.profile_edit_page .model_parameners .right_fileds .fields {
+  width: 119px;
+}
+.notice_popup {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 13px 12px;
+  background: #7CBEDE none;
+}
+.notice_popup .close_button {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/close_notice_icon.png) 0px 0px no-repeat;
+}
+.notice_popup .notice_text {
+  display: table-cell;
+  width: auto;
+  height: 54px;
+  padding-left: 84px;
+  padding-right: 20px;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-align: left;
+  vertical-align: middle;
+  background: url(../img/notice_success_icon.png) 0px 0px no-repeat;
+}
+.notice_popup .notice_text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+}
+.notice_errors {
+  background: #FE9900 none;
+}
+.notice_errors .notice_text {
+  background: url(../img/notice_errors_icon.png) 0px 0px no-repeat;
+}
+.notice_photos {
+  background: #FE9900 none;
+}
+.notice_photos .notice_text {
+  background: url(../img/notice_photos_icon.png) 0px 0px no-repeat;
+}
+@media only screen and (max-width: 1270px) {
+  .profile_edit_page {
+    width: 100%;
+  }
+  .profile_edit {
+    width: 996px !important;
+    margin: 0px auto;
+    padding-top: 19px;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .profile_edit_page .profile_edit {
+    width: 745px !important;
+  }
+  .profile_edit_page .profile_avatar {
+    float: none;
+    margin-bottom: 15px;
+  }
+  .profile_edit_page .user_data {
+    width: 745px !important;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields {
+    padding-right: 41px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields,
+  .profile_edit_page .user_data .account_info_fields .left_fields {
+    padding-right: 39px;
+  }
+  .profile_edit_page .user_data .select2-container {
+    width: 442px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .fields .inputs {
+    width: 420px;
+  }
+  .profile_edit_page .user_data .about_self,
+  .profile_edit_page .user_data .serveces_prices {
+    width: 722px;
+  }
+  .profile_edit_page .aditional_info_fields .model_select {
+    width: 442px !important;
+  }
+  .profile_edit_page .model_parameners {
+    display: block;
+    width: 498px;
+  }
+  .profile_edit_page .model_parameners .left_fields,
+  .profile_edit_page .model_parameners .right_fileds {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .model_parameners .left_fields .labels,
+  .profile_edit_page .model_parameners .right_fileds .labels,
+  .profile_edit_page .model_parameners .left_fields .fields,
+  .profile_edit_page .model_parameners .right_fileds .fields {
+    display: block;
+  }
+  .profile_edit_page .model_parameners .right_fileds .labels {
+    width: 291px;
+    padding-left: 9px;
+  }
+  .profile_edit_page .model_parameners .right_fileds .fields {
+    width: 197px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .profile_edit_page .profile_edit {
+    width: 520px !important;
+  }
+  .profile_edit_page .user_data {
+    width: 520px !important;
+  }
+  .profile_edit_page .user_data .main_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields .fields {
+    width: 395px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .inputs {
+    width: 372px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .selects {
+    width: 395px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .right_fields .selects {
+    width: 395px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields {
+    width: 362px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields .inputs {
+    width: 297px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields {
+    width: 520px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .labels {
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .fields {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .inputs {
+    width: 495px !important;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .select,
+  .profile_edit_page .user_data .aditional_info_fields .model_select {
+    width: 517px !important;
+  }
+  .profile_edit_page .user_data .model_parameners .fields {
+    margin-top: 0px;
+  }
+  .profile_edit_page .user_data .model_parameners .inputs {
+    width: 79px !important;
+  }
+  .profile_edit_page .user_data .textareas {
+    width: 495px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .fields {
+    width: 395px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .inputs,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .inputs {
+    width: 373px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .buttons {
+    margin-right: 3px;
+  }
+}
+@media only screen and (max-width: 539px) {
+  .profile_edit_page .profile_edit {
+    width: 430px !important;
+  }
+  .profile_edit_page .user_data {
+    width: 430px !important;
+  }
+  .profile_edit_page .user_data .main_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields .fields {
+    display: block;
+    margin-top: 10px;
+    width: 430px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .inputs {
+    width: 408px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .selects {
+    width: 430px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .right_fields .selects {
+    width: 430px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields {
+    width: 430px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields .inputs {
+    width: 366px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields {
+    width: 430px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .labels {
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .fields {
+    display: block;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .inputs {
+    width: 408px !important;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .select,
+  .profile_edit_page .user_data .aditional_info_fields .model_select {
+    width: 430px !important;
+  }
+  .profile_edit_page .user_data .model_parameners {
+    display: block;
+    width: 430px;
+  }
+  .profile_edit_page .user_data .model_parameners .inputs {
+    width: 79px !important;
+  }
+  .profile_edit_page .user_data .textareas {
+    width: 408px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .fields {
+    display: block;
+    width: 430px;
+    margin-top: 10px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .inputs,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .inputs {
+    width: 408px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .buttons {
+    margin-right: 0px;
+  }
+  .notice_popup .notice_text {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+}
+@media only screen and (max-width: 449px) {
+  .profile_edit_page .profile_edit {
+    width: 300px !important;
+  }
+  .profile_edit_page .user_data {
+    width: 300px !important;
+  }
+  .profile_edit_page .user_data .main_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .main_info_fiels .right_fields .fields {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .inputs {
+    width: 277px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .left_fields .selects {
+    width: 300px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .right_fields .selects {
+    width: 300px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields {
+    width: 300px;
+  }
+  .profile_edit_page .user_data .main_info_fiels .date_fields .fields .inputs {
+    width: 236px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields {
+    width: 300px;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .inputs {
+    width: 277px !important;
+  }
+  .profile_edit_page .user_data .aditional_info_fields .select,
+  .profile_edit_page .user_data .aditional_info_fields .model_select {
+    width: 300px !important;
+  }
+  .profile_edit_page .user_data .model_parameners {
+    width: auto;
+  }
+  .profile_edit_page .user_data .model_parameners .inputs {
+    width: 79px !important;
+  }
+  .profile_edit_page .user_data .model_parameners .left_fields .labels,
+  .profile_edit_page .user_data .model_parameners .right_fileds .labels {
+    width: 181px !important;
+  }
+  .profile_edit_page .user_data .textareas {
+    width: 277px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels {
+    width: auto;
+    display: block;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields {
+    display: block;
+    width: auto;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .fields,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .fields {
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .inputs,
+  .profile_edit_page .user_data .contact_info_fiels .right_fields .inputs {
+    width: 277px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields {
+    padding-right: 0px;
+  }
+  .profile_edit_page .user_data .contact_info_fiels .left_fields .labels {
+    min-width: 117px;
+    padding-left: 0px;
+  }
+  .profile_edit_page .user_data .buttons {
+    margin-right: 3px;
+  }
+  .notice_popup .notice_text {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+}

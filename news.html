@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotopoisk</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/news.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/news.less" />
+    -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/doubletaptogo.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        <div class="central_block">
+          <a href="index.html" title="" class="logo"></a>
+          
+          <nav class="main_navigation">
+            <a href="#" title="" class="touch_nav"></a>
+            <ul>
+              <li class="parent_nav">
+                <a href="photographers.html" title="" aria-haspopup="true">Фотографы</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Свадебные фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотографы Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Детские фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent_nav">
+                <a href="photomodels.html" title="" aria-haspopup="true">Модели</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Фотомодели Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотомодели TFP</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Дети модели</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="stylists.html" title="">Стилисты</a>
+              </li>
+              <li>
+                <a href="photostudios.html" title="">Фотостудии</a>
+              </li>
+              <li>
+                <a href="retouchers.html" title="">Ретушеры</a>
+              </li>
+              <li>
+                <a href="amateurs.html" title="">Фотолюбители</a>
+              </li>
+              <li>
+                <a href="agencies.html" title="">Модельные агентства</a>
+              </li>
+              <li>
+                <a href="schools.html" title="">Фотошколы</a>
+              </li>
+              <li class="parent_nav more_menu">
+                <a href="#" title="" aria-haspopup="true">Еще</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="retouchers.html" title="">Ретушеры</a>
+                  </li>
+                  <li>
+                    <a href="amateurs.html" title="">Фотолюбители</a>
+                  </li>
+                  <li>
+                    <a href="agencies.html" title="">Модельные агентства</a>
+                  </li>
+                  <li>
+                    <a href="schools.html" title="">Фотошколы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="user_block">
+            <a href="#" title="" class="touch_user_menu"><img src="img/avatar.png" alt="" title="" /></a>
+            <div class="menu_block logined">
+              <div class="user_block">
+                <a href="#" title="" class="avatar"><img src="img/avatar.png" alt="" title="" /></a>
+                <div class="user_info">
+                  <div class="info_block">
+                    <div class="name_row">
+                      <a href="#" title="">Алефтина Смелая</a>
+                    </div>
+                    <div class="notifications_row">
+                      <span class="link messages">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                      <span class="link friends">
+                        <a href="#" title=""><span class="notification">+5</span></a>
+                      </span>
+                      <span class="link edit_profile_link">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="links_block">
+                    <ul>
+                      <li>
+                        <a href="photographer_profile.html" title="">Профиль</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_edit.html" title="">Редактирование</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_portfolio.html" title="">Портфолио</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_blog.html" title="">Блог</a>
+                      </li>
+                      <li>
+                        <a href="payment.html" title="">Pro-Аккаунт</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_views.html" title="">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="add_menu">
+                  <a href="#" title="" class="add_label">Добавить</a>
+                  <div class="add_links">
+                    <ul>
+                      <li>
+                        <a href="#" title="">Фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Видео</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Событие</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Объявление</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Статью в блог</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        </div>
+        
+        <div class="bottom_line">
+          <div class="central_block">
+            <div class="extended_navigation">
+              <ul>
+                <li>
+                  <a href="activity_wall.html" title="">Активность</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="photos.html" title="" aria-haspopup="true">Фото дня</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="#" title="">Фото недели</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Фото месяца</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="photostream.html" title="">Фотопоток</a>
+                </li>
+                <li>
+                  <a href="events_categories.html" title="">События</a>
+                </li>
+                <li>
+                  <a href="contests.html" title="">Фотоконкурсы</a>
+                </li>
+                <li>
+                  <a href="forums.html" title="">Форум</a>
+                </li>
+                <li>
+                  <a href="adverts_categories.html" title="">Объявления</a>
+                </li>
+                <li class="parent_nav current">
+                  <a href="#" title="" aria-haspopup="true">Публикации</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="news.html" title="">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog_categories.html" title="">Блоги</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Интервью</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Полезно знать</a>
+                    </li>
+                    <li>
+                      <a href="videos.html" title="">Видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent_nav">
+                  <a href="job.html" title="" aria-haspopup="true">Работа</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="my_ads.html" title="">Мои объявления</a>
+                    </li>
+                    <li>
+                      <a href="my_orders.html" title="">Мои заказы</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clear_both"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- content -->
+      <div class="content_block">
+        <div class="content news_page">
+          <div class="help_cloud">
+            <div class="help_body">
+              <a href="javascript:void(0);" title="" class="close_cloud"></a>
+              
+              <img src="img/help_photographers.png" alt="" title="" class="help_image" />
+              
+              <h1>Поиск профессионального фотографа</h1>
+              <p>Наш сайт – уникальный в своем роде проект. И один из показателей его уникальности – это полный каталог лучших фотографов со всей Украины. 
+              Здесь вы найдете профессиональных фотохудожников, работающих во всех популярных жанрах фотосессии.</p>
+              <p>Удобный и быстрый поиск нужной вам информации займет минимум вашего времени. А возможность просмотра портфолио каждого фотографа 
+              поможет вам за несколько минут определиться с выбором того мастера, с которым вам хотелось бы поработать. Вы также сможете подписаться на 
+              обновления понравившегося вам фотографа, следить за его творчеством и оценивать его работу. У нас вы также найдете полный список стилистов, 
+              фотостудий, ретушеров, моделей и модельных агентств в каждом городе Украины. Ну а начинающие фотографы в разделе «Фотошколы» найдут список 
+              самых популярных курсов по подготовке будущих специалистов.</p>
+              <p>В настоящее время есть два самых популярных жанра фотосъемки – это свадебная и детская. На сайте в разделе «Фотографы» вы увидите, что 
+              для вашего удобства эти категории выделены в два отдельных подраздела. Вам не придется пересматривать весь сайт в поисках нужного вам мастера.</p>
+              <p>Что же представляет собой профессиональный свадебный фотограф? Это гораздо больше, чем просто человек, умеющий фотографировать свадьбы. 
+              Он должен уметь подсказать вам, что надеть, как и куда стать, на чем остановить свой взгляд, о чем задуматься...</p>
+              <p>Свадебный фотограф работает сразу в нескольких направлениях. Он должен иметь навыки жанровой, портретной, пейзажной, репортажной, 
+              студийной фотографии. Это очень непростая и ответственная работа. Ведь результатом всего процесса должен быть качественный, динамичный и 
+              эмоциональный фотоальбом, который будет одной из самых ценных семейных реликвий. Поэтому к выбору фотографа на свадьбу нужно подойти очень 
+              серьезно. Мы предлагаем вашему вниманию лучших мастеров в этой области.</p>
+              <p>Профессиональный детский фотограф – это тоже особый человек, обладающий не только огромным терпением, но и навыками психолога, сказочника, 
+              а иногда и веселого клоуна или фокусника. Здесь хороши все методы, лишь бы заставить малыша искренне улыбнуться, радостно засмеяться или 
+              удивленно замереть на несколько секунд. Уловить эти моменты и успеть запечатлеть живые эмоции ребенка – основная задача мастера. Каждый детский 
+              фотограф, представляющий свои работы на нашем сайте, имеет большой опыт работы с детьми разного возраста.</p>
+              <p>Кроме того, с нашими фотографами-профессионалами вы можете договориться и о таком жанре съемки, как фотосессия для будущих мам. У вас есть 
+              потрясающая возможность сохранить в семейном альбоме такие трогательные и неповторимые моменты.</p>
+              <p>Помимо свадебной и детской фотосессий есть еще множество интересных и оригинальных жанров. И даже если вы не найдете именно тот вид съемки, 
+              который вам хотелось бы воплотить в жизнь, вы всегда можете обсудить ваши идеи с понравившимся вам мастером. Наши профессиональные фотографы 
+              обязательно помогут вам.</p>
+            </div>
+          </div>
+          
+          <div class="news_header_block" style="background-image: url(img/news_header_bg.png);">
+            <div class="news_logo_block">
+              <a href="#" title=""></a>
+            </div>
+            
+            <div class="news_header_inner">
+              <div class="note_block">* более 800 уникальных статей</div>
+              <a href="#" title="" class="help_link"></a>
+              
+              <div class="categories_block">
+                <ul>
+                  <li class="cat_01 curr">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">МИР ФОТО</a>
+                  </li>
+                  <li class="cat_02">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">НАШИ</a>
+                  </li>
+                  <li class="cat_03">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">ВДОХНОВЕНИЕ</a>
+                  </li>
+                  <li class="cat_04">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">ЖИЗНЬ</a>
+                  </li>
+                  <li class="cat_05">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">ФОТОТЕХНИКА</a>
+                  </li>
+                  <li class="cat_06">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">СТИЛЬ И МОДА</a>
+                  </li>
+                  <li class="cat_07">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">ВИДЕО</a>
+                  </li>
+                  <li class="cat_08">
+                    <span class="color_bg"></span>
+                    <a href="#" title="">ПОПУЛЯРНОЕ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="articles_block">
+            <div class="articles">
+              <article class="article cat_04">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_01.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Жизнь</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="news_view.html" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_01">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_02.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Мир фото</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_03">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_03.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Вдохновение</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_06">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_04.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Стиль и мода</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_04">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_01.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Жизнь</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_01">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_02.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category">Мир фото</p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_03">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_03.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Вдохновение</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+
+              <article class="article cat_06">
+                <header class="article_header">
+                  <a href="news_view.html" title="" class="thumb">
+                    <img src="img/news_thumb_04.png" alt="" title="" />
+                    <span class="cover_block">
+                      <span class="icon_block" style="background-image: url(img/news_hover_icon.png);">
+                        <span class="cover_effect"></span>
+                      </span>
+                    </span>
+                  </a>
+
+                  <p class="category"><a href="#" title="">Стиль и мода</a></p>
+
+                  <p class="article_info">
+                    <span class="date">12/10</span>
+                    <span class="views">439</span>
+                  </p>
+                  <p class="clear_both"></p>
+
+                  <a href="#" title="" class="title">Lorem ipsum dolor sit amet, consectetur</a>
+                  <p class="author">
+                    <a href="#" title="">Alexandra Lavrentieva</a>
+                  </p>
+                </header>
+
+                <div class="article_body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam tellus et velit porttitor bibendum. 
+                  Suspendisse diam eros, sodales ac varius ac, tempor id augue. Donec eu leo quis massa gravida auctor. Morbi vehicula 
+                  vulputate felis ac faucibus. Sed id accumsan lectus. Nulla dignissim egestas posuere. Vestibulum aliquet tempor 
+                  pulvinar. Vestibulum nec porta enim, id tincidunt elit. Aliquam tempus convallis ornare. Praesent vitae aliquet ligula. 
+                  Pellentesque consequat luctus luctus. In est ante, suscipit in nulla et, vestibulum egestas diam. Mauris semper ligula 
+                  vel eros vehicula, ac finibus quam congue.
+                </div>
+              </article>
+              
+              <div class="clear_both"></div>
+              <a href="#" title="" class="show_more">Показать ещё</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="central_block">
+        <div class="left_block">
+          <div class="footer_navigation">
+            <a href="#" title="">О проекте</a>
+            |
+            <a href="#" title="">Новости проекта</a>
+            |
+            <a href="#feedback" title="" rel="feedback">Связаться с нами</a>
+          </div>
+
+          <div class="copy_right">
+            ©2010 Фотопоиск. Все права защищены. info@fotopoisk.com.ua <br />
+            Все фотографии являются собственностью пользоватлей<br /><br />
+            г. Киев, ул. Крещатик, 25<br />
+            +38 (066) 774-73-52
+          </div>
+        </div>
+
+        <div class="site_links">
+          <div class="column">
+            <a href="#" title="">Фотографы</a><br />
+            <a href="#" title="">Фотомодели</a><br />
+            <a href="#" title="">Стилисты</a><br />
+            <a href="#" title="" class="current">Фотостудии</a><br />
+            <a href="#" title="">Ретушеры</a><br />
+            <a href="#" title="">Фотошколы</a><br />
+            <a href="#" title="">Агенства</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Новости</a><br />
+            <a href="#" title="">Блоги</a><br />
+            <a href="#" title="">Интервью</a><br />
+            <a href="#" title="">Полезно знать</a><br />
+            <a href="#" title="">События</a><br />
+            <a href="#" title="">Форум</a><br />
+            <a href="#" title="">Барахолка</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Фото дня</a><br />
+            <a href="#" title="">Фотопоток</a><br />
+            <a href="#" title="">Фотоконкурсы</a><br />
+            <a href="#" title="">Топ городов</a><br />
+            <a href="#" title="">Фотограф года</a><br />
+            <a href="#" title="">Модель года</a><br />
+            <a href="#" title="">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="right_block">
+          <div class="socials">
+            <a href="#" title="" class="instagram"></a>
+            <a href="#" title="" class="odnoklassniki"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="fb"></a>
+            <a href="#" title="" class="vk"></a>
+            <a href="#" title="" class="google_plus"></a>
+            <div class="clear_both"></div>
+          </div>
+
+          <div class="designed_by">
+            <a href="http://freshlime.com.ua" title="" target="_blank"><img src="img/fresh_logo.png" alt="FreshLimeStudio" title="" /></a>
+          </div>
+
+          <div class="clear_both"></div>
+          
+          <div class="share_buttons">
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_01.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_02.png" alt="" tite="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_03.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_04.png" alt="" tite="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

@@ -1,0 +1,207 @@
+.calendar_page {
+  max-width: 1245px;
+  margin: 0px auto;
+  padding: 19px 0px 30px 0px;
+}
+.calendar_page .calendar_block {
+  float: left;
+  width: 900px;
+}
+.calendar_page .calendar_block .calendar {
+  width: inherit;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.calendar_page .calendar_block .note {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #666666;
+}
+.calendar_page .calendar_block .note .cell {
+  display: table-cell;
+  height: 25px;
+  padding-right: 33px;
+  white-space: nowrap;
+  text-align: left;
+  vertical-align: top;
+}
+.calendar_page .calendar_block .note .blue_colored,
+.calendar_page .calendar_block .note .orange_colored,
+.calendar_page .calendar_block .note .gray_colored {
+  display: block;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: -4px;
+  margin-right: 5px;
+}
+.calendar_page .calendar_block .note .blue_colored {
+  background: #3399CC none;
+}
+.calendar_page .calendar_block .note .orange_colored {
+  background: #FF9900 none;
+}
+.calendar_page .calendar_block .note .gray_colored {
+  background: #A9A9A9 none;
+}
+.calendar_page .new_requests {
+  float: right;
+  width: 320px;
+  margin-top: 17px;
+  padding-bottom: 29px;
+  background: #F3F3F3 none;
+}
+.calendar_page .new_requests .caption {
+  width: inherit;
+  height: 44px;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #FFFFFF;
+  background: #2e3338 url(../img/new_request_icon.png) 9px 12px no-repeat;
+}
+.calendar_page .new_requests .caption span {
+  display: block;
+  position: absolute;
+  margin: 11px 0 0 33px;
+}
+.calendar_page .new_requests .requests_list {
+  width: 282px;
+  padding: 0px 17px 0px 21px;
+}
+.calendar_page .new_requests .request {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 26px;
+  font-size: 12px;
+  line-height: 1.2em;
+  border-top: 1px solid #CCCCCC;
+}
+.calendar_page .new_requests .request .row {
+  display: table;
+  margin-bottom: 8px;
+}
+.calendar_page .new_requests .request .labels,
+.calendar_page .new_requests .request .values {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.calendar_page .new_requests .request .labels {
+  width: 137px;
+  color: #2c3338;
+}
+.calendar_page .new_requests .request .values {
+  color: #666666;
+}
+.calendar_page .new_requests .request .values a {
+  text-decoration: underline;
+}
+.calendar_page .new_requests .request .values a:hover {
+  text-decoration: none;
+}
+.calendar_page .new_requests .request .actions {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-align: right;
+}
+.calendar_page .new_requests .request .buttons {
+  display: inline-block;
+  height: 27px !important;
+  padding-top: 13px 15px 0px 15px !importane;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.calendar_page .new_requests .request a.buttons {
+  height: 30px;
+  padding-top: 10px;
+  text-decoration: none !important;
+  color: #ffffff !important;
+}
+.calendar_page .new_requests .request:first-child {
+  margin-top: 0px;
+  border-top: none;
+}
+.calendar_page .new_requests .cancel {
+  margin-right: 18px;
+  color: #999999 !important;
+}
+@media only screen and (max-width: 1270px) {
+  .calendar_page .calendar_block {
+    float: none;
+    width: 100%;
+  }
+  .calendar_page .new_requests {
+    float: none;
+    width: 100%;
+  }
+  .calendar_page .new_requests .requests_list {
+    width: auto;
+    padding: 29px 0px 0px 0px;
+  }
+  .calendar_page .new_requests .requests_list .request {
+    display: table-cell;
+    width: 33%;
+    padding: 0px 20px;
+    border-top: none;
+    border-left: 1px solid #CCCCCC;
+  }
+  .calendar_page .new_requests .requests_list .request:first-child {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .calendar_page .new_requests .request {
+    width: 50%;
+  }
+  .calendar_page .new_requests .request:last-child {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .calendar_page {
+    padding: 19px 10px 30px 10px !important;
+  }
+  .calendar_page .new_requests {
+    max-width: 400px;
+  }
+  .calendar_page .new_requests .requests_list {
+    padding: 9px 0px 0px 0px;
+  }
+  .calendar_page .new_requests .requests_list .request {
+    display: block;
+    width: auto;
+    margin: 20px 20px 0px 20px;
+    padding: 20px 0px 0px 0px;
+    border-top: 1px solid #CCCCCC;
+    border-left: none;
+  }
+  .calendar_page .new_requests .requests_list .request .actions {
+    text-align: left;
+  }
+  .calendar_page .new_requests .requests_list .request .actions .buttons {
+    float: left;
+  }
+  .calendar_page .new_requests .requests_list .request .actions .cancel {
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: 15px;
+  }
+  .calendar_page .new_requests .requests_list .request:first-child {
+    margin-top: 0px;
+    border-top: none;
+  }
+  .calendar_page .new_requests .requests_list .request:last-child {
+    display: block;
+  }
+}
+@media only screen and (max-width: 519px) {
+  .calendar_page .fc-header td {
+    display: block !important;
+    text-align: left !important;
+  }
+  .calendar_page .fc-header td .fc-header-title {
+    padding-bottom: 0.9em !important;
+  }
+}

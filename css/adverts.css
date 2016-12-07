@@ -1,0 +1,984 @@
+/* adverts categories styles */
+.adverts_page {
+  padding: 0px 0px 30px 0px;
+  margin: 0px auto;
+}
+.adverts_page .adverts_header_block {
+  position: relative;
+  max-width: 1245px;
+  margin: 0px auto;
+  padding-top: 17px;
+}
+.adverts_page .adverts_header_block .page_title {
+  padding-top: 7px;
+}
+.adverts_page .adverts_block {
+  max-width: 1245px;
+  margin: 0px auto 20px auto;
+}
+.adverts_page .adverts_block .adverts_categories {
+  margin: 0px -11px;
+  margin: 0px -5.5px;
+}
+.adverts_page .adverts_block .adverts_categories .category {
+  float: left;
+  width: 400px;
+  /*min-height: 388px;*/
+  margin: 22px 11px 0px 11px;
+  display: inline-table;
+  float: none;
+  width: 299px;
+  margin: 22px 5.5px 0px 5.5px;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list {
+  width: 352px;
+  min-height: 240px;
+  padding: 8px 24px 15px 24px;
+  background: #F1F1F1 none;
+  width: auto;
+  padding: 8px 14px 15px 14px;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .row {
+  display: table;
+  margin-top: 15px;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .thumbs,
+.adverts_page .adverts_block .adverts_categories .adverts_list .body {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .thumb {
+  width: 50px;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .thumb img {
+  display: block;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .thumb .date {
+  width: 50px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 1.2em;
+  text-align: center;
+  color: #ffffff;
+  background: #3399cc;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .body {
+  padding-left: 17px;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .caption {
+  display: inline-block;
+  margin-top: -3px;
+  padding-bottom: 3px;
+  font-size: 12px;
+  line-height: 1.2em;
+  color: #2c3338;
+}
+.adverts_page .adverts_block .adverts_categories .adverts_list .description,
+.adverts_page .adverts_block .adverts_categories .adverts_list .date {
+  color: #666666;
+}
+.adverts_page .adverts_block .adverts_categories .show_all_block {
+  width: auto;
+}
+@media only screen and (max-width: 1270px) {
+  .adverts_page {
+    width: 996px;
+  }
+  .adverts_page .adverts_block .adverts_categories {
+    margin: 0px -6px;
+  }
+  .adverts_page .adverts_block .adverts_categories .category {
+    width: 320px;
+    margin: 22px 6.25px 0px 6.25px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .adverts_page {
+    width: 745px;
+  }
+  .adverts_page .adverts_block .adverts_categories {
+    margin: 0px -5px;
+  }
+  .adverts_page .adverts_block .adverts_categories .category {
+    width: 238px;
+    margin: 22px 5px 0px 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .adverts_page {
+    width: auto;
+  }
+  .adverts_page .adverts_header_block,
+  .adverts_page .adverts_block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .adverts_page .adverts_block .adverts_categories {
+    margin: 0px -0.5%;
+  }
+  .adverts_page .adverts_block .adverts_categories .category {
+    width: 48.5%;
+    margin: 22px 0.5% 0px 0.5%;
+  }
+  .adverts_page .adverts_block .adverts_categories .category .caption_block {
+    width: 100%;
+  }
+  .adverts_page .adverts_block .adverts_categories .category .caption_block img {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .adverts_page .adverts_block .adverts_categories {
+    margin: 0px;
+  }
+  .adverts_page .adverts_block .adverts_categories .category {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 22px 0px 0px 0px;
+  }
+  .adverts_page .adverts_block .adverts_categories .category .caption_block {
+    width: 100%;
+  }
+  .adverts_page .adverts_block .adverts_categories .category .caption_block img {
+    position: relative;
+  }
+}
+/* adverts styles */
+.adverts_page .adverts_header_block .add_advert_link {
+  display: none;
+}
+.adverts_page .central_block {
+  position: relative;
+}
+.adverts_page .user_adverts {
+  float: left;
+  width: 962px;
+  margin-top: 22px;
+}
+.adverts_page .user_adverts .user_advert {
+  display: table;
+  position: relative;
+  width: 938px;
+  border: 12px solid #FFFFFF;
+}
+.adverts_page .user_adverts .user_advert .author {
+  display: table-cell;
+  width: 193px;
+  padding-right: 5px;
+  vertical-align: top;
+  text-align: left;
+  border-right: 1px solid #E6E6E6;
+}
+.adverts_page .user_adverts .user_advert .author .avatar {
+  display: block;
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 9px;
+}
+.adverts_page .user_adverts .user_advert .author .avatar img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.adverts_page .user_adverts .user_advert .author .main_info {
+  float: left;
+  overflow: hidden;
+  width: 109px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.adverts_page .user_adverts .user_advert .author .main_info .name {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3338;
+}
+.adverts_page .user_adverts .user_advert .author .main_info .city {
+  display: block;
+  padding-top: 13px;
+}
+.adverts_page .user_adverts .user_advert .author .additional_info {
+  display: table;
+  width: 100%;
+  margin-top: 13px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.adverts_page .user_adverts .user_advert .author .additional_info .row {
+  display: table-row;
+}
+.adverts_page .user_adverts .user_advert .author .additional_info .label,
+.adverts_page .user_adverts .user_advert .author .additional_info .value {
+  display: table-cell;
+  padding-bottom: 5px;
+  vertical-align: top;
+  text-align: left;
+}
+.adverts_page .user_adverts .user_advert .author .additional_info .label {
+  min-width: 89px;
+}
+.adverts_page .user_adverts .user_advert .author .additional_info .value {
+  color: #3399cc;
+}
+.adverts_page .user_adverts .user_advert .body {
+  display: table-cell;
+  position: relative;
+  padding-left: 18px;
+  padding-right: 4px;
+  vertical-align: top;
+  text-align: left;
+}
+.adverts_page .user_adverts .user_advert .body .title {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.2em;
+  color: #2c3338;
+}
+.adverts_page .user_adverts .user_advert .body .info {
+  padding-top: 15px;
+}
+.adverts_page .user_adverts .user_advert .body .info .info_block {
+  display: block;
+  float: left;
+  overflow: hidden;
+  padding: 0px;
+}
+.adverts_page .user_adverts .user_advert .body .info .label,
+.adverts_page .user_adverts .user_advert .body .info .value {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.adverts_page .user_adverts .user_advert .body .info .label {
+  padding-right: 7px;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.adverts_page .user_adverts .user_advert .body .info .value {
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.adverts_page .user_adverts .user_advert .body .info .price {
+  padding-right: 0px;
+}
+.adverts_page .user_adverts .user_advert .body .description {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #666666;
+}
+.adverts_page .user_adverts .user_advert .body .description .read-more a,
+.adverts_page .user_adverts .user_advert .body .description .read-less a {
+  text-decoration: underline;
+}
+.adverts_page .user_adverts .user_advert .body .description .read-more:hover a,
+.adverts_page .user_adverts .user_advert .body .description .read-less:hover a {
+  text-decoration: none;
+}
+.adverts_page .user_adverts .dark_row {
+  border-color: #F7F7F7;
+  background-color: #F7F7F7;
+}
+.adverts_page .adverts_right_column {
+  float: right;
+  width: 245px;
+  margin-top: 22px;
+}
+.adverts_page .adverts_right_column .add_advert_link {
+  width: 245px;
+  padding-bottom: 16px;
+}
+.adverts_page .adverts_right_column .add_advert_link img {
+  display: block;
+}
+@media only screen and (max-width: 1270px) {
+  .adverts_page .adverts_header_block {
+    max-width: auto;
+    padding-right: 265px;
+  }
+  .adverts_page .central_block {
+    width: 996px;
+  }
+  .adverts_page .user_adverts {
+    float: none;
+    width: inherit;
+  }
+  .adverts_page .user_adverts .user_advert {
+    width: 972px;
+  }
+  .adverts_page .right_column {
+    float: none;
+    width: 996px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .adverts_page .right_column .tile {
+    width: 996px;
+  }
+  .adverts_page .right_column .tile .body {
+    padding: 20px 18px 22px 18px;
+  }
+  .adverts_page .right_column .categories {
+    display: none;
+  }
+  .adverts_page .right_column .add_advert_link {
+    position: absolute;
+    top: -55px;
+    right: 0px;
+  }
+  .adverts_page .right_column .last_news .news_list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .adverts_page .right_column .last_news .title {
+    padding-right: 10px;
+  }
+  .adverts_page .right_column .last_news .row {
+    display: table-cell;
+    width: auto;
+    min-width: 194px;
+  }
+  .adverts_page .right_column .last_news .clear_both {
+    display: none;
+  }
+  .adverts_page .right_column .image_block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .adverts_page .adverts_header_block {
+    padding-right: 10px;
+  }
+  .adverts_page .adverts_header_block .add_advert_link {
+    clear: left;
+    display: block;
+    width: 245px;
+    padding-top: 20px;
+  }
+  .adverts_page .adverts_header_block .add_advert_link img {
+    width: 86%;
+  }
+  .adverts_page .central_block {
+    width: 745px;
+  }
+  .adverts_page .user_adverts {
+    width: inherit;
+    margin-top: 13px;
+  }
+  .adverts_page .user_adverts .user_advert {
+    width: 721px;
+  }
+  .adverts_page .right_column {
+    width: 754px;
+  }
+  .adverts_page .right_column .tile {
+    width: 745px;
+  }
+  .adverts_page .right_column .add_advert_link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .adverts_page .central_block {
+    width: auto;
+    min-width: 276px;
+    padding: 0px 10px;
+  }
+  .adverts_page .user_adverts {
+    width: inherit;
+  }
+  .adverts_page .user_adverts .user_advert {
+    display: block;
+    width: auto;
+  }
+  .adverts_page .user_adverts .user_advert .author {
+    display: block;
+    width: auto;
+    padding-right: 0px;
+    border-right: none;
+  }
+  .adverts_page .user_adverts .user_advert .author .main_info {
+    width: auto;
+  }
+  .adverts_page .user_adverts .user_advert .author .additional_info {
+    width: auto;
+  }
+  .adverts_page .user_adverts .user_advert .author .additional_info .label {
+    padding-right: 7px;
+  }
+  .adverts_page .user_adverts .user_advert .body {
+    display: block;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-left: 0px;
+    border-top: 1px solid #E6E6E6;
+  }
+  .adverts_page .right_column {
+    width: 100%;
+  }
+  .adverts_page .right_column .tile {
+    width: auto;
+  }
+  .adverts_page .right_column .last_news .news_list {
+    display: block;
+    width: auto;
+  }
+  .adverts_page .right_column .last_news .row {
+    display: table;
+    width: auto;
+    min-width: 194px;
+    min-width: auto;
+  }
+  .adverts_page .right_column .last_news .clear_both {
+    display: block;
+  }
+}
+/* advert styles */
+.full_advert .advert_gallery_block {
+  width: 972px;
+  margin: 0px -5px;
+  padding: 10px 0px 10px 0px;
+}
+.full_advert .advert_gallery_block .thumb {
+  overflow: hidden;
+  float: left;
+  display: block;
+  width: 233px;
+  height: 233px;
+  margin: 5px;
+}
+.full_advert .advert_gallery_block .thumb img {
+  display: block;
+  width: 100%;
+}
+.full_advert .advert_comments {
+  clear: both;
+  width: inherit;
+  margin: 0px auto;
+  padding: 0px;
+}
+.full_advert .advert_comments .textareas {
+  position: relative;
+  z-index: 0;
+  resize: none;
+  outline: none;
+  width: 100%;
+  height: 105px;
+  margin: 0px;
+  padding: 20px 22px;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-family: Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  color: #2c3338;
+  text-align: left;
+  border: 1px solid #A5ACB2;
+  background: #FFFFFF none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.full_advert .advert_comments .submit {
+  margin-top: 12px;
+  text-align: right;
+}
+.full_advert .advert_comments .submit .buttons {
+  cursor: pointer;
+  outline: none;
+  height: 43px;
+  margin: 0px;
+  padding: 0px 28px;
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #ffffff;
+  border: none;
+  background: #3399CC none;
+}
+.full_advert .comments_list {
+  max-width: 962px;
+}
+.full_advert .comments_list .comment {
+  display: table;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px;
+}
+.full_advert .comments_list .comment .avatar {
+  display: table-cell;
+  float: none;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+.full_advert .comments_list .comment .avatar img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.full_advert .comments_list .comment .body {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.full_advert .comments_list .comment .author {
+  font-size: 16px;
+  line-height: 1.1em;
+  color: #2c3338;
+}
+.full_advert .comments_list .comment .text {
+  padding: 8px 0px 7px 0px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.full_advert .comments_list .comment .text h3,
+.full_advert .comments_list .comment .text h4,
+.full_advert .comments_list .comment .text h5 {
+  padding-bottom: 15px;
+}
+.full_advert .comments_list .comment .text h3 {
+  font-size: 18px;
+  line-height: 1.2em;
+}
+.full_advert .comments_list .comment .text h4 {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.full_advert .comments_list .comment .text h5 {
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.full_advert .comments_list .comment .bottom_line {
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #666666;
+}
+@media only screen and (max-width: 1270px) {
+  .full_advert .advert_gallery_block {
+    width: 1006px;
+  }
+  .full_advert .advert_gallery_block .thumb {
+    width: 241.5px;
+    height: 241.5px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .full_advert .advert_gallery_block {
+    width: 755px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .full_advert {
+    width: 100% !important;
+  }
+  .full_advert .advert_gallery_block {
+    width: auto;
+    margin: 0px -0.65%;
+  }
+  .full_advert .advert_gallery_block .thumb {
+    width: 48.7%;
+    min-width: 245px;
+    margin: 0px 0.65% 6px 0.65%;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .full_advert .advert_gallery_block {
+    margin: 0px;
+  }
+  .full_advert .advert_gallery_block .thumb {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+}
+/* advert form styles */
+.advert_form {
+  float: left;
+  width: 962px;
+  margin-top: 22px;
+}
+.advert_form .main_fields {
+  float: left;
+  width: 352px;
+}
+.advert_form .text_field {
+  float: right;
+  width: 557px;
+}
+.advert_form .submit {
+  text-align: right;
+}
+.advert_form .input_block {
+  position: relative;
+  height: 44px;
+  margin: 0px 0px 15px 0px;
+}
+.advert_form .inputs {
+  display: block;
+  width: 330px;
+  height: 42px;
+  margin: 0px;
+  font-size: 18px;
+  color: #999999;
+}
+.advert_form .selects {
+  display: block;
+  outline: none;
+  width: 352px;
+  height: 44px;
+  margin: 0px 0px 15px 0px;
+  padding: 8px 5px 8px 7px;
+  font-size: 18px;
+  line-height: 44px;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #999999;
+  border: 1px solid #A5ACB2;
+}
+.advert_form .textareas {
+  width: 535px;
+  height: 267px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #999999;
+}
+@media only screen and (max-width: 1270px) {
+  .advert_form {
+    float: none;
+    width: inherit;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .advert_form .main_fields {
+    float: none;
+  }
+  .advert_form .text_field {
+    float: none;
+    width: auto;
+  }
+  .advert_form .textareas {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .advert_form .main_fields,
+  .advert_form .input_block {
+    position: relative;
+    width: 300px;
+    height: auto;
+  }
+  .advert_form .inputs {
+    width: 278px;
+  }
+  .advert_form .selects {
+    width: 300px;
+  }
+  .advert_form .file_field_block {
+    width: 278px;
+  }
+  .advert_form .file_button {
+    margin: 15px 0px;
+  }
+}
+/* my adverts styles */
+.my_ads_page .adverts_header_block {
+  padding-top: 0px;
+}
+.my_ads_page .adverts_header_block .page_title {
+  margin-top: 19px;
+  margin-bottom: 30px;
+  padding-top: 7px;
+}
+.my_ads_page .user_adverts {
+  margin-top: 0px;
+}
+.my_ads_page .user_adverts .user_advert {
+  margin-bottom: 12px;
+}
+.my_ads_page .user_adverts .user_advert .author {
+  display: none;
+}
+.my_ads_page .user_adverts .user_advert .body {
+  padding-left: 4px;
+}
+.my_ads_page .user_adverts .user_advert .body .title {
+  padding-right: 220px;
+}
+.my_ads_page .user_adverts .user_advert .job_status {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: -12px;
+  height: 23px;
+  padding: 0px 16px;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+.my_ads_page .user_adverts .user_advert .yellow_status {
+  background: #FFCF0D none;
+}
+.my_ads_page .user_adverts .user_advert .orange_status {
+  background: #FE9900 none;
+}
+.my_ads_page .user_adverts .user_advert .green_status {
+  background: #A3D801 none;
+}
+.my_ads_page .user_adverts .offer {
+  margin-bottom: 17px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F1F1F1;
+}
+.my_ads_page .user_adverts .offer .avatar {
+  display: block;
+  float: left;
+  width: 75px;
+  height: 75px;
+}
+.my_ads_page .user_adverts .offer .avatar img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.my_ads_page .user_adverts .offer .body {
+  float: left;
+  width: 874px;
+  padding-left: 13px;
+}
+.my_ads_page .user_adverts .offer .author {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.my_ads_page .user_adverts .offer .author a {
+  color: #2c3338;
+}
+.my_ads_page .user_adverts .offer .author .city {
+  color: #999999;
+}
+.my_ads_page .user_adverts .offer .offer_info {
+  padding-top: 15px;
+}
+.my_ads_page .user_adverts .offer .offer_info .info_block {
+  display: block;
+  float: left;
+  overflow: hidden;
+  padding: 0px;
+}
+.my_ads_page .user_adverts .offer .offer_info .label,
+.my_ads_page .user_adverts .offer .offer_info .value {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+.my_ads_page .user_adverts .offer .offer_info .label {
+  padding-right: 7px;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.my_ads_page .user_adverts .offer .offer_info .value {
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #666666;
+}
+.my_ads_page .user_adverts .offer .offer_info .price {
+  padding-right: 0px;
+}
+.my_ads_page .user_adverts .offer .description {
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #666666;
+}
+.my_ads_page .user_adverts .offer .attachments {
+  padding-top: 13px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+.my_ads_page .user_adverts .offer .attachments a {
+  padding-left: 25px;
+  text-decoration: underline;
+  background: url(../img/attachment_icon.png) no-repeat;
+}
+.my_ads_page .user_adverts .offer .bottom_actions {
+  text-align: right;
+}
+.my_ads_page .user_adverts .offer:last-child {
+  margin-bottom: 0px;
+  border: none;
+}
+.my_ads_page .adverts_right_column {
+  margin-top: 0px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .caption {
+  background-position: 9px -73px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .body {
+  padding-bottom: 36px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .row {
+  display: table;
+  width: 194px;
+  margin-bottom: 11px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .thumb,
+.my_ads_page .adverts_right_column .top_empoyers .title {
+  display: table-cell;
+  height: 50px;
+  text-align: left;
+  vertical-align: middle;
+}
+.my_ads_page .adverts_right_column .top_empoyers .thumb {
+  width: 70px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .title {
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.my_ads_page .adverts_right_column .top_empoyers .title a {
+  color: #2c3338;
+}
+.my_ads_page .adverts_right_column .top_empoyers .more_link {
+  position: absolute;
+  bottom: 15px;
+  right: 16px;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.my_ads_page .adverts_right_column .top_empoyers .more_link a {
+  display: block;
+  padding-left: 11px;
+  background: url(../img/arrow_right_black.png) 0px 3px no-repeat;
+}
+.my_ads_page .adverts_right_column .top_empoyers .caption {
+  background-position: 9px -883px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .thumb {
+  width: 71px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .thumb a,
+.my_ads_page .adverts_right_column .top_empoyers .thumb img {
+  width: inherit;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info {
+  display: table-cell;
+  height: 50px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 1.2em;
+  padding-left: 14px;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info a {
+  color: #2c3338;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info .name {
+  font-size: 1.15em;
+  line-height: 1.2em;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info .name a {
+  color: #2c3338;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info .adverts_counter {
+  display: block;
+  padding-top: 7px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+.my_ads_page .adverts_right_column .top_empoyers .info .adverts_counter .count {
+  color: #3399cc;
+}
+@media only screen and (max-width: 1270px) {
+  .my_ads_page .adverts .offer .body {
+    width: 908px;
+  }
+  .my_ads_page .right_column {
+    float: none;
+    width: 996px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .my_ads_page .right_column .add_advert_link {
+    display: none;
+  }
+  .my_ads_page .right_column .tile {
+    width: 996px;
+  }
+  .my_ads_page .right_column .tile .body {
+    padding: 20px 18px 22px 18px;
+  }
+  .my_ads_page .right_column .top_empoyers .row {
+    float: left;
+    width: 182px;
+    margin: 0px 5px 11px 5px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .my_ads_page .adverts .offer .body {
+    width: 657px;
+  }
+  .my_ads_page .right_column {
+    width: 745px;
+  }
+  .my_ads_page .right_column .tile {
+    width: 745px;
+  }
+  .my_ads_page .right_column .top_empoyers .row {
+    width: 226px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .my_ads_page .user_adverts .user_advert .body {
+    margin-top: 0px;
+    padding-top: 0px;
+    border: none;
+  }
+  .my_ads_page .user_adverts .user_advert .body .title {
+    padding-right: 0px;
+  }
+  .my_ads_page .user_adverts .user_advert .job_status {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 10px;
+  }
+  .my_ads_page .user_adverts .offer .avatar {
+    margin-right: 13px;
+  }
+  .my_ads_page .user_adverts .offer .body {
+    float: none;
+    width: auto;
+    padding-left: 0px;
+  }
+  .my_ads_page .user_adverts .offer .author,
+  .my_ads_page .user_adverts .offer .offer_info {
+    padding-left: 88px;
+  }
+  .my_ads_page .right_column {
+    width: auto;
+  }
+  .my_ads_page .right_column .tile {
+    width: auto;
+  }
+  .my_ads_page .right_column .top_empoyers .row {
+    width: 193px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .my_ads_page .user_adverts .offer .bottom_actions {
+    margin-top: 15px;
+    text-align: left;
+  }
+  .my_ads_page .right_column .top_empoyers .row {
+    width: 100%;
+  }
+}

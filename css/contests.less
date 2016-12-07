@@ -1,0 +1,499 @@
+@import (reference) "base.less";
+@import (reference) "categories.less";
+@import (reference) "user.less";
+
+/* contests styles */
+.contests_page {
+    padding: 0px 0px 30px 0px;
+    margin: 0px auto;
+    .contests_header_block {
+        position: relative;
+        max-width: 1245px;
+        margin: 0px auto;
+        padding-top: 19px;
+        .page_title {
+            padding-top: 7px;
+        }
+        .help_link {
+            display: block;
+            position: absolute;
+            top: 29px;
+            right: 10px;
+            width: 22px;
+            height: 22px;
+            background: url(../img/icons.png) -78px -47px no-repeat;
+        }
+    }
+    .contests_block {
+        max-width: 1245px;
+        margin: 0px auto;
+        .contests {
+            .categories_container > .categories;
+        }
+        .contest {
+            .categories_container > .category;
+        }
+        .contest_body {
+            min-height: 245px;
+            padding: 8px 24px 15px 24px;
+            background: #F1F1F1 none;
+            .title {
+                padding-bottom: 3px;
+                .font(16px, 1.2em);
+                color: @dark_color;
+                a {
+                    color: @dark_color;
+                }
+            }
+            .info {
+                .font(12px, 1.2em);
+                color: @light_grey_color;
+            }
+            .description {
+                padding-bottom: 11px;
+                .font(14px, 1.2em);
+                color: @grey_color;
+                a {
+                    text-decoration: underline;
+                    color: @grey_color;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+            .photos_counter {
+                display: inline-block;
+                margin-bottom: 14px;
+                .font(14px, 1.2em);
+                text-decoration: none;
+                color: @grey_color;
+            }
+            .photos_counter:hover {
+                text-decoration: none;
+                color: @dark_color;
+            }
+            .request_link {
+                display: inline-block;
+                min-width: 232px;
+                height: 37px;
+                padding-right: 20px;
+                padding-top: 7px;
+                .font(24px, 1.2em);
+                text-decoration: none;
+                text-align: center;
+                color: @white_color;
+                background: url(../img/contest_participate_categories.png) 100% 0px no-repeat;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .contests_page {
+        width: 996px;
+        .contests_block .contest {
+            width: 487px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .contests_page {
+        width: 745px;
+        .contests_block .contest {
+            width: 361px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contests_page {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        .help_cloud {
+            margin: 0px -10px;
+        }
+        .contests_block .contests {
+            margin: 0px;
+        }
+        .contests_block .contest {
+            width: 100%;
+            margin: 22px 0px 0px 0px;
+        }
+        .contests_block .contest_body {
+            min-height: auto;
+        }
+    }
+}
+
+/* contest styles */
+.contest_page {
+    .contests_header_block {
+        position: relative;
+        max-width: 1245px;
+        margin: 0px auto;
+        padding-top: 19px;
+        .page_title {
+            padding-top: 7px;
+        }
+    }
+    .contest_block {
+        width: 1245px;
+        margin: 0px auto;
+        padding: 19px 0px 30px 0px;
+    }
+    .contest {
+        position: relative;
+        .contest_thumb {
+            .profile_page > .user_main_block > .avatar;
+        }
+        .contest_data {
+            .profile_page > .user_main_block > .user_data;
+            width: 979px;
+        }
+        .contest_info {
+            .profile_page > .user_main_block > .user_info_block;
+            display: block;
+            float: left;
+            width: 546px;
+            margin-top: 0px;
+            .font(14px, 1.2em);
+            .info {
+                margin-top: -2px;
+                padding-bottom: 20px;
+                .font(0.9em, 1.5em);
+                color: @light_grey_color;
+            }
+            .description {
+                min-height: 160px;
+                padding-bottom: 15px;
+                color: @grey_color;
+                a {
+                    text-decoration: underline;
+                    color: @grey_color;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .contest_actions {
+            .profile_page > .user_main_block > .actions_block;
+            width: 167px;
+            .actions {
+                width: 167px;
+            }
+            .like {
+                margin-right: -3px;
+            }
+        }
+    }
+    .contest_photos_list {
+        .profile_page > .user_content_block > .profile_latest_photos;
+        margin-top: 15px;
+        padding-top: 6px;
+        border-top: 4px solid #2E3338;
+        .info {
+            display: none;
+        }
+        .view_more {
+            margin-top: 18px;
+        }
+        .winner {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+            height: 35px;
+            padding-top: 9px;
+            .font(18px, 1.2em);
+            text-align: center;
+            color: @orange_color;
+            background: url(../img/dark_transparent_bg.png);
+            img {
+                margin-bottom: -6px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .contest_page {
+        width: 100%;
+        .contests_header_block,
+        .contest_block {
+            width: 996px;
+        }
+        .contest .contest_data {
+            width: 730px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .contest_page {
+        width: 100%;
+        .contests_header_block,
+        .contest_block {
+            width: 745px;
+        }
+        .contest .contest_thumb {
+            width: 256px;
+            height: 256px;
+            margin-bottom: 20px;
+        }
+        .contest .contest_info {
+            clear: both;
+            width: 100%;
+        }
+        .contest .contest_info .description {
+            min-height: auto;
+        }
+        .contest .contest_actions {
+            clear: both;
+            float: none;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contest_page {
+        width: auto;
+        padding: 0px 10px;
+        .contests_header_block,
+        .contest_block {
+            width: 100%;
+        }
+        .contest_photos_list {
+            .photo {
+                width: 48.7%!important;
+                min-width: 245px !important;
+                margin: 0px 0.65% 6px 0.65% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    .contest_page {
+        .contest .contest_actions {
+            position: relative;
+            top: auto;
+            right: auto;
+            padding-top: 20px;
+        }
+        .contest_photos_list {
+            .photos {
+                margin: 0px !important;
+            }
+            .photo {
+                width: 100% !important;
+                margin: 0px 0px 6px 0px !important;
+            }
+        }
+    }
+}
+
+/* contest add photos styles */
+.contest_add_photos {
+    .profile_add_photos;
+    margin-top: 15px;
+    padding-top: 6px;
+    border-top: 4px solid #2E3338;
+    .file_description {
+        margin-top: 25px;
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .contest_add_photos {
+        width: 100%;
+        padding-left: 0px;
+        .upload_image_list {
+            width: 986px;
+        }
+        .actions {
+            padding-top: 0px;
+        }
+        .thumb {
+            padding-right: 19px;
+        }
+        .file_name {
+            width: 97%;
+            height: 45px;
+            padding-top: 0px;
+            padding-bottom: 12px;
+        }
+        .file_description {
+            margin-top: 0px;
+        }
+        .actions .remove_file {
+            margin-top: 65px;
+        }
+        .drop_area {
+            width: 944px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .contest_add_photos {
+        padding-left: 0px;
+        .upload_image_list {
+            width: 745px;
+        }
+        .file_fields {
+            width: 584px;
+        }
+        .file_description {
+            width: 584px;
+            .inputs {
+                width: 562px;
+            }
+        }
+        .add_button {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .drop_area {
+            width: 703px;
+        }
+        .form_buttons {
+            float: left;
+            margin-left: 0px;
+            .cancel {
+                float: right;
+                margin-left: 24px;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contest_add_photos {
+        padding-left: 0px;
+        .upload_image_list {
+            width: 561px;
+        }
+        .file_fields {
+            width: 400px;
+        }
+        .file_description {
+            width: 400px;
+            .inputs {
+                width: 378px;
+            }
+        }
+        .drop_area {
+            width: 519px;
+            .text_block {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .contest_add_photos {
+        padding-left: 0px;
+        .upload_image_list {
+            display: block;
+            width: 320px;
+            tbody, tr {
+                clear: both;
+                display: block;
+                position: relative;
+            }
+            td {
+                padding-bottom: 10px;
+            }
+        }
+        .thumb {
+            display: block;
+        }
+        .file_info {
+            display: block;
+            float: left;
+            width: 315px;
+            padding-bottom: 37px !important;
+        }
+        .actions {
+            display: block;
+            float: left;
+            position: absolute;
+            top: 0px;
+            left: 119px;
+            width: 27px;
+            padding-top: 36px;
+            .remove_file {
+                margin-top: 0px;
+            }
+        }
+        .file_name {
+            width: 300px;
+            height: auto;
+        }
+        .file_fields {
+            width: 300px;
+        }
+        .file_caption {
+            float: none;
+            width: 300px;
+            margin-bottom: 12px;
+            .inputs {
+                width: 278px;
+            }
+        }
+        .file_category {
+            float: none;
+            width: 300px;
+            .file_genres {
+                width: 300px;
+            }
+        }
+        .file_description {
+            width: 300px;
+            .inputs {
+                width: 278px;
+            }
+        }
+        .drop_area {
+            width: 300px;
+            .text_block {
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contest_add_photos {
+        .form_buttons {
+            .buttons {
+                width: auto;
+                padding: 0px 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contest_add_photos {
+        .add_button {
+            width: 280px;
+            padding-right: 20px;
+        }
+        .drop_area {
+            width: 258px;
+            .text_block {
+                margin-top: 0px;
+            }
+        }
+    }
+}

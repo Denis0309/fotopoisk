@@ -1,0 +1,56 @@
+@import (reference) "base.less";
+
+.new_users {
+    .user {
+        .user_info {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            background: url(../img/dark_transparent_bg.png) 0px 0px repeat;
+            .info {
+                display: table;
+                width: 100%;
+                min-height: 49px;
+            }
+            .row {
+                display: table-row;
+            }
+            .name {
+                display: table-cell;
+                padding-top: 3px;
+                padding-bottom: 0px;
+                padding-left: 11px;
+                .font(14px, 1.2em);
+                text-align: left;
+                vertical-align: middle;
+                a {
+                    text-decoration: none;
+                    color: @white_color;
+                }
+            }
+            .counter {
+                display: table-cell;
+                padding: 3px 11px 0px 11px;
+                .font(18px, 1.2em);
+                text-align: right;
+                vertical-align: middle;
+                a {
+                    text-decoration: none;
+                    color: @white_color;
+                }
+            }
+            .additional_info {
+                display: table-cell;
+                padding: 0px 0px 7px 11px;
+                .font(12px, 1.2em);
+                color: @author_color;
+                a {
+                    text-decoration: none;
+                    color: @author_color;
+                }
+            }
+        }
+    }
+}

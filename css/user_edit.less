@@ -1,0 +1,665 @@
+@import (reference) "base.less";
+@import (reference) "users.less";
+@import (reference) "user.less";
+
+.profile_edit_page {
+    .profile_edit {
+        width: 1017px;
+        margin: 0px auto;
+        padding-top: 19px;
+        padding-bottom: 30px;
+    }
+	.profile_avatar {
+        .profile_page > .user_main_block > .avatar;
+        width: 224px;
+        height: 224px;
+		.actions {
+            width: 224px;
+			a {
+				width: 25px !important;
+				margin: 0px 17px !important;
+				background-image: url(../img/edit_avatar_icons.png) !important;
+			}
+			.edit {
+				background-position: 0px 0px;
+			}
+			.upload {
+				background-position: -25px 0px;
+			}
+			.edit:hover {
+				background-position: 0px -27px;
+			}
+			.upload:hover {
+				background-position: -25px -27px;
+			}
+		}
+	}
+	.user_data {
+		float: left !important;
+		width: 751px !important;
+		.caption {
+			padding-bottom: 15px;
+			.font(20px, 1.2em);
+			color: @dark_color;
+		}
+		.row {
+			padding-bottom: 18px;
+		}
+		.labels {
+			display: inline-block;
+			.font(18px, 1.2em);
+			color: @light_grey_color;
+		}
+		.fields {
+			display: inline-block;
+			position: relative;
+			min-height: 44px;
+		}
+		.main_info_fiels {
+			display: table;
+			width: 751px;
+			margin-bottom: 20px;
+			.left_fields {
+				display: table-cell;
+				width: 348px;
+				padding-right: 50px;
+				.labels {
+					width: 103px;
+					padding-left: 9px;
+				}
+			}
+			.right_fields {
+				display: table-cell;
+				width: 353px;
+				.labels {
+					width: 117px;
+				}
+			}
+			.fields {
+				width: 230px;
+				.inputs {
+					width: 208px;
+				}
+				select {
+					width: 230px;
+				}
+			}
+			.date_fields {
+				.labels {
+					width: 150px;
+				}
+				.fields {
+					width: 197px;
+					.inputs {
+						width: 125px;
+					}
+					.ui-datepicker-trigger {
+						position: absolute;
+						top: 0px;
+						right: 0px;
+					}
+				}
+			}
+		}
+		.aditional_info_fields {
+			width: 751px;
+			margin-bottom: 20px;
+			.labels {
+				width: 288px;
+				padding-left: 9px;
+			}
+			.fields {
+				width: 449px;
+				.inputs {
+					width: 427px;
+				}
+				select {
+					width: 449px;
+				}
+			}
+		}
+		.about_self,
+		.serveces_prices {
+			width: 729px;
+			height: 84px;
+			margin-bottom: 20px;
+			.font(19px, 1.2em);
+		}
+		.contact_info_fiels,
+		.account_info_fields {
+			display: table;
+			width: 751px;
+			margin-bottom: 20px;
+			.left_fields {
+				display: table-cell;
+				width: 347px;
+				padding-right: 50px;
+				.labels {
+					width: 100px;
+					padding-left: 9px;
+				}
+			}
+			.right_fields {
+				display: table-cell;
+				width: 350px;
+				.labels {
+					width: 117px;
+				}
+			}
+			.fields {
+				width: 230px;
+				.inputs {
+					width: 208px;
+				}
+			}
+		}
+		.inputs {
+			display: block;
+			width: 328px;
+			height: 42px;
+			margin: 0px;
+			font-size: 18px;
+			color: @light_grey_color;
+		}
+		.submit {
+			text-align: right;
+			margin-top: -15px;
+		}
+		.selects {
+			display: block;
+			outline: none;
+			width: 350px;
+			height: 44px;
+			margin: 0px 0px 0px 0px;
+			padding: 8px 5px 8px 7px;
+			.font(18px, 44px);
+			font-family: Tahoma, Arial, sans-serif;
+			color: @light_grey_color;
+			border: 1px solid #A5ACB2;
+		}
+		.select2-container {
+			width: 449px;
+		}
+	}
+	.model_select {
+		width: 449px;
+	}
+	.ui-spinner {
+		width: 118px;
+	}
+	.spinner {
+		width: 68px !important;
+	}
+	.model_parameners {
+		display: table;
+		width: 751px;
+		margin-bottom: 18px;
+		.left_fields,
+		.right_fileds {
+			display: table-cell;
+            vertical-align: top;
+			.labels,
+			.fields {
+				display: block;
+				float: left;
+                margin-bottom: 18px;
+			}
+			.labels {
+				padding-top: 12px;
+			}
+            .inputs {
+                width: 79px !important;
+            }
+		}
+        .left_fields {
+            width: 498px;
+            .labels {
+                width: 291px;
+                padding-left: 9px;
+            }
+            .fields {
+                width: 197px;
+            }
+        }
+        .right_fileds {
+            .labels {
+                width: 134px;
+                padding-left: 0px;
+            }
+            .fields {
+                width: 119px;
+            }
+        }
+	}
+}
+
+.notice_popup {
+	position: relative;
+	margin-bottom: 28px;
+	padding: 13px 12px;
+	background: #7CBEDE none;
+	.close_button {
+		position: absolute;
+		top: 8px;
+		right: 9px;
+		width: 16px;
+		height: 16px;
+		background: url(../img/close_notice_icon.png) 0px 0px no-repeat;
+	}
+	.notice_text {
+		display: table-cell;
+		width: auto;
+		height: 54px;
+		padding-left: 84px;
+        padding-right: 20px;
+		.font(20px, 1.2em);
+		color: @white_color;
+		text-align: left;
+		vertical-align: middle;
+		background: url(../img/notice_success_icon.png) 0px 0px no-repeat;
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: @white_color;
+        }
+	}
+}
+
+.notice_errors {
+	background: #FE9900 none;
+	.notice_text {
+		background: url(../img/notice_errors_icon.png) 0px 0px no-repeat;
+	}
+}
+
+.notice_photos {
+	background: #FE9900 none;
+	.notice_text {
+		background: url(../img/notice_photos_icon.png) 0px 0px no-repeat;
+	}
+}
+
+@media only screen and (max-width: 1270px) {
+    .profile_edit_page {
+        width: 100%;
+    }
+    .profile_edit {
+        width: 996px !important;
+        margin: 0px auto;
+        padding-top: 19px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .profile_edit_page {
+        .profile_edit {
+            width: 745px !important;
+        }
+        .profile_avatar {
+            float: none;
+            margin-bottom: 15px;
+        }
+        .user_data {
+            width: 745px !important;
+            .main_info_fiels .left_fields {
+                padding-right: 41px;
+            }
+            .contact_info_fiels .left_fields,
+            .account_info_fields .left_fields {
+                padding-right: 39px;
+            }
+            .select2-container {
+                width: 442px;
+            }
+            .aditional_info_fields .fields .inputs {
+                width: 420px;
+            }
+            .about_self,
+            .serveces_prices {
+                width: 722px;
+            }
+        }
+        .aditional_info_fields {
+            .model_select {
+                width: 442px !important;
+            }
+        }
+        .model_parameners {
+            display: block;
+            width: 498px;
+            .left_fields,
+            .right_fileds {
+                display: block;
+                width: auto;
+                .labels,
+                .fields {
+                    display: block;
+                }
+            }
+            .right_fileds {
+                .labels {
+                    width: 291px;
+                    padding-left: 9px;
+                }
+                .fields {
+                    width: 197px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .profile_edit_page {
+        .profile_edit {
+            width: 520px !important;
+        }
+        .user_data {
+            width: 520px !important;
+            .main_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        width: 395px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                    .inputs {
+                        width: 372px;
+                    }
+                    .selects {
+                        width: 395px;
+                    }
+                }
+                .right_fields {
+                    .selects {
+                        width: 395px;
+                    }
+                }
+                .date_fields {
+                    .fields {
+                        width: 362px;
+                        .inputs {
+                            width: 297px;
+                        }
+                    }
+                }
+            }
+            .aditional_info_fields {
+                width: 520px;
+                .labels {
+                    padding-left: 0px;
+                }
+                .fields {
+                    display: block;
+                    width: auto;
+                    margin-top: 10px;
+                }
+                .inputs {
+                    width: 495px !important;
+                }
+                .select,
+                .model_select {
+                    width: 517px !important;
+                }
+            }
+            .model_parameners {
+                .fields {
+                    margin-top: 0px;
+                }
+                .inputs {
+                    width: 79px !important;
+                }
+            }
+            .textareas {
+                width: 495px;
+            }
+            .contact_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        width: 395px;
+                    }
+                    .inputs {
+                        width: 373px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+            .buttons {
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .profile_edit_page {
+        .profile_edit {
+            width: 430px !important;
+        }
+        .user_data {
+            width: 430px !important;
+            .main_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        display: block;
+                        margin-top: 10px;
+                        width: 430px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                    .inputs {
+                        width: 408px;
+                    }
+                    .selects {
+                        width: 430px;
+                    }
+                }
+                .right_fields {
+                    .selects {
+                        width: 430px;
+                    }
+                }
+                .date_fields {
+                    .fields {
+                        width: 430px;
+                        .inputs {
+                            width: 366px;
+                        }
+                    }
+                }
+            }
+            .aditional_info_fields {
+                width: 430px;
+                .labels {
+                    padding-left: 0px;
+                }
+                .fields {
+                    display: block;
+                }
+                .inputs {
+                    width: 408px !important;
+                }
+                .select,
+                .model_select {
+                    width: 430px !important;
+                }
+            }
+            .model_parameners {
+                display: block;
+                width: 430px;
+                .inputs {
+                    width: 79px !important;
+                }
+            }
+            .textareas {
+                width: 408px;
+            }
+            .contact_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        display: block;
+                        width: 430px;
+                        margin-top: 10px;
+                    }
+                    .inputs {
+                        width: 408px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+            .buttons {
+                margin-right: 0px;
+            }
+        }
+    }
+    .notice_popup .notice_text {
+        .font(18px, 1.2em);
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    .profile_edit_page {
+        .profile_edit {
+            width: 300px !important;
+        }
+        .user_data {
+            width: 300px !important;
+            .main_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        display: block;
+                        margin-top: 10px;
+                        width: 300px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                    .inputs {
+                        width: 277px;
+                    }
+                    .selects {
+                        width: 300px;
+                    }
+                }
+                .right_fields {
+                    .selects {
+                        width: 300px;
+                    }
+                }
+                .date_fields {
+                    .fields {
+                        width: 300px;
+                        .inputs {
+                            width: 236px;
+                        }
+                    }
+                }
+            }
+            .aditional_info_fields {
+                width: 300px;
+                .inputs {
+                    width: 277px !important;
+                }
+                .select,
+                .model_select {
+                    width: 300px !important;
+                }
+            }
+            .model_parameners {
+                width: auto;
+                .inputs {
+                    width: 79px !important;
+                }
+            }
+            .model_parameners .left_fields .labels,
+            .model_parameners .right_fileds .labels {
+                width: 181px !important;
+            }
+            .textareas {
+                width: 277px;
+            }
+            .contact_info_fiels {
+                width: auto;
+                display: block;
+                .left_fields,
+                .right_fields {
+                    display: block;
+                    width: auto;
+                    .fields {
+                        display: block;
+                        width: 300px;
+                        margin-top: 10px;
+                    }
+                    .inputs {
+                        width: 277px;
+                    }
+                }
+                .left_fields {
+                    padding-right: 0px;
+                    .labels {
+                        min-width: 117px;
+                        padding-left: 0px;
+                    }
+                }
+            }
+            .buttons {
+                margin-right: 3px;
+            }
+        }
+    }
+    .notice_popup .notice_text {
+        .font(16px, 1.2em);
+    }
+}

@@ -1,0 +1,159 @@
+@import (reference) "base.less";
+
+/* payment styles */
+.payment_background {
+    background: url(../img/payment_bg.jpg) 50% 50% repeat-y;
+    background-size: cover;
+}
+
+.payment_page {
+	width: 1024px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    .payment_block {
+        text-align: center;
+        color: @white_color;
+        text-shadow: 2px 2px 7px #000000;
+    }
+    .caption {
+        padding-top: 71px;
+        padding-bottom: 53px;
+        .font(63px, 1.2em);
+    }
+    .subcaption {
+        padding-top: 120px;
+        padding-bottom: 53px;
+        .font(28px, 1.2em);
+    }
+    .table {
+        display: table;
+        width: 100%;
+        margin: 0px auto 0px auto;
+    }
+    .cell {
+        display: table-cell;
+        padding: 0px 15px;
+        .font(22px, 1.2em);
+        text-align: left;
+        vertical-align: top;
+        span {
+            display: block;
+            float: left;
+            width: 53px;
+            margin-top: -21px;
+            padding-right: 22px;
+            .font(96px, 1.2em);
+        }
+        p {
+            padding-left: 75px;
+            padding-bottom: 0px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: @white_color;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .payment_page {
+        width: 996px;
+        .caption {
+            .font(52px, 1.2em);
+        }
+        .subcaption {
+            padding-top: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .payment_page {
+        width: 745px;
+        .caption {
+            .font(40px, 1.2em);
+        }
+        .subcaption {
+            padding-top: 40px;
+            .font(24px, 1.2em);
+        }
+        .table {
+            display: block;
+            table-layout: auto;
+        }
+        .cell {
+            clear: left;
+            display: table;
+            padding-bottom: 15px;
+            span {
+                display: table-cell;
+                width: 40px;
+                margin: 0px;
+                padding-right: 15px;
+                .font(72px, 1.2em);
+                vertical-align: middle;
+            }
+            p {
+                display: table-cell;
+                padding-left: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .payment_page {
+        width: auto;
+        padding: 0px 10px 50px 0px;
+    }
+}
+
+@media only screen and (max-width: 379px) {
+    .payment_page {
+        .caption {
+            .font(32px, 1.2em);
+        }
+        .subcaption {
+            padding-top: 0px;
+            padding-bottom: 40px;
+            .font(20px, 1.2em);
+        }
+    }
+}
+
+.payment_thanks_page {
+    .payment_page;
+    .subcaption {
+        padding-top: 30px;
+    }
+    p {
+        .font(22px, 1.2em);
+        color: @white_color
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .payment_thanks_page {
+        width: 996px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .payment_thanks_page {
+        width: 745px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .payment_thanks_page {
+        width: auto;
+        padding: 0px 10px 50px 10px;
+        .caption {
+            .font(48px, 1.2em);
+        }
+        .subcaption {
+            .font(24px, 1.2em);
+        }
+    }
+}

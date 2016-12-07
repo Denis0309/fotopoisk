@@ -1,0 +1,202 @@
+@import (reference) "base.less";
+@import (reference) "inner.less";
+
+/* top cities styles */
+.top_cities_page {
+    padding: 0px 0px 30px 0px;
+    margin: 0px auto;
+    .cities_header_block {
+        position: relative;
+        max-width: 1245px;
+        margin: 0px auto;
+        padding-top: 17px;
+        .page_title {
+            padding-top: 7px;
+        }
+        .add_advert_link {
+            display: none;
+        }
+    }
+    .top_cities_block {
+        max-width: 1245px;
+        margin: 0px auto 20px auto;
+    }
+    .top_cities {
+        float: left;
+        width: 962px;
+        margin-top: 22px;
+    }
+    .cities_category {
+        position: relative;
+        min-height: 151px;
+        padding: 6px;
+        margin-bottom: 9px;
+        .thumb {
+            float: left;
+            width: 150px;
+            height: 150px;
+            img {
+                display: block;
+                width: inherit;
+                height: inherit;
+            }
+        }
+        .body_block {
+            float: left;
+            max-width: 780px;
+            padding: 10px 0px 0px 16px;
+        }
+        .category_name {
+            padding-bottom: 12px;
+            .font(16px, 1.2em);
+        }
+        .cities_list {
+            .font(14px, 1.2em);
+            color: @grey_color;
+            a {
+                color: inherit;
+            }
+        }
+    }
+    .dark_row {
+        background: #F7F7F7 none;
+    }
+    .cities_right_column {
+        float: right;
+        width: 245px;
+        margin-top: 22px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .top_cities_page {
+        .top_cities_block {
+            width: 996px;
+        }
+        .top_cities {
+            float: none;
+            width: inherit;
+        }
+        .cities_category {
+            width: 972px;
+            .body_block {
+                max-width: 800px;
+            }
+        }
+        .right_column {
+            float: none;
+            width: 996px;
+            padding-top: 30px;
+            padding-bottom: 0px;
+            .tile {
+                width: 996px;
+                .body {
+                    padding: 20px 18px 22px 18px;
+                }
+            }
+            .nearest_events,
+            .last_news {
+                .events_list
+                .news_list {
+                    display: table;
+                    table-layout: fixed;
+                    width: 100%;
+                }
+                .title {
+                    padding-right: 10px;
+                }
+                .row {
+                    display: table-cell;
+                    width: auto;
+                    min-width: 194px;
+                }
+                .clear_both {
+                    display: none;
+                }
+            }
+            .image_block {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .top_cities_page {
+        .cities_header_block {
+            padding-right: 10px;
+        }
+        .top_cities_block {
+            width: 745px;
+        }
+        .top_cities {
+            width: inherit;
+            margin-top: 13px;
+        }
+        .cities_category {
+            width: 721px;
+            .body_block {
+                max-width: 550px;
+            }
+        }
+        .right_column {
+            width: 754px;
+            .tile {
+                width: 745px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top_cities_page {
+        .cities_header_block {
+            padding-left: 10px;
+        }
+        .top_cities_block {
+            width: auto;
+            min-width: 276px;
+            padding: 0px 10px;
+        }
+        .top_cities {
+            width: inherit;
+        }
+        .cities_category {
+            display: block;
+            width: auto;
+            .thumb,
+            .thumb img {
+                width: 90px;
+                height: 90px;
+            }
+            .body_block {
+                float: none;
+                max-width: none;
+                padding-left: 106px;
+            }
+        }
+        .right_column {
+            width: 100%;
+            .tile {
+                width: auto;
+            }
+            .nearest_events,
+            .last_news {
+                .events_list,
+                .news_list {
+                    display: block;
+                    width: auto;
+                }
+                .row {
+                    display: table;
+                    width: auto;
+                    min-width: 194px;
+                    min-width: auto;
+                }
+                .clear_both {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,682 @@
+.paid_profile .paid_header {
+  position: relative;
+  min-width: 1245px;
+  min-height: 116px;
+  padding-top: 370px;
+  padding-bottom: 30px;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.paid_profile .paid_icon_block {
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 1245px;
+  margin-left: -622.5px;
+  text-align: right;
+}
+.paid_profile .paid_icon {
+  display: inline-block;
+  padding: 9px 8px 7px 8px;
+  background: url(../img/paid_transparent_bg.png) 0px 0px repeat;
+}
+.paid_profile .paid_icon .icon {
+  display: block;
+  width: 27px;
+  height: 25px;
+  background: url(../img/paid_profile_icon.png) 0px 0px no-repeat;
+}
+.paid_profile a.paid_icon:hover .icon {
+  background-position: 0px -26px;
+}
+.paid_profile .paid_top_row {
+  width: 100%;
+  min-height: 106px;
+  padding-bottom: 9px;
+  background: url(../img/paid_transparent_bg.png) 0px 0px repeat;
+}
+.paid_profile .paid_top_row .paid_central {
+  position: relative;
+  width: 1245px;
+  margin: 0px auto;
+}
+.paid_profile .paid_avatar {
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  width: 245px;
+  height: 245px;
+  border: 7px solid #FFFFFF;
+  background: #FFFFFF none;
+}
+.paid_profile .paid_avatar .image {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+}
+.paid_profile .paid_avatar .image img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.paid_profile .paid_avatar .online_status {
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+}
+.paid_profile .paid_avatar .online_status:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  background: url(../img/icons.png) -29px -31px no-repeat;
+}
+.paid_profile .paid_avatar .top_status {
+  position: absolute;
+  display: block;
+  top: 6px;
+  right: 7px;
+  width: 28px;
+  height: 26px;
+}
+.paid_profile .paid_avatar .top_status:before {
+  content: "";
+  display: block;
+  width: inherit;
+  height: inherit;
+  background: url(../img/icons.png) 0px -32px no-repeat;
+}
+.paid_profile .paid_avatar .actions {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  width: 245px;
+  height: 36px;
+  padding-top: 8px;
+  text-align: center;
+  background: url(../img/dark_transparent_bg.png) 0px 0px repeat;
+}
+.paid_profile .paid_avatar .actions a {
+  display: inline-block;
+  height: 27px;
+  margin: 0px 14px;
+  background-image: url(../img/user_avatar_icons.png);
+  background-repeat: no-repeat;
+}
+.paid_profile .paid_avatar .actions .top_vote {
+  width: 27px;
+  background-position: 0px 0px;
+}
+.paid_profile .paid_avatar .actions .to_friends {
+  width: 35px;
+  background-position: -27px -1px;
+}
+.paid_profile .paid_avatar .actions .message {
+  width: 33px;
+  background-position: -62px 0px;
+}
+.paid_profile .paid_avatar .actions .top_vote:hover {
+  background-position: 0px -27px;
+}
+.paid_profile .paid_avatar .actions .to_friends:hover {
+  background-position: -27px -28px;
+}
+.paid_profile .paid_avatar .actions .message:hover {
+  background-position: -62px -27px;
+}
+.paid_profile .paid_avatar .actions .top_vote.active {
+  background-position: -131px 0px;
+}
+.paid_profile .paid_avatar .actions .to_friends.active {
+  background-position: -95px 0px;
+}
+.paid_profile .paid_avatar .actions .top_vote.active:hover {
+  background-position: -131px -27px;
+}
+.paid_profile .paid_avatar .actions .to_friends.active:hover {
+  background-position: -95px -28px;
+}
+.paid_profile .paid_user_data {
+  float: left;
+  width: 425px;
+  padding: 7px 0px 7px 283px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.paid_profile .paid_user_data .name {
+  padding-bottom: 10px;
+  font-size: 29px;
+  line-height: 1.2em;
+}
+.paid_profile .paid_user_data .user_label {
+  font-size: 17px;
+  line-height: 1.2em;
+}
+.paid_profile .paid_actions {
+  float: right;
+  text-align: right;
+  width: 500px;
+  min-height: 107px;
+}
+.paid_profile .paid_actions .actions {
+  width: 498px;
+  height: 41px;
+  text-align: right;
+  border: 1px solid #F1F1F1;
+  background: #F1F1F1 none;
+}
+.paid_profile .paid_actions .like,
+.paid_profile .paid_actions .not_like {
+  display: block;
+  float: right;
+  height: 29px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-decoration: none;
+  color: #d6d6d6;
+  background-color: #2E3338;
+  background-image: url(../img/likes_icons.png);
+  background-repeat: no-repeat;
+}
+.paid_profile .paid_actions .like {
+  width: 105px;
+  margin: 0px;
+  padding: 12px 15px 0px 0px;
+  background-position: 12px 8px;
+}
+.paid_profile .paid_actions .not_like {
+  width: 46px;
+  margin-left: 1px;
+  padding: 12px 0px 0px 0px;
+  background-position: 12px -33px;
+}
+.paid_profile .paid_actions .like:hover {
+  color: #ffffff;
+  background-position: 12px -74px;
+}
+.paid_profile .paid_actions .not_like:hover {
+  background-position: 12px -115px;
+}
+.paid_profile .paid_actions .like.active {
+  color: #3399cc;
+  background-position: 12px -156px;
+}
+.paid_profile .paid_actions .not_like.active {
+  background-position: 12px -197px;
+}
+.paid_profile .paid_actions .counters_block {
+  float: left;
+  width: 330px;
+  height: 41px;
+}
+.paid_profile .paid_actions .counters_block .row {
+  display: table;
+  table-layout: fixed;
+  max-width: 300px;
+  min-width: 295px;
+  margin: 0px auto;
+}
+.paid_profile .paid_actions .counters {
+  display: table-cell;
+  width: 69px;
+  height: 41px;
+  padding: 0px 2px;
+  font-size: 25px;
+  line-height: 1.2em;
+  color: #999999;
+  text-align: center;
+}
+.paid_profile .paid_actions .counters span {
+  display: block;
+  margin-top: -14px;
+  font-size: 0.5em;
+}
+.paid_profile .paid_actions .actions {
+  margin-top: 9px;
+  padding: 1px;
+  border: none;
+  background: none;
+}
+.paid_profile .paid_actions .counters {
+  color: #ffffff;
+}
+.paid_profile .paid_actions .like,
+.paid_profile .paid_actions .not_like {
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+  background: url(../img/likes_icons.png) 0px 0px no-repeat;
+}
+.paid_profile .paid_actions .like:hover,
+.paid_profile .paid_actions .not_like:hover,
+.paid_profile .paid_actions .active {
+  color: #3399cc;
+  border-color: #3399cc;
+}
+.paid_profile .paid_actions .like {
+  width: 104px;
+  padding: 11px 14px 0px 0px;
+  background-position: 12px -74px;
+}
+.paid_profile .paid_actions .like:hover {
+  background-position: 12px -156px;
+}
+.paid_profile .paid_actions .not_like {
+  width: 44px;
+  padding: 11px 0px 0px 0px;
+  background-position: 12px -115px;
+}
+.paid_profile .paid_actions .not_like:hover {
+  background-position: 12px -197px;
+}
+.paid_profile .paid_actions .social_contacts {
+  position: relative;
+  right: 0px;
+  width: 500px;
+  height: 42px;
+  padding-top: 14px;
+  text-align: right;
+  padding-top: 7px;
+}
+.paid_profile .paid_actions .social_contacts a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-left: 2px;
+  background-image: url(../img/social_contacts_icons.png);
+  background-repeat: no-repeat;
+}
+.paid_profile .paid_actions .social_contacts .flickr {
+  background-position: -294px 0px;
+}
+.paid_profile .paid_actions .social_contacts .twitter {
+  background-position: 0px 0px;
+}
+.paid_profile .paid_actions .social_contacts .google_plus {
+  background-position: -42px 0px;
+}
+.paid_profile .paid_actions .social_contacts .facebook {
+  background-position: -84px 0px;
+}
+.paid_profile .paid_actions .social_contacts .instagram {
+  background-position: -126px 0px;
+}
+.paid_profile .paid_actions .social_contacts .live_journal {
+  background-position: -168px 0px;
+}
+.paid_profile .paid_actions .social_contacts .vkontaktik {
+  background-position: -210px 0px;
+}
+.paid_profile .paid_actions .social_contacts .skype {
+  background-position: -252px 0px;
+}
+.paid_profile .paid_actions .social_contacts .flickr:hover {
+  background-position: -294px -42px;
+}
+.paid_profile .paid_actions .social_contacts .twitter:hover {
+  background-position: 0px -42px;
+}
+.paid_profile .paid_actions .social_contacts .google_plus:hover {
+  background-position: -42px -42px;
+}
+.paid_profile .paid_actions .social_contacts .facebook:hover {
+  background-position: -84px -42px;
+}
+.paid_profile .paid_actions .social_contacts .instagram:hover {
+  background-position: -126px -42px;
+}
+.paid_profile .paid_actions .social_contacts .live_journal:hover {
+  background-position: -168px -42px;
+}
+.paid_profile .paid_actions .social_contacts .vkontaktik:hover {
+  background-position: -210px -42px;
+}
+.paid_profile .paid_actions .social_contacts .skype:hover {
+  background-position: -252px -42px;
+}
+.paid_profile .paid_actions .social_contacts a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+  background-image: url(../img/social_icons_paid.png);
+}
+.paid_profile .paid_actions .social_contacts a:hover {
+  border-color: #3399cc;
+}
+.paid_profile .paid_actions .social_contacts .flickr {
+  background-position: -294px -1px;
+}
+.paid_profile .paid_actions .social_contacts .twitter {
+  background-position: 0px 0px;
+}
+.paid_profile .paid_actions .social_contacts .google_plus {
+  background-position: -42px -1px;
+}
+.paid_profile .paid_actions .social_contacts .facebook {
+  background-position: -84px -1px;
+}
+.paid_profile .paid_actions .social_contacts .instagram {
+  background-position: -126px -1px;
+}
+.paid_profile .paid_actions .social_contacts .live_journal {
+  background-position: -169px -1px;
+}
+.paid_profile .paid_actions .social_contacts .vkontaktik {
+  background-position: -210px -2px;
+}
+.paid_profile .paid_actions .social_contacts .skype {
+  background-position: -253px -2px;
+}
+.paid_profile .paid_actions .social_contacts .flickr:hover {
+  background-position: -294px -43px;
+}
+.paid_profile .paid_actions .social_contacts .twitter:hover {
+  background-position: 0px -42px;
+}
+.paid_profile .paid_actions .social_contacts .google_plus:hover {
+  background-position: -42px -43px;
+}
+.paid_profile .paid_actions .social_contacts .facebook:hover {
+  background-position: -84px -43px;
+}
+.paid_profile .paid_actions .social_contacts .instagram:hover {
+  background-position: -126px -43px;
+}
+.paid_profile .paid_actions .social_contacts .live_journal:hover {
+  background-position: -169px -43px;
+}
+.paid_profile .paid_actions .social_contacts .vkontaktik:hover {
+  background-position: -210px -44px;
+}
+.paid_profile .paid_actions .social_contacts .skype:hover {
+  background-position: -253px -44px;
+}
+.paid_profile .paid_user_info {
+  width: 1245px;
+  margin: 0px auto;
+  padding: 20px 0px 10px 0px;
+}
+.paid_profile .user_info_block {
+  display: table;
+  float: left;
+  font-size: 14px;
+  line-height: 17px;
+}
+.paid_profile .user_info_block .row {
+  display: table-row;
+}
+.paid_profile .user_info_block .labels,
+.paid_profile .user_info_block .info {
+  display: table-cell;
+  padding: 2px 0px;
+  text-align: left;
+  vertical-align: top;
+}
+.paid_profile .user_info_block .labels {
+  width: 102px;
+}
+.paid_profile .user_info_block .info {
+  color: #666666;
+}
+.paid_profile .user_info_block .info a {
+  color: #666666;
+}
+.paid_profile .main_info {
+  width: 532px;
+  margin-right: 10px;
+}
+.paid_profile .additional_info {
+  width: 468px;
+  margin-left: 23px;
+  margin-right: 10px;
+}
+.paid_profile .profile_links {
+  width: 500px;
+  height: 40px;
+  margin-top: 15px;
+  text-align: right;
+  float: right;
+  width: 190px;
+  height: auto;
+  margin-top: 0px;
+}
+.paid_profile .profile_links a {
+  display: inline-block;
+  min-height: 18px;
+  padding: 11px 14px 11px 14px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background: #3399CC none;
+}
+.paid_profile .profile_links span {
+  padding-right: 15px;
+  background: url(../img/arrow_right_white_big.png) 100% 2px no-repeat;
+}
+.paid_profile .profile_links .orange_button {
+  background: #FF9900 none;
+}
+.paid_profile .profile_links a {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1270px) {
+  .paid_profile .paid_header {
+    min-width: 996px;
+    min-height: 216px;
+    padding-top: 270px;
+  }
+  .paid_profile .paid_icon_block {
+    width: 996px;
+    margin-left: -498px;
+  }
+  .paid_profile .paid_top_row .paid_central {
+    width: 996px;
+  }
+  .paid_profile .paid_user_data {
+    width: 346px;
+  }
+  .paid_profile .paid_user_data .name {
+    padding-bottom: 10px;
+    font-size: 27px;
+    line-height: 1.2em;
+  }
+  .paid_profile .paid_user_data .user_label {
+    font-size: 15px;
+    line-height: 1.2em;
+  }
+  .paid_profile .paid_actions {
+    width: 330px;
+  }
+  .paid_profile .paid_actions .actions {
+    width: 330px;
+    margin-left: -1px;
+  }
+  .paid_profile .paid_actions .counters_block {
+    padding-bottom: 10px;
+  }
+  .paid_profile .paid_actions .counters_block .row {
+    margin: 0px 0px 0px auto;
+  }
+  .paid_profile .paid_actions .social_contacts {
+    width: 330px;
+    height: auto;
+    min-height: 42px;
+    padding-top: 14px;
+  }
+  .paid_profile .paid_user_info {
+    width: 996px;
+  }
+  .paid_profile .main_info {
+    width: 407px;
+  }
+  .paid_profile .additional_info {
+    width: 354px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .paid_profile .paid_header {
+    min-width: 745px;
+    min-height: 236px;
+    padding-top: 150px;
+  }
+  .paid_profile .paid_icon_block {
+    width: 745px;
+    margin-left: -372.5px;
+  }
+  .paid_profile .paid_top_row .paid_central {
+    width: 745px;
+  }
+  .paid_profile .paid_avatar {
+    width: 256px;
+    height: 256px;
+    top: 9px;
+    bottom: 0px;
+  }
+  .paid_profile .paid_avatar .actions {
+    width: inherit;
+  }
+  .paid_profile .paid_user_data {
+    float: none;
+    padding-left: 294px;
+  }
+  .paid_profile .paid_actions {
+    float: none;
+    padding-left: 294px;
+  }
+  .paid_profile .paid_actions .actions {
+    margin-left: 0px;
+  }
+  .paid_profile .paid_actions .counters_block {
+    float: none;
+  }
+  .paid_profile .paid_actions .counters_block .row {
+    margin: 0px auto 0px 0px;
+  }
+  .paid_profile .paid_actions .votes_buttons {
+    float: left;
+  }
+  .paid_profile .paid_actions .social_contacts {
+    width: 330px;
+    height: auto;
+    min-height: 42px;
+    text-align: left;
+  }
+  .paid_profile .paid_user_info {
+    width: 745px;
+  }
+  .paid_profile .main_info {
+    width: 357px;
+  }
+  .paid_profile .additional_info {
+    width: 334px;
+  }
+  .paid_profile .profile_links {
+    clear: both;
+    width: 745px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .paid_profile {
+    margin: 0px -10px;
+  }
+  .paid_profile .paid_header {
+    min-width: auto !important;
+  }
+  .paid_profile .paid_icon_block {
+    width: 100%;
+    left: auto;
+    right: 8px;
+    margin-left: 0px;
+  }
+  .paid_profile .paid_top_row {
+    width: auto;
+    padding: 0px 10px 9px 10px;
+  }
+  .paid_profile .paid_top_row .paid_central {
+    width: auto;
+  }
+  .paid_profile .paid_user_data {
+    float: none;
+    width: 320px;
+    padding-left: 294px;
+  }
+  .paid_profile .paid_actions {
+    float: none;
+    padding-left: 294px;
+  }
+  .paid_profile .paid_actions .actions {
+    width: 300px;
+  }
+  .paid_profile .paid_actions .counters_block {
+    width: 298px;
+  }
+  .paid_profile .paid_actions .counters_block .counters {
+    font-size: 23px !important;
+    line-height: 1.35em !important;
+  }
+  .paid_profile .paid_actions .counters_block .counters span {
+    font-size: 12px;
+  }
+  .paid_profile .paid_user_info {
+    width: auto;
+    padding: 20px 10px 10px 10px;
+  }
+  .paid_profile .main_info {
+    width: 100%;
+  }
+  .paid_profile .additional_info {
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+  .paid_profile .profile_links {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .paid_profile .paid_avatar {
+    width: 225px;
+    height: 225px;
+    top: 9px;
+    bottom: 0px;
+  }
+  .paid_profile .paid_user_data {
+    padding-left: 263px;
+  }
+  .paid_profile .paid_actions {
+    padding-left: 263px;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .paid_profile .paid_header {
+    min-height: 126px;
+    padding-top: 260px;
+  }
+  .paid_profile .paid_avatar {
+    top: -249px;
+    bottom: 0px;
+  }
+  .paid_profile .paid_user_data {
+    width: auto;
+    padding-left: 0px;
+  }
+  .paid_profile .paid_actions {
+    width: auto;
+    padding-left: 0px;
+  }
+  .paid_profile .paid_actions .social_contacts {
+    width: auto;
+  }
+}

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fotopoisk</title>
+    
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/inner.css" />
+    <link rel="stylesheet" href="css/activity_wall.css" />
+    <!--
+    <link type="text/less" rel="stylesheet" href="css/colors.less" />
+    <link type="text/less" rel="stylesheet" href="css/helpers.less" />
+    <link type="text/less" rel="stylesheet" href="css/base.less" />
+    <link type="text/less" rel="stylesheet" href="css/inner.less" />
+    <link type="text/less" rel="stylesheet" href="css/activity_wall.less" />
+    -->
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.placeholder.js"></script>
+    <script src="js/doubletaptogo.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/less.min.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header class="header">
+        <div class="central_block">
+          <a href="index.html" title="" class="logo"></a>
+          
+          <nav class="main_navigation">
+            <a href="#" title="" class="touch_nav"></a>
+            <ul>
+              <li class="parent_nav">
+                <a href="photographers.html" title="" aria-haspopup="true">Фотографы</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Свадебные фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотографы Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Детские фотографы</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="parent_nav">
+                <a href="photomodels.html" title="" aria-haspopup="true">Модели</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="#" title="">Фотомодели Ню</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Фотомодели TFP</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Дети модели</a>
+                  </li>
+                  <li>
+                    <a href="#" title="">Другие</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="stylists.html" title="">Стилисты</a>
+              </li>
+              <li>
+                <a href="photostudios.html" title="">Фотостудии</a>
+              </li>
+              <li>
+                <a href="retouchers.html" title="">Ретушеры</a>
+              </li>
+              <li>
+                <a href="amateurs.html" title="">Фотолюбители</a>
+              </li>
+              <li>
+                <a href="agencies.html" title="">Модельные агентства</a>
+              </li>
+              <li>
+                <a href="schools.html" title="">Фотошколы</a>
+              </li>
+              <li class="parent_nav more_menu">
+                <a href="#" title="" aria-haspopup="true">Еще</a>
+                <ul class="subnav">
+                  <li>
+                    <a href="retouchers.html" title="">Ретушеры</a>
+                  </li>
+                  <li>
+                    <a href="amateurs.html" title="">Фотолюбители</a>
+                  </li>
+                  <li>
+                    <a href="agencies.html" title="">Модельные агентства</a>
+                  </li>
+                  <li>
+                    <a href="schools.html" title="">Фотошколы</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="user_block">
+            <a href="#" title="" class="touch_user_menu"><img src="img/avatar.png" alt="" title="" /></a>
+            <div class="menu_block logined">
+              <div class="user_block">
+                <a href="#" title="" class="avatar"><img src="img/avatar.png" alt="" title="" /></a>
+                <div class="user_info">
+                  <div class="info_block">
+                    <div class="name_row"><a href="#" title="">Алефтина Смелая</a></div>
+                    <div class="notifications_row">
+                      <span class="link messages">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                      <span class="link friends">
+                        <a href="#" title=""><span class="notification">+5</span></a>
+                      </span>
+                      <span class="link edit_profile_link">
+                        <a href="#" title=""><span class="no_notification">&nbsp;</span></a>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="links_block">
+                    <ul>
+                      <li>
+                        <a href="photographer_profile.html" title="">Профиль</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_edit.html" title="">Редактирование</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_portfolio.html" title="">Портфолио</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_blog.html" title="">Блог</a>
+                      </li>
+                      <li>
+                        <a href="payment.html" title="">Pro-Аккаунт</a>
+                      </li>
+                      <li>
+                        <a href="photographer_profile_views.html" title="">Статистика</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Выйти</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+                <div class="add_menu">
+                  <a href="#" title="" class="add_label">Добавить</a>
+                  <div class="add_links">
+                    <ul>
+                      <li>
+                        <a href="#" title="">Фотографии</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Видео</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Событие</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Объявление</a>
+                      </li>
+                      <li>
+                        <a href="#" title="">Статью в блог</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear_both"></div>
+        </div>
+        
+        <div class="bottom_line">
+          <div class="central_block">
+            <div class="extended_navigation">
+              <ul>
+                <li class="current">
+                  <a href="activity_wall.html" title="">Активность</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="photos.html" title="" aria-haspopup="true">Фото дня</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="#" title="">Фото недели</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Фото месяца</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="photostream.html" title="">Фотопоток</a>
+                </li>
+                <li>
+                  <a href="events_categories.html" title="">События</a>
+                </li>
+                <li>
+                  <a href="contests.html" title="">Фотоконкурсы</a>
+                </li>
+                <li>
+                  <a href="forums.html" title="">Форум</a>
+                </li>
+                <li>
+                  <a href="adverts_categories.html" title="">Объявления</a>
+                </li>
+                <li class="parent_nav">
+                  <a href="#" title="" aria-haspopup="true">Публикации</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="news.html" title="">Новости</a>
+                    </li>
+                    <li>
+                      <a href="blog_categories.html" title="">Блоги</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Интервью</a>
+                    </li>
+                    <li>
+                      <a href="#" title="">Полезно знать</a>
+                    </li>
+                    <li>
+                      <a href="videos.html" title="">Видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent_nav">
+                  <a href="job.html" title="" aria-haspopup="true">Работа</a>
+                  <ul class="subnav">
+                    <li>
+                      <a href="my_ads.html" title="">Мои объявления</a>
+                    </li>
+                    <li>
+                      <a href="my_orders.html" title="">Мои заказы</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="clear_both"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- content -->
+      <div class="content_block">
+        <div class="content activity_page">
+          
+          <div class="main_column activity_block activity_answers">
+            <div class="activity_list">
+            
+              <div class="activty_answers_caption">
+                <span class="text">Ответы</span>
+                <a href="activity_wall.html" title="" class="activity_link">
+                  Активность
+                  <img src="img/arrow_right_white.png" alt="" title="" />
+                </a>
+              </div>
+
+              <div class="activity_row">
+                <div class="activity_avatar">
+                  <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                </div>
+                <div class="body">
+                  <div class="info">
+                    <a hre="#" title="">Алефтина Смелая</a>
+                    <span>ответила на Ваш коментарий: <a href="#" title="">Отличный урок. Благодарю!</a></span>
+                  </div>
+                  <div class="date">26 марта 2012 в 14:19</div>
+                  <div class="clear_both"></div>
+
+                  <div class="description">
+                    Всегда пожалуйста!
+                  </div>
+
+                  <div class="actions">
+                    <a href="#" title="">Комментировать</a>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+
+                <div class="activity_answer_form">
+                  <img src="img/activity_answer_arrow.png" alt="" title="" class="answer_arrow" />
+                  <form name="" id="" action="" method="">
+                    <textarea name="" id="" placeholder="Введите текст..." class="textareas activity_answer_text"></textarea>
+
+                    <div class="actions">
+                      <div class="links">
+                        <a href="javascript:void(0);" title="" class="video_link"></a>
+                        <a href="javascript:void(0);" title="" class="photo_link"></a>
+                      </div>
+                      <div class="form_buttons">
+                        <input type="submit" name="" id="" value="Опубликовать" class="buttons" />
+                      </div>
+                      <div class="clear_both"></div>
+                    </div>
+
+                    <div class="popup_wrapper video_wrapper">
+
+                    <div class="add_popup add_video_popup">
+                      <div class="popup_caption">
+                        Прикрепить видео
+                        <a href="javascript:void(0);" title="" class="close_popup">Закрыть</a>
+                      </div>
+
+                      <div class="popup_form">
+                        <div class="popup_videos_list">
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_02.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_03.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_04.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_08.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_01.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_05.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_06.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_09.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_02.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_03.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_04.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_08.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_01.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_05.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_06.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                          <a href="#" title="" class="popup_video">
+                            <img src="img/photo_09.png" alt="" title="" />
+                            <span class="watermark"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="popup_wrapper photo_wrapper">
+
+                    <div class="add_popup add_photo_popup">
+                      <div class="popup_caption">
+                        Прикрепить фотографию
+                        <a href="javascript:void(0);" title="" class="close_popup">Закрыть</a>
+                      </div>
+
+                      <div class="upload_photo_block">
+                        <div class="input_block">
+                          <div class="file_field_block errors">Фото</div>
+                          <input type="button" id="" name="" value="Загрузить фотографию" class="file_button" />
+                          <br />
+                          <input type="file" id="" name="" value="" class="file_field" />
+                        </div>
+                        <div class="clear_both"></div>
+                      </div>
+
+                      <div class="popup_form">
+                        <div class="popup_photos_list">
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_02.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_03.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_04.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_08.png" alt="" title="" />
+                          </a>
+
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_01.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_05.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_06.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_09.png" alt="" title="" />
+                          </a>
+
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_02.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_03.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_04.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_08.png" alt="" title="" />
+                          </a>
+
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_01.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_05.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_06.png" alt="" title="" />
+                          </a>
+                          <a href="#" title="" class="popup_photo">
+                            <img src="img/photo_09.png" alt="" title="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="activity_row">
+                <div class="activity_avatar">
+                  <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                </div>
+                <div class="body">
+                  <div class="info">
+                    <a hre="#" title="">Алефтина Смелая</a>
+                    <span>добавила статью</span>
+                  </div>
+                  <div class="date">26 марта 2012 в 14:19</div>
+                  <div class="clear_both"></div>
+
+                  <div class="description">
+                    Урок ретуши от фотографа и иллюстратор Андрея Шаронова. В его портфолио дружно сосуществуют иллюстрации, 
+                    логотипы и элементы фирменного стиля. В этой публикации Андрей расскажет о том, какого это сочетать два 
+                    направления, а также поделится соображениями на тему вдохновения, увлечений, путешествий и капризных заказчиков.
+                  </div>
+
+                  <div class="actions">
+                    <a href="#" title="">Читать полностью</a>
+                    |
+                    <a href="#" title="">Комментировать</a>
+                  </div>
+
+                  <div class="activity_comments">
+                    <div class="comment">
+                      <div class="avatar">
+                        <a href="#" title=""><img src="img/forum_avatar_02.png" alt=""title="" /></a>
+                      </div>
+                      <div class="body">
+                        <div class="author">
+                          <a href="#" title="">Дмитрий Коробков</a>
+                        </div>
+                        <div class="text">
+                          Отличный урок. Благодарю!
+                        </div>
+                        <div class="comment_bottom">
+                          10 февраля 2014 в 13:48 | <a href="#" title="">Ответить</a>
+                        </div>
+                      </div>
+                      <div class="clear_both"></div>
+                    </div>
+
+                    <div class="comment">
+                      <div class="avatar">
+                        <a href="#" title=""><img src="img/avatar.png" alt=""title="" /></a>
+                      </div>
+                      <div class="body">
+                        <div class="author">
+                          <a href="#" title="">Алефтина Смелая</a>
+                        </div>
+                        <div class="text">
+                          Всегда пожалуйста!
+                        </div>
+                        <div class="comment_bottom">
+                          10 февраля 2014 в 13:48 | <a href="#" title="">Ответить</a>
+                        </div>
+                      </div>
+                      <div class="clear_both"></div>
+                    </div>
+
+                    <a href="#" title="" class="show_all_comments">Показать все 10 коментариев<img src="img/arrow_down_white.png" alt="" title="" /></a>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+              </div>
+
+              <div class="activity_row">
+                <div class="activity_avatar">
+                  <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                </div>
+                <div class="body">
+                  <div class="info">
+                    <a hre="#" title="">Алефтина Смелая</a>
+                    <span>добавила тему</span>
+                  </div>
+                  <div class="date">26 марта 2012 в 14:19</div>
+                  <div class="clear_both"></div>
+
+                  <div class="title">
+                    <a href="#" title="">Мастер-класс Оли Филиппс «Как делать «неправильно» и преуспеть?»</a>
+                  </div>
+                  <div class="author_info">
+                    administrator, 25.03.2012 23:12
+                  </div>
+
+                  <div class="activity_comment_form">
+                    <form name="" id="" action="" method="">
+                      <div class="comment_avatar">
+                        <a href="#" title=""><img src="img/forum_avatar_02.png" alt="" title="" /></a>
+                      </div>
+                      <div class="message">
+                        <textarea name="" id="" placeholder="Ваш комментарий..." class="textareas"></textarea>
+                      </div>
+                      <div class="clear_both"></div>
+                      <div class="actions">
+                        <div class="links">
+                          <a href="javascript:void(0);" title="" class="video_link"></a>
+                          <a href="javascript:void(0);" title="" class="photo_link"></a>
+                        </div>
+                        <div class="form_buttons">
+                          <input type="submit" name="" id="" value="Отправить" class="buttons" />
+                        </div>
+                      </div>
+                      <div class="clear_both"></div>
+
+                      <div class="popup_wrapper video_wrapper">
+
+                        <div class="add_popup add_video_popup">
+                          <div class="popup_caption">
+                            Прикрепить видео
+                            <a href="javascript:void(0);" title="" class="close_popup">Закрыть</a>
+                          </div>
+
+                          <div class="popup_form">
+                            <div class="popup_videos_list">
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_02.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_03.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_04.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_08.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_01.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_05.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_06.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_09.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_02.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_03.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_04.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_08.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_01.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_05.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_06.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                              <a href="#" title="" class="popup_video">
+                                <img src="img/photo_09.png" alt="" title="" />
+                                <span class="watermark"></span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="popup_wrapper photo_wrapper">
+                        <div class="add_popup add_photo_popup">
+                          <div class="popup_caption">
+                            Прикрепить фотографию
+                            <a href="javascript:void(0);" title="" class="close_popup">Закрыть</a>
+                          </div>
+
+                          <div class="upload_photo_block">
+                            <div class="input_block">
+                              <div class="file_field_block errors">Фото</div>
+                              <input type="button" id="" name="" value="Загрузить фотографию" class="file_button" />
+                              <br />
+                              <input type="file" id="" name="" value="" class="file_field" />
+                            </div>
+                            <div class="clear_both"></div>
+                          </div>
+
+                          <div class="popup_form">
+                            <div class="popup_photos_list">
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_02.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_03.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_04.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_08.png" alt="" title="" />
+                              </a>
+
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_01.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_05.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_06.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_09.png" alt="" title="" />
+                              </a>
+
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_02.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_03.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_04.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_08.png" alt="" title="" />
+                              </a>
+
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_01.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_05.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_06.png" alt="" title="" />
+                              </a>
+                              <a href="#" title="" class="popup_photo">
+                                <img src="img/photo_09.png" alt="" title="" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+              </div>
+
+              <div class="activity_row">
+                <div class="activity_avatar">
+                  <a href="#" title=""><img src="img/activity_photo_01.png" alt="" title="" /></a>
+                </div>
+                <div class="body">
+                  <div class="info">
+                    <a hre="#" title="">Андрей Шаронов</a>
+                    <span>ответил на Вашу запись: <a href="#" title="">Costello Tagliapietra Fall/Winter 2014-15 Backsta...</a></span>
+                  </div>
+                  <div class="date">26 марта 2012 в 14:19</div>
+                  <div class="clear_both"></div>
+
+                  <div class="description">
+                    Вот, посмотри )
+                  </div>
+
+                  <div class="video_block">
+                    <span class="link">Видео <a href="#" title="">www.youtube.com</a></span>
+                    <div class="video">
+                      <a href="#" title="">
+                        <span class="watermark"></span>
+                        <img src="img/activity_video_01.png" alt="" title="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <a href="#" title="">Комментировать</a>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+              </div>
+
+              <div class="activity_row">
+                <div class="activity_avatar">
+                  <a href="#" title=""><img src="img/photo_06.png" alt="" title="" /></a>
+                </div>
+                <div class="body">
+                  <div class="info">
+                    <a hre="#" title="">Алефтина Смелая</a>
+                    <span>ответила на Ваш коментарий: <a href="#" title="">Отличный урок. Благодарю!</a></span>
+                  </div>
+                  <div class="date">26 марта 2012 в 14:19</div>
+                  <div class="clear_both"></div>
+
+                  <div class="description">
+                    <p>Попробуйте понаблюдать за собой в течение дня. Периодически останавливайтесь и спрашивайте себя: “Где я?” 
+                    Где находится ваше сознание, когда вы куда-то идете, с кем-то общаетесь, готовите, убираетесь или 
+                    занимаетесь любой другой деятельностью?</p>
+                    <img src="img/activity_answer_image.png" alt="" title="" />
+                  </div>
+
+                  <div class="actions">
+                    <a href="#" title="">Комментировать</a>
+                  </div>
+                </div>
+                <div class="clear_both"></div>
+              </div>
+
+              <a href="#" title="" class="view_more_activity">Показать ещё<img src="img/arrow_down_white.png" alt="" title="" /></a>
+
+            </div>
+          </div>
+          
+          <aside class="right_column activity_aside">
+            
+            <div class="tile last_news">
+              <div class="caption">
+                <span>Свежие новости</span>
+              </div>
+              <div class="body">
+                <div class="news_list">
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_01.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Новые снимки Vogue</a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_02.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Старые снимки Togue</a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_03.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Совсем новые снимки Gogue</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="more_link">
+                  <a href="#" title="">Все новости</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile nearest_events">
+              <div class="caption">
+                <span>Последние события</span>
+              </div>
+              <div class="body">
+                <div class="events_list">
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_01.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Конференция Vogue</a>
+                      <span class="date">12 апреля 2014 года</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_02.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Мастер-класс Фишера</a>
+                      <span class="date">20 марта 2014 года</span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_03.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Презентация Гетцнерской...</a>
+                      <span class="date">1 мая 2014 года</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="more_link">
+                  <a href="#" title="">Все события</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="tile blog_articles">
+              <div class="caption">
+                <span>Блоги</span>
+              </div>
+              <div class="body">
+                <div class="blog_articles_list">
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_01.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Переходные кольца на Советскую...</a>
+                      <span class="author">
+                        <a href="#" title="">Ольга Солдина</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_02.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Lightroom, Photoshop. Что...</a>
+                      <span class="author">
+                        <a href="#" title="">Юлия Бечерова</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="thumb">
+                      <a href="#" title=""><img src="img/last_news_thumb_03.png" alt="" title="" /></a>
+                    </div>
+                    <div class="title">
+                      <a href="#" title="">Переходные кольца на Советскую...</a>
+                      <span class="author">
+                        <a href="#" title="">Виктория Бермен</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="more_link">
+                  <a href="#" title="">Все статьи</a>
+                </div>
+              </div>
+            </div>
+            
+          </aside>
+          <div class="clear_both"></div>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <div class="central_block">
+        <div class="left_block">
+          <div class="footer_navigation">
+            <a href="#" title="">О проекте</a>
+            |
+            <a href="#" title="">Новости проекта</a>
+            |
+            <a href="#feedback" title="" rel="feedback">Связаться с нами</a>
+          </div>
+
+          <div class="copy_right">
+            ©2010 Фотопоиск. Все права защищены. info@fotopoisk.com.ua <br />
+            Все фотографии являются собственностью пользоватлей<br /><br />
+            г. Киев, ул. Крещатик, 25<br />
+            +38 (066) 774-73-52
+          </div>
+        </div>
+
+        <div class="site_links">
+          <div class="column">
+            <a href="#" title="">Фотографы</a><br />
+            <a href="#" title="">Фотомодели</a><br />
+            <a href="#" title="">Стилисты</a><br />
+            <a href="#" title="" class="current">Фотостудии</a><br />
+            <a href="#" title="">Ретушеры</a><br />
+            <a href="#" title="">Фотошколы</a><br />
+            <a href="#" title="">Агенства</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Новости</a><br />
+            <a href="#" title="">Блоги</a><br />
+            <a href="#" title="">Интервью</a><br />
+            <a href="#" title="">Полезно знать</a><br />
+            <a href="#" title="">События</a><br />
+            <a href="#" title="">Форум</a><br />
+            <a href="#" title="">Барахолка</a>
+          </div>
+          <div class="column">
+            <a href="#" title="">Фото дня</a><br />
+            <a href="#" title="">Фотопоток</a><br />
+            <a href="#" title="">Фотоконкурсы</a><br />
+            <a href="#" title="">Топ городов</a><br />
+            <a href="#" title="">Фотограф года</a><br />
+            <a href="#" title="">Модель года</a><br />
+            <a href="#" title="">Сотрудничество</a>
+          </div>
+        </div>
+
+        <div class="right_block">
+          <div class="socials">
+            <a href="#" title="" class="instagram"></a>
+            <a href="#" title="" class="odnoklassniki"></a>
+            <a href="#" title="" class="twitter"></a>
+            <a href="#" title="" class="fb"></a>
+            <a href="#" title="" class="vk"></a>
+            <a href="#" title="" class="google_plus"></a>
+            <div class="clear_both"></div>
+          </div>
+
+          <div class="designed_by">
+            <a href="http://freshlime.com.ua" title="" target="_blank"><img src="img/fresh_logo.png" alt="FreshLimeStudio" title="" /></a>
+          </div>
+
+          <div class="clear_both"></div>
+          
+          <div class="share_buttons">
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_01.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_02.png" alt="" tite="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="cell">
+                <img src="img/share_03.png" alt="" tite="" />
+              </div>
+              <div class="cell">
+                <img src="img/share_04.png" alt="" tite="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear_both"></div>
+      </div>
+    </footer>
+  
+  </body>
+</html>

@@ -1,0 +1,121 @@
+/* top cities styles */
+.editable_page {
+  padding: 0px 0px 30px 0px;
+  margin: 0px auto;
+}
+.editable_page .epage_header_block {
+  position: relative;
+  max-width: 1245px;
+  margin: 0px auto;
+  padding-top: 17px;
+}
+.editable_page .epage_header_block .page_title {
+  padding-top: 7px;
+}
+.editable_page .epage_header_block .add_advert_link {
+  display: none;
+}
+.editable_page .central_block {
+  max-width: 1245px;
+  margin: 0px auto 20px auto;
+}
+.editable_page .epage_content {
+  float: left;
+  width: 962px;
+  margin-top: 22px;
+}
+.editable_page .epage_right_column {
+  float: right;
+  width: 245px;
+  margin-top: 22px;
+}
+@media only screen and (max-width: 1270px) {
+  .editable_page .central_block {
+    width: 996px;
+  }
+  .editable_page .epage_content {
+    float: none;
+    width: inherit;
+  }
+  .editable_page .right_column {
+    float: none;
+    width: 996px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .editable_page .right_column .tile {
+    width: 996px;
+  }
+  .editable_page .right_column .tile .body {
+    padding: 20px 18px 22px 18px;
+  }
+  .editable_page .right_column .last_news .news_list {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .editable_page .right_column .last_news .title {
+    padding-right: 10px;
+  }
+  .editable_page .right_column .last_news .row {
+    display: table-cell;
+    width: auto;
+    min-width: 194px;
+  }
+  .editable_page .right_column .last_news .clear_both {
+    display: none;
+  }
+  .editable_page .right_column .image_block {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .editable_page .epage_header_block {
+    padding-right: 10px;
+  }
+  .editable_page .central_block {
+    width: 745px;
+  }
+  .editable_page .epage_content {
+    width: inherit;
+    margin-top: 13px;
+  }
+  .editable_page .right_column {
+    width: 754px;
+  }
+  .editable_page .right_column .tile {
+    width: 745px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .editable_page .epage_header_block {
+    padding-left: 10px;
+  }
+  .editable_page .central_block {
+    width: auto;
+    min-width: 276px;
+    padding: 0px 10px;
+  }
+  .editable_page .epage_content {
+    width: inherit;
+  }
+  .editable_page .right_column {
+    width: 100%;
+  }
+  .editable_page .right_column .tile {
+    width: auto;
+  }
+  .editable_page .right_column .last_news .news_list {
+    display: block;
+    width: auto;
+  }
+  .editable_page .right_column .last_news .row {
+    display: table;
+    width: auto;
+    min-width: 194px;
+    min-width: auto;
+  }
+  .editable_page .right_column .last_news .clear_both {
+    display: block;
+  }
+}

@@ -1,0 +1,615 @@
+@import (reference) "base.less";
+
+/* landing styles */
+.landing_page {
+    width: 100%;
+    .centered_block {
+        width: 1245px;
+        margin: 0px auto;
+    }
+    .first_row {
+        background: url(../img/landing_bg_01.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        .centered_block {
+            min-height: 272px;
+            padding-bottom: 30px;
+        }
+        p {
+            padding: 0px 118px 0px 0px;
+            text-align: right;
+            color: @white_color;
+            text-shadow: 2px 2px 7px #000000;
+        }
+        .big_text {
+            padding-top: 81px;
+            .font(63px, 1.2em);
+        }
+        .small_text {
+            .font(38px, 1.2em);
+        }
+    }
+    .second_row {
+        background: #EBEBEB none;
+        .centered_block {
+            min-height: 250px;
+        }
+        .icons {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        p {
+            display: table-cell;
+            padding: 0px;
+            text-align: center;
+            .font(20px, 1.2em);
+            color: @blue_color;
+        }
+        p:before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 42px auto 15px auto;
+        }
+        .design_icon:before {
+            background: url(../img/landing_icon_01.png) 0px 0px no-repeat;
+            background-size: 100%;
+        }
+        .competition_icon:before {
+            background: url(../img/landing_icon_02.png) 0px 0px no-repeat;
+            background-size: 100%;
+        }
+        .restrictions_icon:before {
+            background: url(../img/landing_icon_03.png) 0px 0px no-repeat;
+            background-size: 100%;
+        }
+        .database_icon:before {
+            background: url(../img/landing_icon_04.png) 0px 0px no-repeat;
+            background-size: 100%;
+        }
+    }
+    .third_row {
+        background: url(../img/landing_bg_02.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        .centered_block {
+            min-height: 240px;
+            padding-bottom: 34px;
+            text-align: center;
+            color: @white_color;
+            text-shadow: 2px 2px 7px #000000;
+        }
+        .caption {
+            padding-top: 34px;
+            padding-bottom: 53px;
+            .font(28px, 1.2em);
+        }
+        .table {
+            display: table;
+            width: 100%;
+            margin: 0px auto;
+        }
+        .cell {
+            display: table-cell;
+            padding: 0px 15px;
+            .font(22px, 1.2em);
+            text-align: left;
+            vertical-align: top;
+            span {
+                display: block;
+                float: left;
+                width: 53px;
+                margin-top: -21px;
+                padding-right: 22px;
+                .font(96px, 1.2em);
+            }
+            p {
+                padding-left: 75px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+    .fourth_row {
+        background: #FFFFFF none;
+        .centered_block {
+            min-height: 250px;
+        }
+        .about_photographer {
+            display: inline-block;
+            margin-left: 70px;
+            padding: 65px 20px 30px 20px;
+            .font(24px, 1.2em);
+        }
+        .about_photographer:before {
+            content: "";
+            display: block;
+            float: left;
+            width: 158px;
+            height: 119px;
+            margin-right: 54px;
+            background: url(../img/landing_icon_05.png) 0px 0px no-repeat;
+            background-size: 100%;
+        }
+    }
+    .fifth_row {
+        background: #ECECEC none;
+        .centered_block {
+            min-height: 230px;
+            padding-bottom: 20px;
+            color: @blue_color;
+        }
+        .caption {
+            padding-top: 33px;
+            padding-bottom: 36px;
+            .font(28px, 1.2em);
+            text-align: center;
+        }
+        .and_more {
+            display: table;
+            width: 100%;
+            margin: 0px auto;
+            p {
+                display: table-cell;
+                padding: 0px 10px;
+                .font(20px, 1.2em);
+                text-align: left;
+                vertical-align: top;
+            }
+            p:before {
+                content: "";
+                display: block;
+                float: left;
+                width: 79px;
+                height: 96px;
+                margin-top: 3px;
+                margin-right: 10px;
+                background: url(../img/landing_icon_06.png) 0px 0px no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    .sixth_row {
+        background: #1396D2 none;
+        .centered_block {
+            display: table;
+            min-height: 250px;
+        }
+        .pro_account {
+            display: table-cell;
+            width: 267px;
+            padding: 32px 32px 25px 32px;
+            text-align: center;
+            vertical-align: middle;
+            p {
+                height: 66px;
+                padding: 0px;
+                .font(50px, 1.25em);
+                color: @orange_color;
+                background: #FFFFFF none;
+            }
+            p:first-child {
+                height: 120px;
+                .font(120px, 0.95em);
+                color: @white_color;
+                background: #FF9400 none;
+            }
+        }
+        .right_text {
+            display: table-cell;
+            padding-top: 28px;
+            padding-right: 15px;
+            text-align: left;
+            vertical-align: middle;
+            color: @white_color;
+        }
+        .orange_block {
+            display: inline-block;
+            padding: 8px;
+            background: #FF9300 none;
+        }
+        .top_row {
+            .font(34px, 0.95em);
+            b {
+                .font(48px, 0.95em);
+                font-weight: normal;
+            }
+            .small_text {
+                .font(34px, 0.95em);
+            }
+        }
+        .middle_row {
+            padding-top: 10px;
+            padding-bottom: 22px;
+            .font(18px, 1.2em);
+        }
+        .bottom_row {
+            .font(36px, 0.95em);
+        }
+    }
+    .sixth_bottom_row {
+        padding: 37px 0px 32px 0px;
+        .text_block {
+            float: left;
+            width: 570px;
+            padding-top: 10px;
+            padding-left: 32px;
+            .font(40px, 1.2em);
+            color: @blue_color;
+        }
+        .icons_block {
+            float: right;
+            width: 590px;
+            span {
+                display: block;
+                float: left;
+                padding-top: 120px;
+                .font(26px, 1.2em);
+                text-align: center;
+                color: @blue_color;
+            }
+            span:before {
+                content: "";
+                display: block;
+                margin: -120px auto 0px auto;
+            }
+            .first_icon {
+                width: 185px;
+            }
+            .second_icon {
+                width: 215px;
+            }
+            .third_icon {
+                width: 190px;
+            }
+            .first_icon:before {
+                width: 99px;
+                height: 103px;
+                background: url(../img/sixth_bottom_image_01.png) 0px 0px no-repeat;
+                background-size: 100%;
+            }
+            .second_icon:before {
+                width: 125px;
+                height: 95px;
+                margin-bottom: 8px;
+                background: url(../img/sixth_bottom_image_02.png) 0px 0px no-repeat;
+                background-size: 100%;
+            }
+            .third_icon:before {
+                width: 103px;
+                height: 103px;
+                background: url(../img/sixth_bottom_image_03.png) 0px 0px no-repeat;
+                background-size: 100%;
+            }
+        }
+    }
+    .seventh_row {
+        background: url(../img/landing_bg_03.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        .centered_block {
+            min-height: 300px;
+            .font(38px, 1.2em);
+            text-align: center;
+        }
+        .caption {
+            padding-top: 40px;
+            padding-bottom: 35px;
+            color: @white_color;
+            text-shadow: 2px 2px 7px #000000;
+        }
+        .orange_link {
+            display: inline-block;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: @white_color;
+            background: #FF9326 none;
+        }
+        .payment_buttons {
+            display: table;
+            margin: 20px auto;
+            .button_block {
+                display: table-cell;
+                padding: 0px 4px;
+                vertical-align: top;
+                text-align: center;
+            }
+        }
+        .note {
+            display: block;
+            padding-top: 25px;
+            .font(17px, 1.2em);
+            font-weight: normal;
+            color: @white_color;
+            text-shadow: 2px 2px 7px #000000;
+            a {
+                color: @white_color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .landing_page {
+        .centered_block {
+            width: 996px;
+        }
+        .first_row {
+            .big_text {
+                padding-right: 80px;
+                .font(50px, 1.2em);
+            }
+            .small_text {
+                padding-right: 80px;
+            }
+        }
+        .second_row {
+            .icons p {
+                padding: 0px 15px 42px 15px;
+            }
+        }
+        .third_row {
+            .cell {
+                .font(20px, 1.2em);
+                span {
+                    width: 44px;
+                    .font(80px, 1.2em);
+                }
+                p {
+                    padding-left: 66px;
+                }
+            }
+        }
+        .fifth_row {
+            .and_more p {
+                .font(18px, 1.2em);
+            }
+            .and_more p:before {
+                width: 60px;
+                height: 51px;
+            }
+        }
+        .sixth_row {
+            .centered_block {
+                padding-bottom: 20px;
+            }
+            .top_row {
+                line-height: 1.2em;
+            }
+            .bottom_row {
+                line-height: 1.2em;
+            }
+        }
+        .sixth_bottom_row {
+            padding-top: 20px;
+            padding-bottom: 37px;
+            .text_block {
+                float: none;
+                width: auto;
+            }
+            .icons_block {
+                float: none;
+                margin: 30px auto 0px auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .landing_page {
+        .centered_block {
+            width: 745px;
+        }
+        .first_row {
+            .big_text {
+                padding-top: 101px;
+                padding-right: 0px;
+                .font(42px, 1.2em);
+            }
+            .small_text {
+                padding-right: 0px;
+                .font(32px, 1.2em);
+            }
+        }
+        .third_row {
+            .table {
+                display: block;
+                table-layout: auto;
+            }
+            .cell {
+                clear: left;
+                display: table;
+                padding-bottom: 15px;
+                span {
+                    display: table-cell;
+                    width: 40px;
+                    margin: 0px;
+                    padding-right: 15px;
+                    .font(72px, 1.2em);
+                    vertical-align: middle;
+                }
+                p {
+                    display: table-cell;
+                    padding-left: 15px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .fourth_row {
+            .about_photographer {
+                margin-left: 0px;
+            }
+            .about_photographer:before {
+                margin-bottom: 10px;
+            }
+        }
+        .fifth_row {
+            .and_more {
+                display: block;
+                p {
+                    display: block;
+                    width: auto !important;
+                    padding: 20px 0px 10px 0px;
+                }
+                p:before {
+                    margin-top: -10px;
+                }
+            }
+        }
+        .sixth_row {
+            .pro_account {
+                display: block;
+                float: left;
+                width: 267px;
+                padding: 32px 32px 0px 0px;
+                p {
+                    height: 40px;
+                    .font(30px, 1.25em);
+                }
+                p:first-child {
+                    height: 80px;
+                    .font(80px, 0.95em);
+                }
+            }
+            .right_text {
+                display: block;
+                padding-right: 0px;
+            }
+            .top_row {
+                padding-bottom: 30px;
+            }
+            .bottom_row {
+                .font(34px, 1.2em);
+            }
+        }
+        .seventh_row {
+            .caption {
+                .font(34px, 1.2em);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .landing_page {
+        .centered_block {
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .first_row {
+            .big_text {
+                .font(38px, 1.2em);
+                text-align: center;
+            }
+            .small_text {
+                .font(28px, 1.2em);
+                text-align: center;
+            }
+        }
+        .second_row {
+            .centered_block {
+                padding-bottom: 30px;
+            }
+            .icons {
+                display: block;
+                text-align: center;
+                p {
+                    display: inline-table;
+                    width: 276px;
+                    padding: 0px 15px 0px 15px;
+                }
+            }
+        }
+        .fourth_row {
+            .about_photographer:before {
+                margin-right: 25px;
+            }
+        }
+        .fifth_row {
+            .and_more p {
+                padding-left: 70px;
+            }
+            .and_more p:before {
+                margin-left: -70px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .landing_page {
+        .first_row {
+            .centered_block {
+                min-height: auto;
+            }
+            .big_text {
+                padding-top: 20px;
+                padding-bottom: 30px;
+                .font(32px, 1.2em);
+            }
+            .small_text {
+                .font(26px, 1.2em);
+            }
+        }
+        .second_row {
+            .icons p {
+                width: 226px;
+            }
+        }
+        .sixth_row {
+            .pro_account {
+                float: none;
+                margin: 0px auto;
+                padding-right: 0px;
+            }
+            .right_text {
+                text-align: center;
+                .top_row {
+                    .font(26px, 1.2em);
+                }
+                .bottom_row {
+                    .font(28px, 1.2em);
+                }
+            }
+        }
+        .sixth_bottom_row {
+            .text_block {
+                padding-left: 0px;
+                .font(32px, 1.2em);
+                text-align: center;
+            }
+            .icons_block {
+                width: 100%;
+                text-align: center;
+                span {
+                    display: inline-table;
+                    float: none;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .seventh_row {
+            .payment_buttons {
+                display: block;
+                text-align: center;
+                .button_block {
+                    display: inline-table;
+                    margin-bottom: 15px;
+                }
+            }
+            .note {
+                padding-top: 0px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .landing_page {
+        .seventh_row {
+            .caption {
+                .font(28px, 1.2em);
+            }
+        }
+    }
+}
